@@ -1,3 +1,8 @@
+"use client";
+
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
 const navLinks = [
   { label: "Home", href: "/", active: true },
   { label: "Projects", href: "#projects" },
@@ -45,24 +50,45 @@ const projectSections = [
 ];
 
 export default function Home() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="homepage">
-      <header className="site-header">
+      <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>
         <div className="container header-inner">
-          <a className="logo" href="/" aria-label="Lockhart Suver Home">
+          <Link className="logo" href="/" aria-label="Lockhart Suver Home">
             <img
               src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png"
               alt="Lockhart Suver"
             />
-          </a>
+          </Link>
 
           <nav aria-label="Primary">
             <ul className="main-nav">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a className={link.active ? "active" : ""} href={link.href}>
-                    {link.label}
-                  </a>
+                  {link.href.startsWith("/") ? (
+                    <Link className={link.active ? "active" : ""} href={link.href}>
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a className={link.active ? "active" : ""} href={link.href}>
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

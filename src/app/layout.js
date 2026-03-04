@@ -1,6 +1,4 @@
 import "./globals.css";
-import "@fontsource/open-sans"; // Defaults to weight 400
-
 
 export const metadata = {
   title: "Home | Lockhart Suver",
