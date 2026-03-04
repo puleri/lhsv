@@ -103,7 +103,7 @@ export default function Home() {
 
         <section id="projects" className="project-strips">
           {projectSections.map((section) => (
-            <article key={section.title} className="project-strip" style={{ backgroundImage: `url(${section.image})` }}>
+            <article key={section.title} className="project-strip h-100" style={{ backgroundImage: `url(${section.image})` }}>
               <div className="strip-overlay" />
               <div className={`container strip-content ${section.light ? "text-light" : "text-normal"}`}>
                 <h2>{section.title}</h2>
