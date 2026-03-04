@@ -79,7 +79,7 @@ export default function Home() {
           />
           <img
             className="hero-watermark"
-            src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png"
+            src="https://www.lockhartsuver.com/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
             alt=""
             aria-hidden="true"
           />
