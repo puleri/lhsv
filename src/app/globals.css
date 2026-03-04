@@ -39,16 +39,26 @@ a {
 }
 
 .header-inner {
-  min-height: 108px;
+  min-height: 124px;
   display: flex;
+  transition: min-height 200ms ease;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
 }
 
 .logo img {
-  height: 56px;
+  height: 64px;
   width: auto;
+  transition: height 200ms ease;
+}
+
+.site-header.is-scrolled .header-inner {
+  min-height: 96px;
+}
+
+.site-header.is-scrolled .logo img {
+  height: 52px;
 }
 
 .main-nav {
