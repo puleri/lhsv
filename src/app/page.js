@@ -1,18 +1,9 @@
 const navLinks = [
-  { label: "Home", href: "/" },
+  { label: "Home", href: "/", active: true },
   { label: "Projects", href: "#projects" },
-  { label: "Firm Profile", href: "#firm-profile" },
-  { label: "Home Service", href: "#home-service" },
-  { label: "Contact", href: "#contact" },
-];
-
-const sliderImages = [
-  "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home1.jpg",
-  "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home2.jpg",
-  "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home3_reduced.jpg",
-  "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home6.jpg",
-  "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home5_reduced.jpg",
-  "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home4.jpg",
+  { label: "Firm Profile", href: "https://lsdev1.wpengine.com/about-us/" },
+  { label: "Home Service", href: "https://lsdev1.wpengine.com/home-services/" },
+  { label: "Contact", href: "https://lsdev1.wpengine.com/contact/" },
 ];
 
 const projectSections = [
@@ -28,14 +19,14 @@ const projectSections = [
     href: "https://lsdev1.wpengine.com/portfolio/downtown-condos/",
     cta: "view the downtown condos portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/bruno_reduced.jpg",
-    light: false,
+    light: true,
   },
   {
     title: "Remodels and Renovations",
     href: "https://lsdev1.wpengine.com/portfolio/remodels-and-renovations/",
     cta: "view the remodels and renovations portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/601_reduced.jpg",
-    light: false,
+    light: true,
   },
   {
     title: "Small Projects",
@@ -58,7 +49,7 @@ export default function Home() {
     <div className="homepage">
       <header className="site-header">
         <div className="container header-inner">
-          <a className="logo" href="https://lsdev1.wpengine.com" aria-label="Lockhart Suver Home">
+          <a className="logo" href="/" aria-label="Lockhart Suver Home">
             <img
               src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png"
               alt="Lockhart Suver"
@@ -69,7 +60,9 @@ export default function Home() {
             <ul className="main-nav">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
+                  <a className={link.active ? "active" : ""} href={link.href}>
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -79,33 +72,40 @@ export default function Home() {
 
       <main>
         <section className="hero" aria-label="Featured homes">
-          <div className="hero-track">
-            {sliderImages.concat(sliderImages).map((src, index) => (
-              <div key={`${src}-${index}`} className="hero-slide" style={{ backgroundImage: `url(${src})` }} />
+          <img
+            className="hero-image"
+            src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home1.jpg"
+            alt="Featured staircase"
+          />
+          <img
+            className="hero-watermark"
+            src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <div className="hero-dots" aria-hidden="true">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <span key={i} className={i === 0 ? "dot active" : "dot"} />
             ))}
           </div>
-          <div className="hero-overlay" />
-          <div className="hero-content container">
+        </section>
+
+        <section className="intro-band" id="firm-profile">
+          <div className="container intro-content">
             <h1>Craftsmanship in every detail.</h1>
             <p>
               We specialize in turning challenging architecture and one-of-a-kind designs into
               well-crafted homes, interiors and built environments.
             </p>
-            <a id="firm-profile" href="https://lsdev1.wpengine.com/about-us/">
-              view the firm profile
-            </a>
+            <a href="https://lsdev1.wpengine.com/about-us/">view the firm profile</a>
           </div>
         </section>
 
-        <section id="projects" className="project-grid container">
+        <section id="projects" className="project-strips">
           {projectSections.map((section) => (
-            <article
-              key={section.title}
-              className={`project-card ${section.light ? "text-light" : "text-normal"}`}
-              style={{ backgroundImage: `url(${section.image})` }}
-            >
-              <div className="card-overlay" />
-              <div className="card-content">
+            <article key={section.title} className="project-strip" style={{ backgroundImage: `url(${section.image})` }}>
+              <div className="strip-overlay" />
+              <div className={`container strip-content ${section.light ? "text-light" : "text-normal"}`}>
                 <h2>{section.title}</h2>
                 <a href={section.href}>{section.cta}</a>
               </div>
@@ -113,12 +113,10 @@ export default function Home() {
           ))}
         </section>
 
-        <section id="contact" className="contact container">
-          <h3>
-            <a href="https://lsdev1.wpengine.com/contact/">
-              Please contact us for more information about building your next project.
-            </a>
-          </h3>
+        <section className="contact-band" id="contact">
+          <a href="https://lsdev1.wpengine.com/contact/">
+            Please contact us for more information about building your next project.
+          </a>
         </section>
       </main>
 
