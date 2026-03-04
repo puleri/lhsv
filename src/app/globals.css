@@ -190,6 +190,8 @@ main {
   top: 28%;
   transform: translateX(-30%);
   opacity: 0.9;
+  z-index: 3;
+  pointer-events: none;
 }
 
 .hero-dots {
@@ -199,6 +201,7 @@ main {
   transform: translateX(-50%);
   display: flex;
   gap: 0.35rem;
+  z-index: 4;
 }
 
 .dot {
@@ -206,7 +209,7 @@ main {
   height: 11px;
   border-radius: 999px;
   border: 1px solid #fff;
-  background: transparent;
+  background: rgb(0 0 0 / 35%);
   padding: 0;
   cursor: pointer;
 }
