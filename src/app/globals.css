@@ -34,7 +34,7 @@ a {
 }
 
 .site-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -44,7 +44,6 @@ a {
 }
 
 main {
-  padding-top: 120px;
   transition: padding-top 200ms ease;
 }
 
@@ -68,7 +67,6 @@ main {
 }
 
 .site-header.is-scrolled + main {
-  padding-top: 80px;
 }
 
 .site-header.is-scrolled .logo img {
