@@ -68,8 +68,8 @@ a {
 
 .hero {
   position: relative;
-  height: min(66vw, 860px);
-  min-height: 360px;
+  height: min(66vw, 560px);
+  min-height: 260px;
   overflow: hidden;
 }
 
