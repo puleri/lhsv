@@ -34,12 +34,22 @@ a {
 }
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
+main {
+  padding-top: 120px;
+  transition: padding-top 200ms ease;
+}
+
 .header-inner {
-  min-height: 124px;
+  min-height: 120px;
   display: flex;
   transition: min-height 200ms ease;
   align-items: center;
@@ -54,7 +64,11 @@ a {
 }
 
 .site-header.is-scrolled .header-inner {
-  min-height: 96px;
+  min-height: 80px;
+}
+
+.site-header.is-scrolled + main {
+  padding-top: 80px;
 }
 
 .site-header.is-scrolled .logo img {
