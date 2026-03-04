@@ -106,11 +106,81 @@ main {
   object-position: center;
   display: block;
   opacity: 0;
-  transition: opacity 600ms ease;
+  transform: translateX(0);
 }
 
 .hero-image.is-active {
   opacity: 1;
+  z-index: 2;
+}
+
+.hero-image.is-leaving {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero-image.enter-from-right {
+  animation: slide-in-from-right 650ms ease forwards;
+}
+
+.hero-image.enter-from-left {
+  animation: slide-in-from-left 650ms ease forwards;
+}
+
+.hero-image.exit-to-left {
+  animation: slide-out-to-left 650ms ease forwards;
+}
+
+.hero-image.exit-to-right {
+  animation: slide-out-to-right 650ms ease forwards;
+}
+
+@keyframes slide-in-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-to-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out-to-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
 }
 
 .hero-watermark {
