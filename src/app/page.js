@@ -49,8 +49,36 @@ const projectSections = [
   },
 ];
 
+const heroSlides = [
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home1.jpg",
+    alt: "Featured staircase",
+  },
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home2.jpg",
+    alt: "Modern open living area",
+  },
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home3_reduced.jpg",
+    alt: "Contemporary exterior with landscaped entry",
+  },
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home6.jpg",
+    alt: "Warm kitchen and dining space",
+  },
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home5_reduced.jpg",
+    alt: "Detailed interior finish and lighting",
+  },
+  {
+    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home4.jpg",
+    alt: "Outdoor patio with architectural overhang",
+  },
+];
+
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,6 +90,16 @@ export default function Home() {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 5500);
+
+    return () => {
+      clearInterval(interval);
     };
   }, []);
 
@@ -98,20 +136,30 @@ export default function Home() {
 
       <main>
         <section className="hero" aria-label="Featured homes">
-          <img
-            className="hero-image"
-            src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home1.jpg"
-            alt="Featured staircase"
-          />
+          {heroSlides.map((slide, index) => (
+            <img
+              key={slide.image}
+              className={`hero-image${index === currentSlide ? " is-active" : ""}`}
+              src={slide.image}
+              alt={slide.alt}
+              aria-hidden={index !== currentSlide}
+            />
+          ))}
           <img
             className="hero-watermark"
             src="https://www.lockhartsuver.com/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
             alt=""
             aria-hidden="true"
           />
-          <div className="hero-dots" aria-hidden="true">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <span key={i} className={i === 0 ? "dot active" : "dot"} />
+          <div className="hero-dots">
+            {heroSlides.map((slide, i) => (
+              <button
+                key={slide.image}
+                className={i === currentSlide ? "dot active" : "dot"}
+                onClick={() => setCurrentSlide(i)}
+                aria-label={`Show slide ${i + 1}`}
+                type="button"
+              />
             ))}
           </div>
         </section>
