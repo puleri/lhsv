@@ -79,6 +79,7 @@ const heroSlides = [
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const activeSlide = heroSlides[currentSlide];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -94,14 +95,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
     }, 5500);
 
     return () => {
-      clearInterval(interval);
+      clearTimeout(timeout);
     };
-  }, []);
+  }, [currentSlide]);
 
   return (
     <div className="homepage">
@@ -136,15 +137,12 @@ export default function Home() {
 
       <main>
         <section className="hero" aria-label="Featured homes">
-          {heroSlides.map((slide, index) => (
-            <img
-              key={slide.image}
-              className={`hero-image${index === currentSlide ? " is-active" : ""}`}
-              src={slide.image}
-              alt={slide.alt}
-              aria-hidden={index !== currentSlide}
-            />
-          ))}
+          <img
+            key={activeSlide.image}
+            className="hero-image is-active"
+            src={activeSlide.image}
+            alt={activeSlide.alt}
+          />
           <img
             className="hero-watermark"
             src="https://www.lockhartsuver.com/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
