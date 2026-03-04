@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { label: "Home", href: "/", active: true },
@@ -79,7 +79,38 @@ const heroSlides = [
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const activeSlide = heroSlides[currentSlide];
+  const [previousSlide, setPreviousSlide] = useState(null);
+  const [transitionDirection, setTransitionDirection] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const transitionTimeoutRef = useRef(null);
+
+  const goToSlide = useCallback(
+    (nextSlide) => {
+      if (nextSlide === currentSlide) {
+        return;
+      }
+
+      if (transitionTimeoutRef.current) {
+        clearTimeout(transitionTimeoutRef.current);
+      }
+
+      const isWrappingToStart = currentSlide === heroSlides.length - 1 && nextSlide === 0;
+      const isWrappingToEnd = currentSlide === 0 && nextSlide === heroSlides.length - 1;
+      const direction = isWrappingToStart || (!isWrappingToEnd && nextSlide > currentSlide) ? 1 : -1;
+
+      setTransitionDirection(direction);
+      setPreviousSlide(currentSlide);
+      setCurrentSlide(nextSlide);
+      setIsTransitioning(true);
+
+      transitionTimeoutRef.current = setTimeout(() => {
+        setPreviousSlide(null);
+        setIsTransitioning(false);
+        transitionTimeoutRef.current = null;
+      }, 650);
+    },
+    [currentSlide],
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,13 +127,21 @@ export default function Home() {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+      goToSlide((currentSlide + 1) % heroSlides.length);
     }, 5500);
 
     return () => {
       clearTimeout(timeout);
     };
-  }, [currentSlide]);
+  }, [currentSlide, goToSlide]);
+
+  useEffect(() => {
+    return () => {
+      if (transitionTimeoutRef.current) {
+        clearTimeout(transitionTimeoutRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className="homepage">
@@ -137,12 +176,25 @@ export default function Home() {
 
       <main>
         <section className="hero" aria-label="Featured homes">
-          <img
-            key={activeSlide.image}
-            className="hero-image is-active"
-            src={activeSlide.image}
-            alt={activeSlide.alt}
-          />
+          {heroSlides.map((slide, i) => {
+            const isCurrent = i === currentSlide;
+            const isPrevious = i === previousSlide;
+            const imageClasses = ["hero-image"];
+
+            if (isCurrent && isTransitioning) {
+              imageClasses.push("is-active");
+              imageClasses.push(transitionDirection === 1 ? "enter-from-right" : "enter-from-left");
+            } else if (isCurrent) {
+              imageClasses.push("is-active");
+            }
+
+            if (isPrevious && isTransitioning) {
+              imageClasses.push("is-leaving");
+              imageClasses.push(transitionDirection === 1 ? "exit-to-left" : "exit-to-right");
+            }
+
+            return <img key={slide.image} className={imageClasses.join(" ")} src={slide.image} alt={slide.alt} />;
+          })}
           <img
             className="hero-watermark"
             src="https://www.lockhartsuver.com/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
@@ -154,7 +206,7 @@ export default function Home() {
               <button
                 key={slide.image}
                 className={i === currentSlide ? "dot active" : "dot"}
-                onClick={() => setCurrentSlide(i)}
+                onClick={() => goToSlide(i)}
                 aria-label={`Show slide ${i + 1}`}
                 type="button"
               />
