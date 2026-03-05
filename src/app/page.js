@@ -6,43 +6,43 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const navLinks = [
   { label: "Home", href: "/", active: true },
   { label: "Projects", href: "#projects" },
-  { label: "Firm Profile", href: "https://lsdev1.wpengine.com/about-us/" },
-  { label: "Home Service", href: "https://lsdev1.wpengine.com/home-services/" },
-  { label: "Contact", href: "https://lsdev1.wpengine.com/contact/" },
+  { label: "Firm Profile", href: "/about-us/" },
+  { label: "Home Service", href: "/home-services/" },
+  { label: "Contact", href: "/remodels/contact-2" },
 ];
 
 const projectSections = [
   {
     title: "New Homes",
-    href: "https://lsdev1.wpengine.com/portfolio/new_homes/",
+    href: "/portfolio/new_homes/",
     cta: "view the new homes portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/508feature-min.jpg",
     light: true,
   },
   {
     title: "Downtown Condos",
-    href: "https://lsdev1.wpengine.com/portfolio/downtown-condos/",
+    href: "/portfolio/downtown-condos/",
     cta: "view the downtown condos portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/bruno_reduced.jpg",
     light: true,
   },
   {
     title: "Remodels and Renovations",
-    href: "https://lsdev1.wpengine.com/portfolio/remodels-and-renovations/",
+    href: "/portfolio/remodels-and-renovations/",
     cta: "view the remodels and renovations portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/601_reduced.jpg",
     light: true,
   },
   {
     title: "Small Projects",
-    href: "https://lsdev1.wpengine.com/portfolio/small-projects/",
+    href: "/portfolio/small-projects/",
     cta: "view the small projects portfolio",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/smallprojects_reduced.jpg",
     light: true,
   },
   {
     title: "Commercial",
-    href: "https://lsdev1.wpengine.com/commercial/",
+    href: "/commercial/",
     cta: "commercial portfolio under construction",
     image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home5_reduced.jpg",
     light: true,
@@ -221,7 +221,7 @@ export default function Home() {
               We specialize in turning challenging architecture and one-of-a-kind designs into
               well-crafted homes, interiors and built environments.
             </p>
-            <a href="https://lsdev1.wpengine.com/about-us/">view the firm profile</a>
+            <a href="/about-us/">view the firm profile</a>
           </div>
         </section>
 
@@ -238,7 +238,7 @@ export default function Home() {
         </section>
 
         <section className="contact-band" id="contact">
-          <a href="https://lsdev1.wpengine.com/contact/">
+          <a href="/remodels/contact-2">
             Please contact us for more information about building your next project.
           </a>
         </section>
