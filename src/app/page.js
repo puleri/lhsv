@@ -197,7 +197,7 @@ export default function Home() {
           })}
           <img
             className="hero-watermark"
-            src="https://www.lockhartsuver.com/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
+            src="/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
             alt=""
             aria-hidden="true"
           />
