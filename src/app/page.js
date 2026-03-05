@@ -216,7 +216,7 @@ export default function Home() {
 
         <section className="intro-band" id="firm-profile">
           <div className="container intro-content">
-            <h1>Craftsmanship in every detail.</h1>
+            <h1 className="">Craftsmanship in every detail.</h1>
             <p>
               We specialize in turning challenging architecture and one-of-a-kind designs into
               well-crafted homes, interiors and built environments.

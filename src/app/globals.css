@@ -48,7 +48,7 @@ main {
 }
 
 .header-inner {
-  min-height: 120px;
+  min-height: 140px;
   display: flex;
   transition: min-height 200ms ease;
   align-items: center;
@@ -63,7 +63,7 @@ main {
 }
 
 .site-header.is-scrolled .header-inner {
-  min-height: 80px;
+  min-height: 60px;
 }
 
 .site-header.is-scrolled + main {
@@ -90,8 +90,8 @@ main {
 
 .hero {
   position: relative;
-  height: min(66vw, 560px);
-  min-height: 260px;
+  height: min(66vw, 590px);
+  min-height: 320px;
   overflow: hidden;
 }
 
@@ -103,7 +103,7 @@ main {
   object-fit: cover;
   object-position: center;
   display: block;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(0);
 }
 
@@ -135,7 +135,7 @@ main {
 
 @keyframes slide-in-from-right {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(100%);
   }
 
@@ -147,7 +147,7 @@ main {
 
 @keyframes slide-in-from-left {
   from {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-100%);
   }
 
@@ -164,7 +164,7 @@ main {
   }
 
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-100%);
   }
 }
@@ -176,7 +176,7 @@ main {
   }
 
   to {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(100%);
   }
 }
