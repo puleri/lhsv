@@ -19,7 +19,7 @@ export default function ContactRemodelPage() {
       <header className="contact2-header">
         <div className="contact2-wrapper contact2-header-inner">
           <Link className="contact2-logo" href="/" aria-label="Lockhart Suver Home">
-            <img src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png" alt="Lockhart Suver" />
+            <img src="/wp-content/uploads/2014/02/LSlogo2.png" alt="Lockhart Suver" />
           </Link>
 
           <nav aria-label="Primary">

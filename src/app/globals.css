@@ -309,7 +309,7 @@ main {
 
 footer {
   background: linear-gradient(rgba(37, 29, 27, 0.7), rgba(37, 29, 27, 0.7)),
-    url("https://lsdev1.wpengine.com/wp-content/uploads/2014/02/footer-bg.jpg");
+    url("/wp-content/uploads/2014/02/footer-bg.jpg");
   background-size: cover;
   background-position: center center;
   color: #d6d0c8;
@@ -457,7 +457,7 @@ footer {
 
 .contact2-footer {
   background: linear-gradient(rgb(40 31 28 / 74%), rgb(40 31 28 / 74%)),
-    url("https://lsdev1.wpengine.com/wp-content/uploads/2014/02/footer-bg.jpg") center / cover;
+    url("/wp-content/uploads/2014/02/footer-bg.jpg") center / cover;
   color: #d6d0c8;
 }
 
