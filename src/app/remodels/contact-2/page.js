@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "https://lsdev1.wpengine.com/portfolio/projects-2/" },
-  { label: "Firm Profile", href: "https://lsdev1.wpengine.com/about-us/" },
-  { label: "Home Service", href: "https://lsdev1.wpengine.com/home-service-2/" },
+  { label: "Projects", href: "/portfolio/projects-2/" },
+  { label: "Firm Profile", href: "/about-us/" },
+  { label: "Home Service", href: "/home-service-2/" },
   { label: "Contact", href: "/remodels/contact-2", active: true },
 ];
 
@@ -26,9 +26,9 @@ export default function ContactRemodelPage() {
             <ul className="contact2-nav">
               {navItems.map((item) => (
                 <li key={item.label}>
-                  <a href={item.href} className={item.active ? "is-active" : ""}>
+                  <Link href={item.href} className={item.active ? "is-active" : ""}>
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
