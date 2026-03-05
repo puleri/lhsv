@@ -1,15 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-
-const navLinks = [
-  { label: "Home", href: "/", active: true },
-  { label: "Projects", href: "#projects" },
-  { label: "Firm Profile", href: "/about-us/" },
-  { label: "Home Service", href: "/home-services/" },
-  { label: "Contact", href: "/remodels/contact-2" },
-];
 
 const projectSections = [
   {
@@ -77,7 +68,6 @@ const heroSlides = [
 ];
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [previousSlide, setPreviousSlide] = useState(null);
   const [transitionDirection, setTransitionDirection] = useState(1);
@@ -113,19 +103,6 @@ export default function Home() {
   );
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
     const timeout = setTimeout(() => {
       goToSlide((currentSlide + 1) % heroSlides.length);
     }, 5500);
@@ -144,123 +121,72 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="homepage">
-      <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>
-        <div className="container header-inner">
-          <Link className="logo" href="/" aria-label="Lockhart Suver Home">
-            <img
-              src="/wp-content/uploads/2014/02/LSlogo2.png"
-              alt="Lockhart Suver"
+    <main>
+      <section className="hero" aria-label="Featured homes">
+        {heroSlides.map((slide, i) => {
+          const isCurrent = i === currentSlide;
+          const isPrevious = i === previousSlide;
+          const imageClasses = ["hero-image"];
+
+          if (isCurrent && isTransitioning) {
+            imageClasses.push("is-active");
+            imageClasses.push(transitionDirection === 1 ? "enter-from-right" : "enter-from-left");
+          } else if (isCurrent) {
+            imageClasses.push("is-active");
+          }
+
+          if (isPrevious && isTransitioning) {
+            imageClasses.push("is-leaving");
+            imageClasses.push(transitionDirection === 1 ? "exit-to-left" : "exit-to-right");
+          }
+
+          return <img key={slide.image} className={imageClasses.join(" ")} src={slide.image} alt={slide.alt} />;
+        })}
+        <img
+          className="hero-watermark"
+          src="/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <div className="hero-dots">
+          {heroSlides.map((slide, i) => (
+            <button
+              key={slide.image}
+              className={i === currentSlide ? "dot active" : "dot"}
+              onClick={() => goToSlide(i)}
+              aria-label={`Show slide ${i + 1}`}
+              type="button"
             />
-          </Link>
-
-          <nav aria-label="Primary">
-            <ul className="main-nav">
-              {navLinks.map((link) => (
-                <li key={link.label}>
-                  {link.href.startsWith("/") ? (
-                    <Link className={link.active ? "active" : ""} href={link.href}>
-                      {link.label}
-                    </Link>
-                  ) : (
-                    <a className={link.active ? "active" : ""} href={link.href}>
-                      {link.label}
-                    </a>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <main>
-        <section className="hero" aria-label="Featured homes">
-          {heroSlides.map((slide, i) => {
-            const isCurrent = i === currentSlide;
-            const isPrevious = i === previousSlide;
-            const imageClasses = ["hero-image"];
-
-            if (isCurrent && isTransitioning) {
-              imageClasses.push("is-active");
-              imageClasses.push(transitionDirection === 1 ? "enter-from-right" : "enter-from-left");
-            } else if (isCurrent) {
-              imageClasses.push("is-active");
-            }
-
-            if (isPrevious && isTransitioning) {
-              imageClasses.push("is-leaving");
-              imageClasses.push(transitionDirection === 1 ? "exit-to-left" : "exit-to-right");
-            }
-
-            return <img key={slide.image} className={imageClasses.join(" ")} src={slide.image} alt={slide.alt} />;
-          })}
-          <img
-            className="hero-watermark"
-            src="/wp-content/uploads/2014/05/LSlogo91021495_shadow.png"
-            alt=""
-            aria-hidden="true"
-          />
-          <div className="hero-dots">
-            {heroSlides.map((slide, i) => (
-              <button
-                key={slide.image}
-                className={i === currentSlide ? "dot active" : "dot"}
-                onClick={() => goToSlide(i)}
-                aria-label={`Show slide ${i + 1}`}
-                type="button"
-              />
-            ))}
-          </div>
-        </section>
-
-        <section className="intro-band" id="firm-profile">
-          <div className="container intro-content">
-            <h1 className="">Craftsmanship in every detail.</h1>
-            <p>
-              We specialize in turning challenging architecture and one-of-a-kind designs into
-              well-crafted homes, interiors and built environments.
-            </p>
-            <a href="/about-us/">view the firm profile</a>
-          </div>
-        </section>
-
-        <section id="projects" className="project-strips">
-          {projectSections.map((section) => (
-            <article key={section.title} className="project-strip h-100" style={{ backgroundImage: `url(${section.image})` }}>
-              <div className="strip-overlay" />
-              <div className={`container strip-content ${section.light ? "text-light" : "text-normal"}`}>
-                <h2>{section.title}</h2>
-                <a href={section.href}>{section.cta}</a>
-              </div>
-            </article>
           ))}
-        </section>
-
-        <section className="contact-band" id="contact">
-          <a href="/remodels/contact-2">
-            Please contact us for more information about building your next project.
-          </a>
-        </section>
-      </main>
-
-      <footer>
-        <div className="container footer-inner">
-          <p>© 2007 — 2026 Lockhart Suver LLC</p>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/lockhartsuverllc" target="_blank" rel="noreferrer">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/lockhartsuver/" target="_blank" rel="noreferrer">
-                Instagram
-              </a>
-            </li>
-          </ul>
         </div>
-      </footer>
-    </div>
+      </section>
+
+      <section className="intro-band" id="firm-profile">
+        <div className="container intro-content">
+          <h1 className="">Craftsmanship in every detail.</h1>
+          <p>
+            We specialize in turning challenging architecture and one-of-a-kind designs into
+            well-crafted homes, interiors and built environments.
+          </p>
+          <a href="/about-us/">view the firm profile</a>
+        </div>
+      </section>
+
+      <section id="projects" className="project-strips">
+        {projectSections.map((section) => (
+          <article key={section.title} className="project-strip h-100" style={{ backgroundImage: `url(${section.image})` }}>
+            <div className="strip-overlay" />
+            <div className={`container strip-content ${section.light ? "text-light" : "text-normal"}`}>
+              <h2>{section.title}</h2>
+              <a href={section.href}>{section.cta}</a>
+            </div>
+          </article>
+        ))}
+      </section>
+
+      <section className="contact-band" id="contact">
+        <a href="/remodels/contact-2">Please contact us for more information about building your next project.</a>
+      </section>
+    </main>
   );
 }
