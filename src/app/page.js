@@ -16,62 +16,62 @@ const projectSections = [
     title: "New Homes",
     href: "/portfolio/new_homes/",
     cta: "view the new homes portfolio",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/508feature-min.jpg",
+    image: "/wp-content/uploads/2015/12/508feature-min.jpg",
     light: true,
   },
   {
     title: "Downtown Condos",
     href: "/portfolio/downtown-condos/",
     cta: "view the downtown condos portfolio",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/bruno_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/bruno_reduced.jpg",
     light: true,
   },
   {
     title: "Remodels and Renovations",
     href: "/portfolio/remodels-and-renovations/",
     cta: "view the remodels and renovations portfolio",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/601_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/601_reduced.jpg",
     light: true,
   },
   {
     title: "Small Projects",
     href: "/portfolio/small-projects/",
     cta: "view the small projects portfolio",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/smallprojects_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/smallprojects_reduced.jpg",
     light: true,
   },
   {
     title: "Commercial",
     href: "/commercial/",
     cta: "commercial portfolio under construction",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home5_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/home5_reduced.jpg",
     light: true,
   },
 ];
 
 const heroSlides = [
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home1.jpg",
+    image: "/wp-content/uploads/2014/02/home1.jpg",
     alt: "Featured staircase",
   },
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home2.jpg",
+    image: "/wp-content/uploads/2014/02/home2.jpg",
     alt: "Modern open living area",
   },
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home3_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/home3_reduced.jpg",
     alt: "Contemporary exterior with landscaped entry",
   },
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home6.jpg",
+    image: "/wp-content/uploads/2014/02/home6.jpg",
     alt: "Warm kitchen and dining space",
   },
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2015/12/home5_reduced.jpg",
+    image: "/wp-content/uploads/2015/12/home5_reduced.jpg",
     alt: "Detailed interior finish and lighting",
   },
   {
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/home4.jpg",
+    image: "/wp-content/uploads/2014/02/home4.jpg",
     alt: "Outdoor patio with architectural overhang",
   },
 ];
@@ -149,7 +149,7 @@ export default function Home() {
         <div className="container header-inner">
           <Link className="logo" href="/" aria-label="Lockhart Suver Home">
             <img
-              src="https://lsdev1.wpengine.com/wp-content/uploads/2014/02/LSlogo2.png"
+              src="/wp-content/uploads/2014/02/LSlogo2.png"
               alt="Lockhart Suver"
             />
           </Link>
