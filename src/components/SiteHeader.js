@@ -12,13 +12,28 @@ const navLinks = [
   { label: "Contact", href: "/remodels/contact-2" },
 ];
 
+const SHRINK_SCROLL_THRESHOLD = 80;
+const GROW_SCROLL_THRESHOLD = SHRINK_SCROLL_THRESHOLD - 30;
+
 export default function SiteHeader() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const scrollY = window.scrollY;
+
+      setIsScrolled((previousIsScrolled) => {
+        if (!previousIsScrolled && scrollY >= SHRINK_SCROLL_THRESHOLD) {
+          return true;
+        }
+
+        if (previousIsScrolled && scrollY <= GROW_SCROLL_THRESHOLD) {
+          return false;
+        }
+
+        return previousIsScrolled;
+      });
     };
 
     handleScroll();
