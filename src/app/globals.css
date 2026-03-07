@@ -549,3 +549,135 @@ footer {
     padding-top: 24px;
   }
 }
+
+.projects2-main {
+  background: #372e2c;
+  color: #e9e3dc;
+  padding-bottom: 44px;
+}
+
+.projects2-wrapper {
+  width: min(1260px, 94vw);
+  margin: 0 auto;
+}
+
+.projects2-title-row {
+  padding: 28px 0 18px;
+}
+
+.projects2-title-row h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.projects2-groups {
+  display: grid;
+  gap: 16px;
+}
+
+.projects2-group {
+  position: relative;
+  min-height: 340px;
+  background-size: cover;
+  background-position: center;
+  isolation: isolate;
+}
+
+.projects2-group::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.projects2-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.02) 5%, rgba(0, 0, 0, 0.58) 60%);
+  z-index: 0;
+}
+
+.projects2-group-content {
+  position: relative;
+  z-index: 1;
+  min-height: 340px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.projects2-list-col h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+}
+
+.projects2-list-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects2-list-col li {
+  line-height: 1.55;
+}
+
+.projects2-list-col a {
+  color: #fff;
+}
+
+.projects2-list-col a:hover {
+  color: #e3a029;
+}
+
+.projects2-bottom-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 26px;
+}
+
+.projects2-bottom-row h3,
+.projects2-bottom-row p {
+  margin: 0;
+}
+
+.projects2-bottom-row h3 {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.projects2-bottom-row p {
+  text-align: right;
+  color: #c6c6bc;
+}
+
+.projects2-bottom-row a {
+  color: #e3a029;
+}
+
+@media (max-width: 900px) {
+  .projects2-group-content,
+  .projects2-bottom-row {
+    grid-template-columns: 1fr;
+  }
+
+  .projects2-group-content {
+    padding: 1.5rem 0;
+  }
+
+  .projects2-empty-col {
+    display: none;
+  }
+
+  .projects2-list-col {
+    padding: 0 1rem;
+  }
+
+  .projects2-bottom-row p {
+    text-align: left;
+  }
+}
