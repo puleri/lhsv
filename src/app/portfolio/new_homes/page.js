@@ -58,14 +58,14 @@ export default function NewHomesPage() {
         </div>
       </section>
 
-      <section className="new-homes-list projects2-wrapper">
+      <section className="new-homes-list">
         {homes.map((home) => (
           <article key={home.name} className="new-homes-item">
             <div
               className="new-homes-image"
               style={{ backgroundImage: `url(${home.image})`, backgroundPosition: home.position ?? "center center" }}
             />
-            <div className="new-homes-item-content">
+            <div className="new-homes-item-content projects2-wrapper">
               <div />
               <div className="new-homes-copy">
                 <h2 className={home.darkText ? "dark-text" : ""}>{home.name}</h2>
