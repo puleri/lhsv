@@ -101,7 +101,7 @@ const navItems = [
   { label: "Contact", href: "/remodels/contact-2/" },
 ];
 
-const SHRINK_SCROLL_THRESHOLD = 80;
+const SHRINK_SCROLL_THRESHOLD = 120;
 const GROW_SCROLL_THRESHOLD = 8;
 
 function isActivePath(pathname, href) {
