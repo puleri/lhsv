@@ -681,3 +681,83 @@ footer {
     text-align: left;
   }
 }
+
+.new-homes-main {
+  background: #372e2c;
+  color: #e9e3dc;
+  padding-bottom: 44px;
+}
+
+.new-homes-title-row {
+  padding: 28px 0 18px;
+}
+
+.new-homes-title-row h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.new-homes-list {
+  display: grid;
+  gap: 16px;
+}
+
+.new-homes-item {
+  position: relative;
+  min-height: 340px;
+}
+
+.new-homes-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.new-homes-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 5%, rgba(0, 0, 0, 0.58) 60%);
+}
+
+.new-homes-item-content {
+  position: relative;
+  z-index: 1;
+  min-height: 340px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.new-homes-copy h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 300;
+}
+
+.new-homes-copy h2.dark-text {
+  color: #000;
+}
+
+.new-homes-copy h4 {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.new-homes-copy a {
+  color: #fff;
+}
+
+.new-homes-copy a:hover {
+  color: #e3a029;
+}
+
+@media (max-width: 900px) {
+  .new-homes-item-content {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+}
