@@ -133,8 +133,22 @@ main {
 }
 
 .sub-menu-scrollable {
-  max-height: min(70vh, 540px);
+  max-height: calc(6 * 2.2rem);
   overflow-y: auto;
+  padding-bottom: 1.5rem;
+}
+
+.sub-menu-scrollable::after {
+  content: "↓";
+  position: sticky;
+  bottom: 0.3rem;
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #d7d7d7;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgb(38 38 38 / 0%), #262626 45%);
+  padding-top: 0.9rem;
 }
 
 .sub-menu .sub-menu {
