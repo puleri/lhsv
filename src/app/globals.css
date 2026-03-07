@@ -132,6 +132,11 @@ main {
   z-index: 1000;
 }
 
+.sub-menu-scrollable {
+  max-height: min(70vh, 540px);
+  overflow-y: auto;
+}
+
 .sub-menu .sub-menu {
   left: 100%;
   top: 0;

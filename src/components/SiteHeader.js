@@ -13,6 +13,7 @@ const navItems = [
       {
         label: "New Homes",
         href: "/portfolio/new_homes/",
+        scrollableSubmenu: true,
         children: [
           { label: "The Bluff", href: "/portfolio/the-bluff/" },
           { label: "Dorothy’s House", href: "/portfolio/dorothys-house/" },
@@ -89,17 +90,12 @@ const navItems = [
     label: "Home Service",
     href: "/home-service-2/",
     children: [
-      {
-        label: "Home Service",
-        href: "/home-service/",
-        children: [
-          { label: "About Home Service", href: "/about-home-service/" },
-          { label: "Our Commitment", href: "/our-commitment/" },
-          { label: "Small Projects and Repairs", href: "/small-projects-and-repairs/" },
-          { label: "Ongoing Maintenance", href: "/ongoing-maintenance/" },
-          { label: "Remodels", href: "/remodels/" },
-        ],
-      },
+      { label: "Home Service", href: "/home-service/" },
+      { label: "About Home Service", href: "/about-home-service/" },
+      { label: "Our Commitment", href: "/our-commitment/" },
+      { label: "Small Projects and Repairs", href: "/small-projects-and-repairs/" },
+      { label: "Ongoing Maintenance", href: "/ongoing-maintenance/" },
+      { label: "Remodels", href: "/remodels/" },
     ],
   },
   { label: "Contact", href: "/remodels/contact-2/" },
@@ -122,7 +118,7 @@ function NavItem({ item, pathname }) {
         {item.label}
       </Link>
       {hasChildren ? (
-        <ul className="sub-menu">
+        <ul className={`sub-menu${item.scrollableSubmenu ? " sub-menu-scrollable" : ""}`}>
           {item.children.map((child) => (
             <NavItem key={`${item.label}-${child.label}`} item={child} pathname={pathname} />
           ))}
