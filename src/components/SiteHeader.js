@@ -102,7 +102,7 @@ const navItems = [
 ];
 
 const SHRINK_SCROLL_THRESHOLD = 80;
-const GROW_SCROLL_THRESHOLD = SHRINK_SCROLL_THRESHOLD - 30;
+const GROW_SCROLL_THRESHOLD = 8;
 
 function isActivePath(pathname, href) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href);
