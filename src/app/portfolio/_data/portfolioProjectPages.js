@@ -76,6 +76,24 @@ const southpawResidenceImages = [
   "southpaw24.jpg",
 ];
 
+const dmgResidenceImages = [
+  "dmg-5649x.jpg",
+  "CRO1558pc-e1498579808541.jpg",
+  "CRO1229v3graymag.jpg",
+  "dmg-114x.jpg",
+  "dmg-123x.jpg",
+  "dmg-146x.jpg",
+  "dmg-206x.jpg",
+  "DSC_0151koyoLR.jpg",
+  "dmg-157x.jpg",
+  "dmg-182x.jpg",
+  "DSC_0070koyoLR.jpg",
+  "DMG_comboImageLowerRes.png",
+  "CRO1563pcKoyoLR.jpg",
+  "DSC_0442koyoLR.jpg",
+  "DSC_0388koyoLR.jpg",
+  ];
+
 const mercerIslandResidenceImages = [
   "Demopulos_43_2k.jpg",
   "Demopulos_14_2k.jpg",
@@ -305,6 +323,18 @@ const portfolioProjectPages = {
       alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
+  "dmg-residence": {
+    slug: "dmg-residence",
+    title: "DMG Residence",
+    category: "New Homes",
+    location: "Seward Park, Seattle, Washington",
+    heroImage: "/wp-content/uploads/2016/02/dmg-5669x.jpg",
+    previousHref: "/portfolio/pole-pass-cabin/",
+    nextHref: "/portfolio/mercer-island-residence/",
+    description: [
+      "This home was designed to serve as a high-tech shop and loft residence. The expressed structure celebrates the raw surfaces of precisely assembled steel posts and beams, concrete, and translucent channel-glass walls. A two-story workspace sits at the heart of the house, washed with natural light from large east and west-facing steel window walls and high north and south-facing clerestories. The living space overlooks the workspace, with a glass-floored walkway leading to the bedroom and bath suite and a private garden courtyard.",
+      'The building scale relates to the adjacent homes in the well-established Seattle neighborhood. "Norman" style brick veneer cladding was selected to echo the original masonry prevalent in the area. In order to moderate the height of the monumental shed roof, the building burrows into the sloping existing grade, creating an underground workshop bunker which opens to the lofty two story central workspace. The front facade of the building features an entire bank of steel windows that pivot open as a surprising but functional door to allow large equipment to be rolled into the shop floor.',
+      "After a tour of the completed project, a visitor asked Burt, \"Wow! Does Batman live here?\" Burt replied, \"No. Our client's name is Bruce Wayne\".",
   "the-ranch": {
     slug: "the-ranch",
     title: "The Ranch",
@@ -320,16 +350,40 @@ const portfolioProjectPages = {
     details: [
       {
         label: "Architect:",
+        lines: ["Replinger Hossner Osolin Architects"],
         lines: ["Tim Hossner, Jim Replinger, Christopher Osolin, and Stacie Conway", "rho Architects"],
         links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
       },
       {
         label: "Interiors:",
+        lines: ["Maryika Byskinewicz", "Spaces"],
         lines: ["Maryika Byskiniewicz", "SPACES"],
         links: [{ label: "www.maryika-spaces.com", href: "https://www.maryika-spaces.com" }],
       },
       {
         label: "Landscape Architect:",
+        lines: ["Jerry Coburn", "Geyer Coburn Hutchins"],
+        links: [{ label: "www.gchsite.com", href: "https://www.gchsite.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: [
+          "Aaron Leitz",
+          "images 1, 2, 5, 6, 7, 8, 10, 11",
+          "Christopher Osolin",
+          "images 3, 4, 14, 15",
+          "Elizabeth Lockhart",
+          "images 9, 12, 13, 16",
+        ],
+        links: [
+          { label: "www.aaronleitz.com", href: "https://www.aaronleitz.com" },
+          { label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" },
+        ],
+      },
+    ],
+    galleryImages: dmgResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2016/02/${image}`,
+      alt: `DMG Residence - ${image.replace(/\.(jpg|png)$/i, "")}`,
         lines: ["Bruce Hinckley and Mario Laky", "Alchemie"],
         links: [{ label: "alchemiesites.com", href: "https://alchemiesites.com" }],
       },
