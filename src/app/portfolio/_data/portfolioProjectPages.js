@@ -76,6 +76,18 @@ const southpawResidenceImages = [
   "southpaw24.jpg",
 ];
 
+const polePassCabinImages = [
+  "LR_11054_00_Pole_Pass_N21.jpg",
+  "LR_11054_00_Pole_Pass_N19.jpg",
+  "LR_11054_00_Pole_Pass_N18.jpg",
+  "LR_11054_00_Pole_Pass_N17.jpg",
+  "LR_11054_00_Pole_Pass_N14.jpg",
+  "LR_11054_00_Pole_Pass_N13.jpg",
+  "LR_11054_00_Pole_Pass_N10.jpg",
+  "LR_11054_00_Pole_Pass_N9.jpg",
+  "LR_11054_00_Pole_Pass_N8.jpg",
+  "Pole_Pass_waterView2Kwide72ppiLR.jpg",
+  "LR_11054_00_Pole_Pass_N37.jpg",
 const theRanchImages = [
   "theRanch02.jpg",
   "theRanch03.jpg",
@@ -265,6 +277,18 @@ const portfolioProjectPages = {
       alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
+  "pole-pass-cabin": {
+    slug: "pole-pass-cabin",
+    title: "Pole Pass Cabin",
+    category: "New Homes",
+    location: "Orcas Island, Washington",
+    heroImage: "/wp-content/uploads/2015/05/LR_11054_00_Pole_Pass_N7.jpg",
+    previousHref: "/portfolio/teanaway-ranch/",
+    nextHref: "/portfolio/dmg-residence/",
+    description: [
+      "A secluded family retreat located in the San Juan islands of Washington State. This is the modern expression of a cabin — built with an engineered steel frame and walls of glass.",
+      "On two faces of the building, entire walls slide open, driven by a hand-cranked gear that opens the home to the outdoors. Second-growth clear Douglas fir framing creates warm and rich ceilings. Fir plywood and blackened steel wrap interior walls, punctuated by functional walls of tile or a custom steel vanity painted Lockhart|Suver orange.",
+      "Planted roofs elevate two rectangular planes of grass field to serve as natural terraces for the upper-floor master suite. The exterior is clad with traditional Japanese shou sugi ban charred cedar plank siding.",
   "the-ranch": {
     slug: "the-ranch",
     title: "The Ranch",
@@ -280,6 +304,26 @@ const portfolioProjectPages = {
     details: [
       {
         label: "Architect:",
+        lines: [
+          "Tom Kundig principal architect",
+          "Mark Olthoff and Chris Gerrick project architects",
+          "Olson Kundig Architects",
+        ],
+        links: [{ label: "www.olsonkundig.com", href: "https://www.olsonkundig.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Debbie Kennedy", "Olson Kundig Architects"],
+      },
+      {
+        label: "Photography:",
+        lines: ["Benjamin Benschneider Photography"],
+        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
+      },
+    ],
+    galleryImages: polePassCabinImages.map((image) => ({
+      src: image === "Pole_Pass_waterView2Kwide72ppiLR.jpg" ? `/wp-content/uploads/2015/07/${image}` : `/wp-content/uploads/2015/05/${image}`,
+      alt: `Pole Pass Cabin - ${image.replace(/\.jpg$/i, "")}`,
         lines: ["Tim Hossner, Jim Replinger, Christopher Osolin, and Stacie Conway", "rho Architects"],
         links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
       },
