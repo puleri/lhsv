@@ -76,6 +76,30 @@ const southpawResidenceImages = [
   "southpaw24.jpg",
 ];
 
+const theRanchImages = [
+  "theRanch02.jpg",
+  "theRanch03.jpg",
+  "theRanch04.jpg",
+  "theRanch05.jpg",
+  "theRanch06.jpg",
+  "theRanch07.jpg",
+  "theRanch08.jpg",
+  "theRanch09.jpg",
+  "theRanch10.jpg",
+  "theRanch11.jpg",
+  "theRanch12.jpg",
+  "theRanch13.jpg",
+  "theRanch14.jpg",
+  "theRanch15.jpg",
+  "theRanch16.jpg",
+  "theRanch17.jpg",
+  "theRanch18.jpg",
+  "theRanch19.jpg",
+  "theRanch20.jpg",
+  "theRanch21.jpg",
+  "theRanch22.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -239,6 +263,45 @@ const portfolioProjectPages = {
     galleryImages: southpawResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2014/02/${image}`,
       alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "the-ranch": {
+    slug: "the-ranch",
+    title: "The Ranch",
+    category: "New Homes",
+    location: "Eastern Washington",
+    heroImage: "/wp-content/uploads/2023/02/theRanch01.jpg",
+    previousHref: "/portfolio/southpaw-residence/",
+    nextHref: "/portfolio/pole-pass-cabin/",
+    description: [
+      "Home, home on the range… Nestled into the lee of a hill, while taking advantage of expansive views of the surrounding prairie and wooded hillside beyond, the clients envisioned a contemporary take on the classic ranch home. Board form concrete, corrugated exterior wall paneling, re-sawn fir timber bolt frame and steel windows and doors give an integrity to the design while also acting as a bulwark against the sometimes harsh environment of the Cascade range.",
+      "Tucking a portion of the home and garage into the natural slope, choosing a darker color palette for the exterior, building a separate bunk house for family and guests—these elements combined, serve to harmonize and ease the overall visual scale of the residence into the beautiful, rolling Eastern Washington landscape. Substantial overhangs provide shade in the hot summers and a buffer from snowy winters. Generous gathering spaces on the interior, matched with the clients fearless embrace of color and texture, foster a fun and inviting feel.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Tim Hossner, Jim Replinger, Christopher Osolin, and Stacie Conway", "rho Architects"],
+        links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Maryika Byskiniewicz", "SPACES"],
+        links: [{ label: "www.maryika-spaces.com", href: "https://www.maryika-spaces.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Bruce Hinckley and Mario Laky", "Alchemie"],
+        links: [{ label: "alchemiesites.com", href: "https://alchemiesites.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Andrew Pogue", "Pogue"],
+        links: [{ label: "www.andrewpogue.com", href: "https://www.andrewpogue.com" }],
+      },
+    ],
+    galleryImages: theRanchImages.map((image) => ({
+      src: `/wp-content/uploads/2023/02/${image}`,
+      alt: `The Ranch - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
