@@ -100,6 +100,8 @@ const mercerIslandResidenceImages = [
   "Demopulos_6_2k.jpg",
   "Demopulos_36_2k.jpg",
   "Demopulos_35_2k.jpg",
+];
+
 const polePassCabinImages = [
   "LR_11054_00_Pole_Pass_N21.jpg",
   "LR_11054_00_Pole_Pass_N19.jpg",
@@ -112,6 +114,8 @@ const polePassCabinImages = [
   "LR_11054_00_Pole_Pass_N8.jpg",
   "Pole_Pass_waterView2Kwide72ppiLR.jpg",
   "LR_11054_00_Pole_Pass_N37.jpg",
+];
+
 const theRanchImages = [
   "theRanch02.jpg",
   "theRanch03.jpg",
@@ -268,7 +272,7 @@ const portfolioProjectPages = {
     location: "Seward Park, Seattle, Washington",
     heroImage: "/wp-content/uploads/2014/02/southpaw21.jpg",
     previousHref: "/portfolio/508-residence/",
-    nextHref: "/portfolio/teanaway-ranch/",
+    nextHref: "/portfolio/the-ranch/",
     description: [
       "Unconventional, inventive and daring. Rather than conforming to the typical front yard, house, back yard site plan, the architects boldly chose to locate the house its long axis running East to West, and shifted toward the North property line, in order to create a sunny south facing modern villa with a courtyard that serves as an outdoor living space.",
       "Equally bold is the use of air-placed concrete structural walls, finished with true integral color trowel finished cement stucco, resulting in walls that appear to be carved from a single block of stone. The north wall of the home is monolithic exposed smooth concrete, over 75′ long, 28′ tall and 2′ thick.",
@@ -301,6 +305,86 @@ const portfolioProjectPages = {
       alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
+  "the-ranch": {
+    slug: "the-ranch",
+    title: "The Ranch",
+    category: "New Homes",
+    location: "Eastern Washington",
+    heroImage: "/wp-content/uploads/2023/02/theRanch01.jpg",
+    previousHref: "/portfolio/southpaw-residence/",
+    nextHref: "/portfolio/pole-pass-cabin/",
+    description: [
+      "Home, home on the range… Nestled into the lee of a hill, while taking advantage of expansive views of the surrounding prairie and wooded hillside beyond, the clients envisioned a contemporary take on the classic ranch home. Board form concrete, corrugated exterior wall paneling, re-sawn fir timber bolt frame and steel windows and doors give an integrity to the design while also acting as a bulwark against the sometimes harsh environment of the Cascade range.",
+      "Tucking a portion of the home and garage into the natural slope, choosing a darker color palette for the exterior, building a separate bunk house for family and guests—these elements combined, serve to harmonize and ease the overall visual scale of the residence into the beautiful, rolling Eastern Washington landscape. Substantial overhangs provide shade in the hot summers and a buffer from snowy winters. Generous gathering spaces on the interior, matched with the clients fearless embrace of color and texture, foster a fun and inviting feel.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Tim Hossner, Jim Replinger, Christopher Osolin, and Stacie Conway", "rho Architects"],
+        links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Maryika Byskiniewicz", "SPACES"],
+        links: [{ label: "www.maryika-spaces.com", href: "https://www.maryika-spaces.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Bruce Hinckley and Mario Laky", "Alchemie"],
+        links: [{ label: "alchemiesites.com", href: "https://alchemiesites.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Andrew Pogue", "Pogue"],
+        links: [{ label: "www.andrewpogue.com", href: "https://www.andrewpogue.com" }],
+      },
+    ],
+    galleryImages: theRanchImages.map((image) => ({
+      src: `/wp-content/uploads/2023/02/${image}`,
+      alt: `The Ranch - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "pole-pass-cabin": {
+    slug: "pole-pass-cabin",
+    title: "Pole Pass Cabin",
+    category: "New Homes",
+    location: "Orcas Island, Washington",
+    heroImage: "/wp-content/uploads/2015/05/LR_11054_00_Pole_Pass_N7.jpg",
+    previousHref: "/portfolio/the-ranch/",
+    nextHref: "/portfolio/dmg-residence/",
+    description: [
+      "A secluded family retreat located in the San Juan islands of Washington State. This is the modern expression of a cabin — built with an engineered steel frame and walls of glass.",
+      "On two faces of the building, entire walls slide open, driven by a hand-cranked gear that opens the home to the outdoors. Second-growth clear Douglas fir framing creates warm and rich ceilings. Fir plywood and blackened steel wrap interior walls, punctuated by functional walls of tile or a custom steel vanity painted Lockhart|Suver orange.",
+      "Planted roofs elevate two rectangular planes of grass field to serve as natural terraces for the upper-floor master suite. The exterior is clad with traditional Japanese shou sugi ban charred cedar plank siding.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: [
+          "Tom Kundig principal architect",
+          "Mark Olthoff and Chris Gerrick project architects",
+          "Olson Kundig Architects",
+        ],
+        links: [{ label: "www.olsonkundig.com", href: "https://www.olsonkundig.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Debbie Kennedy", "Olson Kundig Architects"],
+      },
+      {
+        label: "Photography:",
+        lines: ["Benjamin Benschneider Photography"],
+        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
+      },
+    ],
+    galleryImages: polePassCabinImages.map((image) => ({
+      src:
+        image === "Pole_Pass_waterView2Kwide72ppiLR.jpg"
+          ? `/wp-content/uploads/2015/07/${image}`
+          : `/wp-content/uploads/2015/05/${image}`,
+      alt: `Pole Pass Cabin - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
   "mercer-island-residence": {
     slug: "mercer-island-residence",
     title: "Mercer Island Residence",
@@ -313,29 +397,6 @@ const portfolioProjectPages = {
       "This lakefront home, sited in a descending wooded property, displays an uncommon level of craft. Intricate detail and intersections of unusual materials pushed the project's artisans and craftspeople to bring out their best.",
       "Lake and woodland views are captured and deliberately framed on all levels of the building. Expansive walls of glass flood the home with light. Artfully designed steel fins at the exterior adorn the house while shielding from summer sun.",
       "Cerused casework and doors, custom metalwork with plated finish, venetian plaster, leather paneling and complex wood joinery throughout lend a richness and warmth to the interiors.",
-  "pole-pass-cabin": {
-    slug: "pole-pass-cabin",
-    title: "Pole Pass Cabin",
-    category: "New Homes",
-    location: "Orcas Island, Washington",
-    heroImage: "/wp-content/uploads/2015/05/LR_11054_00_Pole_Pass_N7.jpg",
-    previousHref: "/portfolio/teanaway-ranch/",
-    nextHref: "/portfolio/dmg-residence/",
-    description: [
-      "A secluded family retreat located in the San Juan islands of Washington State. This is the modern expression of a cabin — built with an engineered steel frame and walls of glass.",
-      "On two faces of the building, entire walls slide open, driven by a hand-cranked gear that opens the home to the outdoors. Second-growth clear Douglas fir framing creates warm and rich ceilings. Fir plywood and blackened steel wrap interior walls, punctuated by functional walls of tile or a custom steel vanity painted Lockhart|Suver orange.",
-      "Planted roofs elevate two rectangular planes of grass field to serve as natural terraces for the upper-floor master suite. The exterior is clad with traditional Japanese shou sugi ban charred cedar plank siding.",
-  "the-ranch": {
-    slug: "the-ranch",
-    title: "The Ranch",
-    category: "New Homes",
-    location: "Eastern Washington",
-    heroImage: "/wp-content/uploads/2023/02/theRanch01.jpg",
-    previousHref: "/portfolio/southpaw-residence/",
-    nextHref: "/portfolio/pole-pass-cabin/",
-    description: [
-      "Home, home on the range… Nestled into the lee of a hill, while taking advantage of expansive views of the surrounding prairie and wooded hillside beyond, the clients envisioned a contemporary take on the classic ranch home. Board form concrete, corrugated exterior wall paneling, re-sawn fir timber bolt frame and steel windows and doors give an integrity to the design while also acting as a bulwark against the sometimes harsh environment of the Cascade range.",
-      "Tucking a portion of the home and garage into the natural slope, choosing a darker color palette for the exterior, building a separate bunk house for family and guests—these elements combined, serve to harmonize and ease the overall visual scale of the residence into the beautiful, rolling Eastern Washington landscape. Substantial overhangs provide shade in the hot summers and a buffer from snowy winters. Generous gathering spaces on the interior, matched with the clients fearless embrace of color and texture, foster a fun and inviting feel.",
     ],
     details: [
       {
@@ -362,48 +423,6 @@ const portfolioProjectPages = {
     galleryImages: mercerIslandResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2017/08/${image}`,
       alt: `Mercer Island Residence - ${image.replace(/\.jpg$/i, "")}`,
-        lines: [
-          "Tom Kundig principal architect",
-          "Mark Olthoff and Chris Gerrick project architects",
-          "Olson Kundig Architects",
-        ],
-        links: [{ label: "www.olsonkundig.com", href: "https://www.olsonkundig.com" }],
-      },
-      {
-        label: "Interiors:",
-        lines: ["Debbie Kennedy", "Olson Kundig Architects"],
-      },
-      {
-        label: "Photography:",
-        lines: ["Benjamin Benschneider Photography"],
-        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
-      },
-    ],
-    galleryImages: polePassCabinImages.map((image) => ({
-      src: image === "Pole_Pass_waterView2Kwide72ppiLR.jpg" ? `/wp-content/uploads/2015/07/${image}` : `/wp-content/uploads/2015/05/${image}`,
-      alt: `Pole Pass Cabin - ${image.replace(/\.jpg$/i, "")}`,
-        lines: ["Tim Hossner, Jim Replinger, Christopher Osolin, and Stacie Conway", "rho Architects"],
-        links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
-      },
-      {
-        label: "Interiors:",
-        lines: ["Maryika Byskiniewicz", "SPACES"],
-        links: [{ label: "www.maryika-spaces.com", href: "https://www.maryika-spaces.com" }],
-      },
-      {
-        label: "Landscape Architect:",
-        lines: ["Bruce Hinckley and Mario Laky", "Alchemie"],
-        links: [{ label: "alchemiesites.com", href: "https://alchemiesites.com" }],
-      },
-      {
-        label: "Photography:",
-        lines: ["Andrew Pogue", "Pogue"],
-        links: [{ label: "www.andrewpogue.com", href: "https://www.andrewpogue.com" }],
-      },
-    ],
-    galleryImages: theRanchImages.map((image) => ({
-      src: `/wp-content/uploads/2023/02/${image}`,
-      alt: `The Ranch - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
