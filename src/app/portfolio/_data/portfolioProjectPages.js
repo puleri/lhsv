@@ -76,6 +76,32 @@ const southpawResidenceImages = [
   "southpaw24.jpg",
 ];
 
+const mercerIslandResidenceImages = [
+  "Demopulos_43_2k.jpg",
+  "Demopulos_14_2k.jpg",
+  "Demopulos_1_2kB.jpg",
+  "Demopulos_16_2kB.jpg",
+  "Demopulos_28_2k.jpg",
+  "Demopulos_31_2k.jpg",
+  "Demopulos_15_2k.jpg",
+  "Demopulos_33_2k.jpg",
+  "Demopulos_34_2k.jpg",
+  "Demopulos_27_2k.jpg",
+  "Demopulos_12_2k.jpg",
+  "Demopulos_13_2k.jpg",
+  "Demopulos_19_2kB.jpg",
+  "Demopulos_2k.jpg",
+  "Demopulos_24_2k.jpg",
+  "Demopulos_21_2k.jpg",
+  "Demopulos_22_2k.jpg",
+  "Demopulos_4_2k.jpg",
+  "Demopulos_17_2k.jpg",
+  "Demopulos_25_2k.jpg",
+  "Demopulos_6_2k.jpg",
+  "Demopulos_36_2k.jpg",
+  "Demopulos_35_2k.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -239,6 +265,46 @@ const portfolioProjectPages = {
     galleryImages: southpawResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2014/02/${image}`,
       alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "mercer-island-residence": {
+    slug: "mercer-island-residence",
+    title: "Mercer Island Residence",
+    category: "New Homes",
+    location: "Mercer Island, Washington",
+    heroImage: "/wp-content/uploads/2017/08/Demopulos_40_2K.jpg",
+    previousHref: "/portfolio/dmg-residence/",
+    nextHref: "/portfolio/arrow-bay/",
+    description: [
+      "This lakefront home, sited in a descending wooded property, displays an uncommon level of craft. Intricate detail and intersections of unusual materials pushed the project's artisans and craftspeople to bring out their best.",
+      "Lake and woodland views are captured and deliberately framed on all levels of the building. Expansive walls of glass flood the home with light. Artfully designed steel fins at the exterior adorn the house while shielding from summer sun.",
+      "Cerused casework and doors, custom metalwork with plated finish, venetian plaster, leather paneling and complex wood joinery throughout lend a richness and warmth to the interiors.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Brett Baba and Noreen Shinohara", "Graham Baba Architects"],
+        links: [{ label: "www.grahambabaarchitects.com", href: "https://www.grahambabaarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Terry Hunziker Design"],
+        links: [{ label: "www.terryhunziker.com", href: "https://www.terryhunziker.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Rich Haag and Anne James", "Rich Haag & Assoc."],
+        links: [{ label: "www.richhaagassoc.com", href: "https://www.richhaagassoc.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Kevin Scott"],
+        links: [{ label: "www.kevinscott.us", href: "https://www.kevinscott.us" }],
+      },
+    ],
+    galleryImages: mercerIslandResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2017/08/${image}`,
+      alt: `Mercer Island Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
