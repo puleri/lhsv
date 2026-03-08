@@ -10,7 +10,7 @@ const newHomesPortfolioItems = [
     href: "/portfolio/dorothys-house/",
     image: "/wp-content/uploads/2014/01/Front2_DorothyHR_1.jpg",
   },
-  { name: "508 Residence", href: "/portfolio/508-residence/", image: "/wp-content/uploads/2013/05/508feature.jpg" },
+  { name: "508 Residence", href: "/portfolio/508-residence/", image: "/wp-content/uploads/2015/12/508feature-min.jpg" },
   {
     name: "Southpaw Residence",
     href: "/portfolio/southpaw-residence/",
@@ -19,7 +19,7 @@ const newHomesPortfolioItems = [
   },
   { name: "The Ranch", href: "/portfolio/the-ranch/", image: "/wp-content/uploads/2014/01/theRanch_ProjectsImage2000.jpg", position: "center right" },
   { name: "Pole Pass Cabin", href: "/portfolio/pole-pass-cabin/", image: "/wp-content/uploads/2015/05/LR_11054_00_Pole_Pass_N37.jpg" },
-  { name: "DMG Residence", href: "/portfolio/dmg-residence/", image: "/wp-content/uploads/2016/02/CRO1558pc.jpg" },
+  { name: "DMG Residence", href: "/portfolio/dmg-residence/", image: "/wp-content/uploads/2016/02/CRO1558pc-e1498579808541.jpg" },
   { name: "Mercer Island Residence", href: "/portfolio/mercer-island-residence/", image: "/wp-content/uploads/2017/08/Demopulos_38_2k.jpg" },
   { name: "Arrow Bay", href: "/portfolio/arrow-bay/", image: "/wp-content/uploads/2024/10/Arrow-Bay_5692.jpg" },
   { name: "Beans-Bight Residence", href: "/portfolio/beans-bight-residence/", image: "/wp-content/uploads/2016/09/koyoDSC03424revB.jpg", position: "bottom center" },
