@@ -761,3 +761,108 @@ footer {
     padding: 1.5rem 1rem;
   }
 }
+
+.commercial-main {
+  background: #372e2c;
+  color: #e8e2db;
+}
+
+.commercial-wrapper {
+  width: min(1260px, 94vw);
+  margin: 0 auto;
+}
+
+.commercial-hero {
+  position: relative;
+  min-height: 500px;
+  padding-top: 20px;
+}
+
+.commercial-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/wp-content/uploads/2015/12/home5_reduced.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+}
+
+.commercial-hero-grid {
+  position: relative;
+  z-index: 1;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.commercial-hero-copy {
+  display: flex;
+  align-items: flex-start;
+}
+
+.commercial-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+.commercial-hero-copy span {
+  color: #e3a029;
+}
+
+.commercial-bottom-row {
+  padding: 20px 0 28px;
+}
+
+.commercial-bottom-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.commercial-bottom-grid h3,
+.commercial-bottom-grid h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.commercial-bottom-grid h3 {
+  font-size: clamp(1.1rem, 2.4vw, 1.5rem);
+}
+
+.commercial-bottom-grid h6 {
+  text-align: right;
+  color: #c6c6bc;
+  font-size: 0.95rem;
+}
+
+.commercial-bottom-grid a {
+  color: inherit;
+}
+
+@media (max-width: 900px) {
+  .commercial-hero {
+    min-height: 420px;
+  }
+
+  .commercial-hero-grid {
+    min-height: 420px;
+    grid-template-columns: 1fr;
+    align-content: start;
+  }
+
+  .commercial-hero-copy {
+    padding-top: 8px;
+  }
+
+  .commercial-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commercial-bottom-grid h6 {
+    text-align: left;
+  }
+}
