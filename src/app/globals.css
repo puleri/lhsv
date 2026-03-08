@@ -682,47 +682,47 @@ footer {
   }
 }
 
-.new-homes-main {
+.portfolio-category-main {
   background: #372e2c;
   color: #e9e3dc;
   padding-bottom: 44px;
 }
 
-.new-homes-title-row {
+.portfolio-category-title-row {
   padding: 28px 0 18px;
 }
 
-.new-homes-title-row h1 {
+.portfolio-category-title-row h1 {
   margin: 0;
   font-size: 40px;
   font-weight: 400;
 }
 
-.new-homes-list {
+.portfolio-category-list {
   display: grid;
   gap: 16px;
 }
 
-.new-homes-item {
+.portfolio-category-item {
   position: relative;
   min-height: 340px;
 }
 
-.new-homes-image {
+.portfolio-category-image {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.new-homes-image::after {
+.portfolio-category-image::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 5%, rgba(0, 0, 0, 0.58) 60%);
 }
 
-.new-homes-item-content {
+.portfolio-category-item-content {
   position: relative;
   z-index: 1;
   min-height: 340px;
@@ -731,32 +731,32 @@ footer {
   align-items: center;
 }
 
-.new-homes-copy h2 {
+.portfolio-category-copy h2 {
   margin: 0;
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 300;
 }
 
-.new-homes-copy h2.dark-text {
+.portfolio-category-copy h2.dark-text {
   color: #000;
 }
 
-.new-homes-copy h4 {
+.portfolio-category-copy h4 {
   margin: 0.25rem 0 0;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.new-homes-copy a {
+.portfolio-category-copy a {
   color: #fff;
 }
 
-.new-homes-copy a:hover {
+.portfolio-category-copy a:hover {
   color: #e3a029;
 }
 
 @media (max-width: 900px) {
-  .new-homes-item-content {
+  .portfolio-category-item-content {
     grid-template-columns: 1fr;
     padding: 1.5rem 1rem;
   }
