@@ -7,19 +7,19 @@ const remodelsAndRenovationsPortfolioItems = [
   {
     name: "Light House Residence",
     href: "/portfolio/light-house-residence/",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/lightHouseSliceB.jpg",
+    image: "/wp-content/uploads/2014/02/lightHouseSliceB.jpg",
     position: "center top",
   },
   {
     name: "Queen Anne Residence",
     href: "/portfolio/queen-anne-residence-2/",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/1NB-Design-Group-_-Lee-Street-CROPPED.jpg",
+    image: "/wp-content/uploads/2014/02/1NB-Design-Group-_-Lee-Street-CROPPED.jpg",
     darkText: true,
   },
   {
     name: "Waverly Residence",
     href: "/portfolio/waverly-residence/",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/waverlySlice2.jpg",
+    image: "/wp-content/uploads/2014/02/waverlySlice2.jpg",
     position: "center top",
   },
   {
@@ -41,7 +41,7 @@ const remodelsAndRenovationsPortfolioItems = [
   {
     name: "Classic Seattle",
     href: "/portfolio/classic-seattle/",
-    image: "https://lsdev1.wpengine.com/wp-content/uploads/2014/02/SeattleClassicSlice.jpg",
+    image: "/wp-content/uploads/2014/02/SeattleClassicSlice.jpg",
     darkText: true,
   },
   {
