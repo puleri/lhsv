@@ -57,6 +57,25 @@ const residence508Images = [
   "508_58.jpg",
 ];
 
+const southpawResidenceImages = [
+  "southpaw26.jpg",
+  "southpaw28.jpg",
+  "southpaw03.jpg",
+  "southpaw18.jpg",
+  "southpaw20.jpg",
+  "southpaw11.jpg",
+  "southpaw17.jpg",
+  "southpaw04.jpg",
+  "southpaw06.jpg",
+  "southpaw07.jpg",
+  "southpaw08.jpg",
+  "southpaw10.jpg",
+  "southpaw16.jpg",
+  "southpaw15.jpg",
+  "southpaw23.jpg",
+  "southpaw24.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -180,6 +199,46 @@ const portfolioProjectPages = {
     galleryImages: residence508Images.map((image) => ({
       src: `/wp-content/uploads/2014/02/${image}`,
       alt: `508 Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "southpaw-residence": {
+    slug: "southpaw-residence",
+    title: "Southpaw Residence",
+    category: "New Homes",
+    location: "Seward Park, Seattle, Washington",
+    heroImage: "/wp-content/uploads/2014/02/southpaw21.jpg",
+    previousHref: "/portfolio/508-residence/",
+    nextHref: "/portfolio/teanaway-ranch/",
+    description: [
+      "Unconventional, inventive and daring. Rather than conforming to the typical front yard, house, back yard site plan, the architects boldly chose to locate the house its long axis running East to West, and shifted toward the North property line, in order to create a sunny south facing modern villa with a courtyard that serves as an outdoor living space.",
+      "Equally bold is the use of air-placed concrete structural walls, finished with true integral color trowel finished cement stucco, resulting in walls that appear to be carved from a single block of stone. The north wall of the home is monolithic exposed smooth concrete, over 75′ long, 28′ tall and 2′ thick.",
+      "Metal roofing, and steel windows and doors create a building shell that will age gracefully with virtually no maintenance. The interiors feature exposed steel and reclaimed fir beams and ceilings, Moroccan tile mosaic floors and a sinuous, sculptural steel stair railing.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Replinger Hossner Osolin Architects"],
+        links: [{ label: "www.rhoarchitects.com", href: "https://www.rhoarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Janice Viekman"],
+        links: [{ label: "www.viekman.com", href: "https://www.viekman.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Allworth Nussbaum"],
+        links: [{ label: "www.allworthnussbaum.com", href: "https://www.allworthnussbaum.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Lara Swimmer Photography"],
+        links: [{ label: "www.swimmerphoto.com", href: "https://www.swimmerphoto.com" }],
+      },
+    ],
+    galleryImages: southpawResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2014/02/${image}`,
+      alt: `Southpaw Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
