@@ -24,6 +24,24 @@ const bluffImages = [
   "Lawtonwood_38.jpg",
 ];
 
+const dorothysHouseImages = [
+  "b_DorothyHR_2.jpg",
+  "c_DorothyHR_3-scaled.jpg",
+  "d_DorothyHR_4-scaled.jpg",
+  "e_DorothyHR_5-scaled.jpg",
+  "f_DorothyHR_6-scaled.jpg",
+  "g_DorothyHR_7c.jpg",
+  "h_DorothyHR_8-scaled.jpg",
+  "i_DorothyHR_9c.jpg",
+  "j_DorothyHR_10.jpg",
+  "k_DorothyHR_11.jpg",
+  "l_DorothyHR_12.jpg",
+  "m_DorothyHR_13.jpg",
+  "n_DorothyHR_14-scaled.jpg",
+  "o_DorothyHR_15.jpg",
+  "p_DorothyHR_16.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -66,6 +84,45 @@ const portfolioProjectPages = {
     galleryImages: bluffImages.map((image) => ({
       src: `/wp-content/uploads/2024/04/${image}`,
       alt: `The Bluff - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "dorothys-house": {
+    slug: "dorothys-house",
+    title: "Dorothy's House",
+    category: "New Homes",
+    location: "Seattle, Washington",
+    heroImage: "/wp-content/uploads/2024/09/a_DorothyHR_1.jpg",
+    previousHref: "/portfolio/the-bluff/",
+    nextHref: "/portfolio/508-residence/",
+    description: [
+      "A tree house at waters edge, this home is located in a forested setting, with a number of natural constraints including an adjacent stream running through the property. The narrow footprint inspired a bold cantilever supported by two steel trusses reaching toward the waters edge. Challenging site access required significant off-site fabrication with a bolt-together construction that was embraced by the buildings architecture.",
+      "The dramatic retreat has a reserved palette, incorporating cost effective finishes including aluminum clad windows and doors, drywall and applied trim. Reclaimed lighting fixtures from the previous home, stainless woven fabric acting as a guard rail, driftwood colored wire brushed casework accents and patinated steel emphasize its proximity to the salt water environment.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Deforest Architects: John Deforest, Rosie Donavan"],
+        links: [{ label: "www.deforestarchitects.com", href: "https://www.deforestarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Lucas Design: David and Suzie Lucas"],
+        links: [{ label: "www.lucasinterior.com", href: "https://www.lucasinterior.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["SCJ Studio Landscape Architecture: Mark Garff"],
+        links: [{ label: "www.scjstudiola.com", href: "https://www.scjstudiola.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Benjamin Benschneider Photography"],
+        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
+      },
+    ],
+    galleryImages: dorothysHouseImages.map((image) => ({
+      src: `/wp-content/uploads/2024/09/${image}`,
+      alt: `Dorothy's House - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
