@@ -42,6 +42,21 @@ const dorothysHouseImages = [
   "p_DorothyHR_16.jpg",
 ];
 
+const residence508Images = [
+  "508_03.jpg",
+  "508_06.jpg",
+  "508_09.jpg",
+  "508_10.jpg",
+  "508_11.jpg",
+  "508_12.jpg",
+  "508_14.jpg",
+  "508_31.jpg",
+  "508_32.jpg",
+  "508_47.jpg",
+  "508_49.jpg",
+  "508_58.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -123,6 +138,48 @@ const portfolioProjectPages = {
     galleryImages: dorothysHouseImages.map((image) => ({
       src: `/wp-content/uploads/2024/09/${image}`,
       alt: `Dorothy's House - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "508-residence": {
+    slug: "508-residence",
+    title: "508 Residence",
+    category: "New Homes",
+    location: "Washington Park, Seattle, Washington",
+    heroImage: "/wp-content/uploads/2014/02/508_01.jpg",
+    previousHref: "/portfolio/dorothys-house/",
+    nextHref: "/portfolio/southpaw-residence/",
+    description: [
+      "A modern masterpiece, the design team worked with a palette of four primary materials: concrete, wood, steel and stone. The surfaces of these materials received finishes in rich warm tones and texture, all installed with extreme precision. High ceilings and a wall of windows running parallel with the lake allow natural light to fill the airy open rooms.",
+      "Sandstone-paved terraces link the house to the landscape at both the street side and lake side. Maples and black pines nearly 100 years old serve as living pieces of sculpture along side modern steel sculpture and antique Chinese stone benches. Energy-conscious features include a ground-source heat pump and green roofs.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: [
+          "Peter Conard principal architect",
+          "Freya Johnson project architect",
+          "Conard Romano Architects (formerly Sullivan Conard Architects)",
+        ],
+        links: [{ label: "www.conardromano.com", href: "https://www.conardromano.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Doug Rasar Interior Design", "ds@rasarinteriors.com"],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Allworth Design"],
+        links: [{ label: "www.allworthdesign.com", href: "https://www.allworthdesign.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Aaron Leitz Photography"],
+        links: [{ label: "www.aaronleitz.com", href: "https://www.aaronleitz.com" }],
+      },
+    ],
+    galleryImages: residence508Images.map((image) => ({
+      src: `/wp-content/uploads/2014/02/${image}`,
+      alt: `508 Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
