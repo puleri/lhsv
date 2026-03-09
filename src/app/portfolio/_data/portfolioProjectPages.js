@@ -181,6 +181,23 @@ const arrowBayImages = [
   "Arrow-Bay_5527.jpg",
 ];
 
+const beansBightResidenceImages = [
+  "koyoDSC05914-2revB.jpg",
+  "koyoDSC05952revB.jpg",
+  "koyoDSC05984revB.jpg",
+  "koyoDSC06046revB.jpg",
+  "koyoDSC03424revB.jpg",
+  "koyoDSC06042revB.jpg",
+  "koyoDSC06040revB.jpg",
+  "koyoDSC05996revB.jpg",
+  "koyoDSC05986-2revB.jpg",
+  "koyoDSC05944revB.jpg",
+  "koyoDSC05950revB.jpg",
+  "koyoDSC05956-Version-2revB.jpg",
+  "koyoDSC05939revB.jpg",
+  "koyoDSC05927revB.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -556,6 +573,47 @@ const portfolioProjectPages = {
     galleryImages: arrowBayImages.map((image) => ({
       src: `/wp-content/uploads/2024/10/${image}`,
       alt: `Arrow Bay - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "beans-bight-residence": {
+    slug: "beans-bight-residence",
+    title: "Beans-Bight Residence",
+    category: "New Homes",
+    location: "Bainbridge Island, Washington",
+    heroImage: "/wp-content/uploads/2016/09/koyoDSC05914-2revB.jpg",
+    previousHref: "/portfolio/arrow-bay/",
+    nextHref: "/portfolio/union-bay-residence/",
+    description: [
+      "A craftsman's dream with a design influenced by traditional elements of Japanese and Scandinavian architecture, this home celebrates the use of wood in structure and finish.",
+      "Liberal use of Alaska yellow cedar, highly prized for its durability and warmth of color was painstakingly sourced by the owners from salvaged timber.",
+      "The home takes full advantage of natural light with an open design and breathtaking views to the inland sea.",
+      "Simplicity of form, intentionally modest rustic materials that naturally age and weather and a geo-thermal heating system realized the owner's dream of a sustainable, energy efficient and multi-generational home.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Ralph Christensen", "Res Loci"],
+        links: [{ label: "www.resloci.com", href: "https://www.resloci.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Virgina Stamey Interiors"],
+        links: [{ label: "www.virginiastameyinteriordesign.com", href: "https://www.virginiastameyinteriordesign.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Octavia Chambliss Garden Design"],
+        links: [{ label: "www.octaviachambliss.com", href: "https://www.octaviachambliss.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Ralph Christensen", "Res Loci"],
+        links: [{ label: "www.resloci.com", href: "https://www.resloci.com" }],
+      },
+    ],
+    galleryImages: beansBightResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2016/09/${image}`,
+      alt: `Beans-Bight Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
