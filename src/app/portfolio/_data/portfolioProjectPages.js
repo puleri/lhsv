@@ -249,6 +249,19 @@ const madisonParkImages = [
   "lda-madison-270xHR.jpg",
 ];
 
+const theCottageImages = [
+  "403_Galer-338_2K.jpg",
+  "403_Galer-237-HDR_2K.jpg",
+  "403_Galer-270-HDR_2K.jpg",
+  "403_Galer-317_2K.jpg",
+  "403_Galer-312_2K.jpg",
+  "403_Galer-142_2K.jpg",
+  "403_Galer-165_2K.jpg",
+  "403_Galer-304_2K.jpg",
+  "403_Galer_Exterior-004_2K.jpg",
+  "403_Galer-114_REV2_2K.jpg"
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -789,6 +802,64 @@ const portfolioProjectPages = {
       alt: `Madison Park - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
+  "the-cottage": {
+  slug: "the-cottage",
+  title: "The Cottage",
+  category: "New Homes",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2017/09/403_Galer_Exterior-020_2K.jpg",
+  previousHref: "/portfolio/madison-park/",
+  nextHref: "/portfolio/longhouse-residence/",
+  description: [
+  "The home is perched at the top of one of Seattle’s famous hills with sweeping views to the east. Inspired by cottages of the English countryside, the architect kept the scale of the rooms intimate with thoughtful detailing throughout. Wood paneled walls, ceilings and trim bring a warmth and depth of finish. Reclaimed southern pine flooring, handmade tile at the kitchen and baths and brick sourced from a mid-west turn of the century building all enhance the home’s cottage feel."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Linda Hoedemaker and Matthew Waddington",
+      "Linda Hoedemaker Residential Design"
+    ],
+    "links": []
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Sara Kranwinkle"
+    ],
+    "links": []
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Kenneth Philp Landscape Architects"
+    ],
+    "links": [
+      {
+        "label": "www.kennethphilp.com",
+        "href": "https://www.kennethphilp.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Andrew Giammarco Photography"
+    ],
+    "links": [
+      {
+        "label": "www.andrewgiammarco.com",
+        "href": "https://www.andrewgiammarco.com"
+      }
+    ]
+  }
+],
+  galleryImages: theCottageImages.map((image) => ({
+    src: `/wp-content/uploads/2017/09/${image}`,
+    alt: `The Cottage - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
 };
 
 export default portfolioProjectPages;
