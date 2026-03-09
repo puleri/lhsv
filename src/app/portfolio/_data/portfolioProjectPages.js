@@ -213,6 +213,18 @@ const unionBayResidenceImages = [
   "Talbot_25.jpg",
 ];
 
+const comstockImages = [
+  "6_j_515_Comstock_10.jpg",
+  "3_e_515_Comstock_5.jpg",
+  "4_i_515_Comstock_9.jpg",
+  "5_z_515_Comstock_26.jpg",
+  "7_o_515_Comstock_15.jpg",
+  "8_f_515_Comstock_6.jpg",
+  "9_t_515_Comstock_20.jpg",
+  "10_w_515_Comstock_23chosenCroppedLessdark.jpg",
+  "11_d_515_Comstock_4.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -638,7 +650,7 @@ const portfolioProjectPages = {
     location: "Laurelhurst, Washington",
     heroImage: "/wp-content/uploads/2017/06/Talbot_1.jpg",
     previousHref: "/portfolio/beans-bight-residence/",
-    nextHref: "/portfolio/the-perch/",
+    nextHref: "/portfolio/comstock/",
     description: [
       "A modern design with long, clean horizontal lines, the home appears as an extension of the surrounding landscape.",
       "The design team's limited palette of materials creates an overall impression of simplicity that belies the building's underlying complex structural intersections.",
@@ -670,6 +682,48 @@ const portfolioProjectPages = {
     galleryImages: unionBayResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2017/06/${image}`,
       alt: `Union Bay Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  comstock: {
+    slug: "comstock",
+    title: "The Perch",
+    category: "New Homes",
+    location: "Seattle, Washington",
+    heroImage: "/wp-content/uploads/2025/11/1_x_515_Comstock_24.jpg",
+    previousHref: "/portfolio/union-bay-residence/",
+    nextHref: "/portfolio/madison-park/",
+    description: [
+      "Situated on a steep, narrow, in-city lot, this artist’s residence took full advantage of expansive views of downtown Seattle and Elliot Bay.",
+      "At the heart of the home is a design studio that includes a series of roof monitors to flood the space with indirect natural light.",
+      "The central stair is anchored by Tansu style casework that provides abundant storage and is a nod to the clients extensive collection of traditional Japanese furniture. Playful use of materials including a woven metal screen at the entry vestibule are found throughout the home.",
+      "The building is clad in rich textures featuring a mix of re-claimed wood from Montana corrals and rodeo bleacher seats, Sho-sugi-ban treated cypress and Richlite panels.",
+      "Coupled with aluminum clad windows and doors and standing seam metal roofing it fulfills the clients desire for a low maintenance exterior. Elements of deeply textured board-form concrete at the entry and select areas add a striking contrast to surrounding finishes.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Rohleder Borges Architecture: Andrew Borges and Ricky Lyman"],
+        links: [{ label: "www.rb-a.net", href: "https://www.rb-a.net" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Brio Interiors: Kenna Stout"],
+        links: [{ label: "www.briointeriordesign.com", href: "https://www.briointeriordesign.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Anne James Landscape Architect: Anne James"],
+        links: [{ label: "www.annejamesla.com", href: "https://www.annejamesla.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Benjamin Benschneider"],
+        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
+      },
+    ],
+    galleryImages: comstockImages.map((image) => ({
+      src: `/wp-content/uploads/2025/11/${image}`,
+      alt: `The Perch - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
