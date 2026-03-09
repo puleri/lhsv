@@ -158,6 +158,29 @@ const theRanchImages = [
   "theRanch22.jpg",
 ];
 
+
+const arrowBayImages = [
+  "Arrow-Bay_5640.jpg",
+  "Arrow-Bay_5654.jpg",
+  "Arrow-Bay_5786.jpg",
+  "Arrow-Bay_5849-1.jpg",
+  "Arrow-Bay_5660.jpg",
+  "Arrow-Bay_5690.jpg",
+  "Arrow-Bay_5692.jpg",
+  "Arrow-Bay_5709.jpg",
+  "Arrow-Bay_5747.jpg",
+  "Arrow-Bay_5761.jpg",
+  "Arrow-Bay_5881.jpg",
+  "Arrow-Bay_5657.jpg",
+  "Arrow-Bay_5647.jpg",
+  "Arrow-Bay_6065.jpg",
+  "Arrow-Bay_6054.jpg",
+  "Arrow-Bay_6098.jpg",
+  "Arrow-Bay_6082.jpg",
+  "Arrow-Bay_5645.jpg",
+  "Arrow-Bay_5527.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -491,6 +514,48 @@ const portfolioProjectPages = {
     galleryImages: mercerIslandResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2017/08/${image}`,
       alt: `Mercer Island Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+
+  "arrow-bay": {
+    slug: "arrow-bay",
+    title: "Arrow Bay",
+    category: "New Homes",
+    location: "Bainbridge Island, Washington",
+    heroImage: "/wp-content/uploads/2024/10/Arrow-Bay_5642.jpg",
+    previousHref: "/portfolio/mercer-island-residence/",
+    nextHref: "/portfolio/beans-bight-residence/",
+    description: [
+      "This island waterfront home is a contemporary take on the Cotswold architecture of the client's native England. Characterized by steep, gable roof forms, liberal use of stone cladding, a grand fireplace near the main entrance, and plaster finishes throughout the interior.",
+      "Reclaimed oak timber sourced from a 19th century Pennsylvania warehouse warms the ceilings and floors of the main house, while evoking the traditional exposed framing of the Cotswolds.",
+      "Steel windows and doors, standing seam metal roofing, and locally sourced cedar cladding lighten the feel of the home and modernize the building. An adjacent guest house shares many of the Arts and Craft features of the primary residence, incorporating a simplified palette of materials to add cost effective square footage.",
+      "Little Arrow: This adjacent guest house shares many of the Arts and Craft features of the primary residence, incorporating a simplified palette of materials to add cost effective square footage.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Hoedemaker Pfeiffer: Steve Hoedemaker, Bryan Chilcote and Ben Loeffler"],
+        links: [{ label: "www.hoedemakerpfeiffer.com", href: "https://www.hoedemakerpfeiffer.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Hoedemaker Pfeiffer: Tim Pfeiffer, Maggie Smith and Peak Peterson"],
+        links: [{ label: "www.hoedemakerpfeiffer.com", href: "https://www.hoedemakerpfeiffer.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Anne James Landscape Architecture: Anne James"],
+        links: [{ label: "www.annejamesla.com", href: "https://www.annejamesla.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Kevin Scott"],
+        links: [{ label: "www.kevinscott.us", href: "https://www.kevinscott.us" }],
+      },
+    ],
+    galleryImages: arrowBayImages.map((image) => ({
+      src: `/wp-content/uploads/2024/10/${image}`,
+      alt: `Arrow Bay - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
