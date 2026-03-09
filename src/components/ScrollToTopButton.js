@@ -2,14 +2,20 @@
 
 import { useEffect, useState } from "react";
 
-const SHOW_BUTTON_SCROLL_OFFSET = 300;
+const SHOW_BUTTON_SCROLL_OFFSET = 120;
 
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsVisible(window.scrollY > SHOW_BUTTON_SCROLL_OFFSET);
+      const scrollTop =
+        window.scrollY ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        0;
+
+      setIsVisible(scrollTop > SHOW_BUTTON_SCROLL_OFFSET);
     };
 
     handleScroll();
