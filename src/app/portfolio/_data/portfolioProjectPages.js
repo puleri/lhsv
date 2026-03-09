@@ -198,6 +198,21 @@ const beansBightResidenceImages = [
   "koyoDSC05927revB.jpg",
 ];
 
+const unionBayResidenceImages = [
+  "Talbot_3.jpg",
+  "Talbot_4.jpg",
+  "Talbot_7.jpg",
+  "Talbot_10.jpg",
+  "Talbot_13.jpg",
+  "Talbot_12.jpg",
+  "Talbot_15.jpg",
+  "Talbot_17.jpg",
+  "Talbot_18.jpg",
+  "Talbot_23.jpg",
+  "Talbot_21.jpg",
+  "Talbot_25.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -614,6 +629,47 @@ const portfolioProjectPages = {
     galleryImages: beansBightResidenceImages.map((image) => ({
       src: `/wp-content/uploads/2016/09/${image}`,
       alt: `Beans-Bight Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "union-bay-residence": {
+    slug: "union-bay-residence",
+    title: "Union Bay Residence",
+    category: "New Homes",
+    location: "Laurelhurst, Washington",
+    heroImage: "/wp-content/uploads/2017/06/Talbot_1.jpg",
+    previousHref: "/portfolio/beans-bight-residence/",
+    nextHref: "/portfolio/the-perch/",
+    description: [
+      "A modern design with long, clean horizontal lines, the home appears as an extension of the surrounding landscape.",
+      "The design team's limited palette of materials creates an overall impression of simplicity that belies the building's underlying complex structural intersections.",
+      "Upon opening the large entry pivot door, a visitor's eye is drawn through the building to the water beyond. A massive sliding window wall in the great room transforms the home into an outdoor pavilion during warmer months.",
+      "To quote the client, 'it's a main house and vacation house wrapped into one.'",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["John Deforest, Ted Cameron and Michael Knowles", "DeForest Architects"],
+        links: [{ label: "www.deforestarchitects.com", href: "https://www.deforestarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Nancy Burfiend and Whitney Maehara", "NB Design Group"],
+        links: [{ label: "www.nbdesigngroup.net", href: "https://www.nbdesigngroup.net" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Randy Allworth, Brian Gregory", "Allworth Design"],
+        links: [{ label: "www.allworthdesign.com", href: "https://www.allworthdesign.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Benjamin Benschneider Photography"],
+        links: [{ label: "www.benschneiderphoto.com", href: "https://www.benschneiderphoto.com" }],
+      },
+    ],
+    galleryImages: unionBayResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2017/06/${image}`,
+      alt: `Union Bay Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
