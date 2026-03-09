@@ -966,10 +966,10 @@ footer {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: 0;
-  border-radius: 0;
+  border-radius: 4px;
   background: #000;
   color: #fff;
   display: inline-flex;
@@ -988,10 +988,10 @@ footer {
 }
 
 .scroll-to-top-chevron {
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
   transform: rotate(-45deg);
   margin-top: 3px;
 }

@@ -378,7 +378,1493 @@ const brunoResidenceImages = [
   "bruno02.jpg"
 ];
 
+const pioneerSquareResidenceImages = [
+  "pioneerSquare2.jpg",
+  "pioneerSquare3.jpg",
+  "pioneerSquare4.jpg",
+  "pioneerSquare5.jpg",
+  "pioneerSquare6.jpg"
+];
+
+
+const CondoImages = [
+  "1521_Condo-282-HDR_2k-1.jpg",
+  "1521_Condo-289-HDR_2k-1.jpg",
+  "1521_Condo-304-HDR_2k.jpg",
+  "1521_Condo-255-HDR_2k.jpg",
+  "1521_Condo-196_2k.jpg",
+  "1521_Condo-349_2k.jpg",
+  "1521_Condo-165-HDR_2k.jpg",
+  "1521_Condo-332_2k.jpg",
+  "1521_Condo-365-HDR_2k-1.jpg",
+  "1521_Condo-379-HDR_2k-1.jpg",
+  "1521_Condo-391_2k.jpg",
+  "1521_Condo-153-HDR_2k.jpg",
+  "1521_Condo-086-HDR_2k.jpg"
+];
+
+const bigStarBelltownImages = [
+  "20210316_deforest_027.jpg",
+  "20210316_deforest_020.jpg",
+  "20210316_deforest_003-scaled.jpg",
+  "20210316_deforest_001.jpg",
+  "20210316_deforest_031-scaled.jpg",
+  "20210316_deforest_033-scaled.jpg",
+  "20210316_deforest_005-scaled.jpg",
+  "20210316_deforest_036.jpg",
+  "20210316_deforest_007.jpg",
+  "20210316_deforest_013-scaled.jpg",
+  "20210316_deforest_016.jpg"
+];
+const firstHillPenthouseImages = [
+  "firsthillPenthouse15.jpg",
+  "firsthillPenthouse14.jpg",
+  "firsthillPenthouse11.jpg",
+  "firsthillPenthouse10.jpg",
+  "firsthillPenthouse08.jpg",
+  "firsthillPenthouse07.jpg",
+  "firsthillPenthouse06.jpg",
+  "firsthillPenthouse03.jpg",
+  "firsthillPenthouse02.jpg"
+];
+const carillonPointResidenceImages = [
+  "carillonPoint10.jpg",
+  "carillonPoint8.jpg",
+  "carillonPoint9.jpg",
+  "carillonPoint3.jpg",
+  "carillonPoint5.jpg",
+  "carillonPoint4.jpg",
+  "carillonPoint6.jpg",
+  "carillonPoint1.jpg"
+];
+const lightHouseResidenceImages = [
+  "ok-39th-102xBlr%E2%80%93alt.jpg",
+  "ok-39th-111x.jpg",
+  "ok-39th-265x.jpg",
+  "ok-39th-191x.jpg",
+  "ok-39th-124xFIXED.jpg",
+  "ok-39th-226x.jpg",
+  "ok-39th-235x.jpg",
+  "ok-39th-153x.jpg",
+  "ok-39th-356x.jpg",
+  "ok-39th-176x.jpg",
+  "ok-39th-260x.jpg",
+  "ok-39th-0049x.jpg"
+];
+
+const queenAnneResidence2Images = [
+  "2NB-Design-Group-_-Lee-Street-1.jpg",
+  "3NB-Design-Group-_-Lee-Street-5.jpg",
+  "4NB-Design-Group-_-Lee-Street-13.jpg",
+  "5NB-Design-Group-_-Lee-Street-15.jpg",
+  "6NB-Design-Group-_-Lee-Street-14.jpg",
+  "7NB-Design-Group-_-Lee-Street-17.jpg",
+  "9NB-Design-Group-_-Lee-Street-32.jpg",
+  "10NB-Design-Group-_-Lee-Street-31.jpg",
+  "11NB-Design-Group-_-Lee-Street-30.jpg",
+  "12NB-Design-Group-_-Lee-Street-12.jpg",
+  "13NB-Design-Group-_-Lee-Street-11.jpg",
+  "14NB-Design-Group-_-Lee-Street-19.jpg",
+  "15NB-Design-Group-_-Lee-Street-22.jpg",
+  "16NB-Design-Group-_-Lee-Street-23.jpg",
+  "17NB-Design-Group-_-Lee-Street-24.jpg",
+  "18NB-Design-Group-_-Lee-Street-21.jpg",
+  "19NB-Design-Group-_-Lee-Street-29.jpg",
+  "20NB-Design-Group-_-Lee-Street-27.jpg"
+];
+
+const ResidenceImages = [
+  "601Res02.jpg",
+  "601Res03.jpg",
+  "601Res05.jpg",
+  "601Res06.jpg",
+  "601Res07.jpg",
+  "601Res04.jpg",
+  "601Res08.jpg"
+];
+
+const capitolHillArtsAndCraftsHomeImages = [
+  "CapitolHillArtsCrafts_3596_2k.jpg",
+  "CapitolHillArtsCrafts_3580_2k.jpg",
+  "CapitolHillArtsCrafts_3558b_2k.jpg",
+  "CapitolHillArtsCrafts_3512b_2k.jpg",
+  "CapitolHillArtsCrafts_3531A_2k.jpg",
+  "CapitolHillArtsCrafts_3628_2k.jpg",
+  "CapitolHillArtsCrafts_3478_2k.jpg",
+  "CapitolHillArtsCrafts_3427_2k.jpg",
+  "CapitolHillArtsCrafts_3461_2k.jpg",
+  "CapitolHillArtsCrafts_3643-2_2k.jpg"
+];
+
+const edmondsWaterfrontResidenceImages = [
+  "EdmondsWaterRes016_2kcroppednoChimney.jpg",
+  "EdmondsWaterRes018_2kcropped-1.jpg",
+  "EdmondsWaterRes014_2k.jpg",
+  "EdmondsWaterRes013_2k.jpg",
+  "EdmondsWaterRes005_2k.jpg",
+  "EdmondsWaterRes004_2k.jpg",
+  "EdmondsWaterRes008_2k.jpg",
+  "EdmondsWaterRes007_2k.jpg",
+  "EdmondsWaterRes006_2k.jpg",
+  "EdmondsWaterRes002b_2k.jpg",
+  "EdmondsWaterRes001b_2k.jpg",
+  "EdmondsWaterRes009_2k.jpg",
+  "EdmondsWaterRes010_2k.jpg",
+  "EdmondsWaterRes012_2k.jpg",
+  "EdmondsWaterRes011_2k.jpg"
+];
+const laurelhurstKitchenImages = [
+  "laurelhurstKitchen11.jpg",
+  "laurelhurstKitchen21.jpg"
+];
+const tumbleCreekResidenceImages = [
+  "tumbleCreek1.jpg",
+  "tumbleCreek5.jpg",
+  "tumbleCreek6.jpg",
+  "tumbleCreek3.jpg"
+];
+
+
+const restorationPointResidenceImages = [
+  "entryDoor2.jpg",
+  "diningRoom.jpg",
+  "library.jpg",
+  "kitchenalt2.jpg",
+  "stairs.jpg",
+  "hallwayStair.jpg",
+  "Bath.jpg",
+  "bath2.jpg",
+  "wineCellar.jpg",
+  "dining2.jpg",
+  "greenfurnitureglasswall.jpg",
+  "viewRoom.jpg"
+];
+const classicSeattleImages = [
+  "queenAnneKitchen1.jpg",
+  "queenAnneKitchen2.jpg",
+  "queenAnneKitchen3.jpg",
+  "queenAnneKitchen5.jpg"
+];
+const windermereArborsImages = [
+  "windermereArbors1.jpg",
+  "windermereArbors2.jpg",
+  "windermereArbors4.jpg",
+  "windermereArbors5.jpg",
+  "windermereArbors10.jpg",
+  "windermereArbors9.jpg",
+  "windermereArbors6.jpg",
+  "windermereArbors7.jpg",
+  "windermereArbors8.jpg"
+];
+const waverlyResidenceImages = [
+  "14-HoedemakerPffeifer_Rudolph-33.jpg",
+  "2-HoedemakerPffeifer_Rudolph-3.jpg",
+  "7b-HoedemakerPffeifer_Rudolph-11.jpg",
+  "5-HoedemakerPffeifer_Rudolph-8.jpg",
+  "IMG_6999altBulbs2h.jpg",
+  "3-HoedemakerPffeifer_Rudolph-2.jpg",
+  "8-HoedemakerPffeifer_Rudolph-15.jpg",
+  "12-HoedemakerPffeifer_Rudolph-18.jpg",
+  "4-HoedemakerPffeifer_Rudolph-26.jpg",
+  "11-HoedemakerPffeifer_Rudolph-25.jpg",
+  "11b-HoedemakerPffeifer_Rudolph-21.jpg",
+  "9-HoedemakerPffeifer_Rudolph-28.jpg",
+  "6-HoedemakerPffeifer_Rudolph-12.jpg",
+  "7-HoedemakerPffeifer_Rudolph-14.jpg",
+  "1-HoedemakerPffeifer_Rudolph-29.jpg"
+];
+
+const capitolHillKitchenImages = [
+  "capitolHillKitchen3.jpg",
+  "capitolHillKitchen2.jpg",
+  "capitolHillKitchen1.jpg"
+];
+const madisonParkResidenceRemodelImages = [
+  "MadisonParkRemodel-216.jpg",
+  "MadisonParkRemodel2k-187.jpg",
+  "MadisonParkRemodel2k-043.jpg"
+];
+
+const zenHouseImages = [
+  "zen6.jpg",
+  "zen5.jpg",
+  "zen8.jpg",
+  "zen4f.jpg",
+  "zen3.jpg",
+  "zen7.jpg",
+  "zen2.jpg"
+];
+const madronaResidenceImages = [
+  "madronaRes2.jpg"
+];
+
+const queenAnneBathroomImages = [
+  "QueenAnneBath1.jpg",
+  "QueenAnneBath3.jpg",
+  "QueenAnneBath2.jpg",
+  "QueenAnneBath4.jpg"
+];
+
+const dennyBlaineImages = [
+  "dennyBlaine2.jpg"
+];
+const washingtonParkResidenceImages = [
+  "washingtonPark5.jpg",
+  "washingtonPark4.jpg",
+  "washingtonPark3.jpg",
+  "washingtonPark2.jpg"
+];
+
+
 const portfolioProjectPages = {
+
+"washington-park-residence": {
+  slug: "washington-park-residence",
+  title: "Washington Park Residence",
+  category: "Small Projects",
+  location: "Washington Park, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/washingtonPark1.jpg",
+  previousHref: "/portfolio/windermere-arbors/",
+  nextHref: "/commercial/",
+  description: [
+  "Restoration and remodeling of a historic home. Our most recent project required that we replace the mansard roof with new copper dormers, flashings and gutters."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Margaret A. Appleton Design"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Burt Lockhart"
+    ],
+    "links": []
+  }
+],
+  galleryImages: washingtonParkResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Washington Park Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "windermere-arbors": {
+  slug: "windermere-arbors",
+  title: "Windermere Arbors",
+  category: "Small Projects",
+  location: "Windermere, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/windermereArbors3.jpg",
+  previousHref: "/portfolio/madrona-residence/",
+  nextHref: "/portfolio/washington-park-residence/",
+  description: [
+  "Custom design steel rose arbor and monumental steel trellis structure"
+],
+  details: [
+  {
+    "label": "Architect – Rose Arbor:",
+    "lines": [
+      "Marvin Anderson at Sullivan Conard Architects"
+    ],
+    "links": [
+      {
+        "label": "www.marvinandersonarchitects.com",
+        "href": "https://www.marvinandersonarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Design – Trellis:",
+    "lines": [
+      "Lockhart|Suver"
+    ],
+    "links": []
+  },
+  {
+    "label": "Landscape:",
+    "lines": [
+      "Gene Wheeler"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Burt Lockhart"
+    ],
+    "links": []
+  }
+],
+  galleryImages: windermereArborsImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Windermere Arbors - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "madrona-residence": {
+  slug: "madrona-residence",
+  title: "Madrona Residence",
+  category: "Small Projects",
+  location: "Madrona, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/madronaRes1.jpg",
+  previousHref: "/portfolio/denny-blaine/",
+  nextHref: "/portfolio/windermere-arbors/",
+  description: [
+  "This charming home represents the result of a long-time, multiple phase collaboration between owners, architect and builder. Earlier projects included a basement remodel, a view deck with steel railings, and the construction of a new detached garage. The most recently completed project called for Lockhart|Suver to replace most of the windows, install new shingle siding and trim, build a new entry canopy, and create a courtyard with concrete planters and a decorative metal fence and gate."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Anita Lehmann Architect"
+    ],
+    "links": [
+      {
+        "label": "www.ahldraws.com",
+        "href": "https://www.ahldraws.com"
+      }
+    ]
+  },
+  {
+    "label": "Landscape:",
+    "lines": [
+      "CEM Landscape Design"
+    ],
+    "links": [
+      {
+        "label": "www.cemlandscapes.com",
+        "href": "https://www.cemlandscapes.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Burt Lockhart"
+    ],
+    "links": []
+  }
+],
+  galleryImages: madronaResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Madrona Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "denny-blaine": {
+  slug: "denny-blaine",
+  title: "Denny-Blaine Residence",
+  category: "Small Projects",
+  location: "Denny-Blaine, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/dennyBlaine1.jpg",
+  previousHref: "/portfolio/queen-anne-bathroom/",
+  nextHref: "/portfolio/madrona-residence/",
+  description: [
+  "A new porch and steps of rich and long-lasting ipe hardwood lead up to a remodeled entry foyer and powder bath. A copper roof shelters the new porch, installed using traditional flat-seamed copper panels. New wood windows at the main floor were carefully selected and trimmed to match the original windows. An upstairs bathroom was completely redone, with finishes and fittings true to the history of the house. A freshly painted exterior is adorned with new copper gutters and downspouts, and a new copper roof at the kitchen bay window."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Graham Baba Architects"
+    ],
+    "links": [
+      {
+        "label": "www.grahambaba.com",
+        "href": "https://www.grahambaba.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Mary Wood"
+    ],
+    "links": [
+      {
+        "label": "www.mfinnwood@msn.com",
+        "href": "https://www.mfinnwood@msn.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Burt Lockhart"
+    ],
+    "links": []
+  }
+],
+  galleryImages: dennyBlaineImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Denny-Blaine Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "queen-anne-bathroom": {
+  slug: "queen-anne-bathroom",
+  title: "Queen Anne Bathroom",
+  category: "Small Projects",
+  location: "Queen Anne Hill, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/QueenAnneBath5.jpg",
+  previousHref: "/portfolio/madison-park-residence-remodel/",
+  nextHref: "/portfolio/denny-blaine/",
+  description: [
+  "This bathroom was the result of a long-term collaboration between the owner and the designer-builder. Twenty years earlier, we built the “before” bathroom. After years of serving the family well, it was time for a rejuvenation. The owner desired to update the bathroom in both style and function and challenged us to find a way to create a larger and less confining shower and to open up as much space as possible in the small room. Original beveled-glass windows had to stay, the owner insisted on maintaining the awkwardly located laundry chute and moving walls was out of the question."
+],
+  details: [
+  {
+    "label": "Design:",
+    "lines": [
+      "Lockhart|Suver"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Elizabeth Lockhart",
+      "elizabethlockhart@lockhartsuver.com"
+    ],
+    "links": []
+  }
+],
+  galleryImages: queenAnneBathroomImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Queen Anne Bathroom - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "madison-park-residence-remodel": {
+  slug: "madison-park-residence-remodel",
+  title: "Madison Park Residence Remodel",
+  category: "Small Projects",
+  location: "Madison Park, Seattle Washington",
+  heroImage: "/wp-content/uploads/2020/05/MadisonParkRemodel2k-123.jpg",
+  previousHref: "/portfolio/small-projects/",
+  nextHref: "/portfolio/queen-anne-bathroom/",
+  description: [
+  "This third floor addition, part of a larger remodel of a classic Spanish Colonial in Broadmoor, presented a number of building challenges including creation of a structural “bridge” over the existing finished lower floors. Charlie and Paul’s design collaboration seamlessly weaves the new outdoor aerie into the existing home."
+],
+  details: [
+  {
+    "label": "Interior design:",
+    "lines": [
+      "Charlie Hellstern",
+      "Charlie Hellstern Interior Design"
+    ],
+    "links": [
+      {
+        "label": "www.charliehellstern.com",
+        "href": "https://www.charliehellstern.com"
+      }
+    ]
+  },
+  {
+    "label": "Architect:",
+    "lines": [
+      "Paul Schlachter",
+      "Apollo Design Studio"
+    ],
+    "links": [
+      {
+        "label": "www.apollo-designstudio.com",
+        "href": "https://www.apollo-designstudio.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Andrew Giammarco",
+      "Andrew Giammarco Photography"
+    ],
+    "links": [
+      {
+        "label": "www.andrewgiammarco.com",
+        "href": "https://www.andrewgiammarco.com"
+      }
+    ]
+  }
+],
+  galleryImages: madisonParkResidenceRemodelImages.map((image) => ({
+    src: `/wp-content/uploads/2020/05/${image}`,
+    alt: `Madison Park Residence Remodel - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "capitol-hill-kitchen": {
+  slug: "capitol-hill-kitchen",
+  title: "Capitol Hill Kitchen",
+  category: "Remodels & Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/02/capitolHillKitchenTitle.jpg",
+  previousHref: "/portfolio/zen-house/",
+  nextHref: "/portfolio/small-projects/",
+  description: [
+  "This new kitchen was designed in keeping with the spirit of a 1920s era bungalow home. The owners and their designer focused a delicate sense of scale and meticulous attention to the details to fit a dining nook, powder bath and a fully-equipped kitchen into a small existing space. Delightful touches include an arch-topped niche displaying a vintage rotary dial phone as a functional sculpture, a fold-down seat near the back entry hidden behind a cabinet door, and a docking station in a cabinet toe-kick where the floor cleaning robot hides when it’s not busily scrubbing the real linoleum floor."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Carleen Cafferty"
+    ],
+    "links": [
+      {
+        "label": "www.carleencafferty.com",
+        "href": "https://www.carleencafferty.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Alex Hayden Photography"
+    ],
+    "links": [
+      {
+        "label": "www.alexhayden.com",
+        "href": "https://www.alexhayden.com"
+      }
+    ]
+  }
+],
+  galleryImages: capitolHillKitchenImages.map((image) => ({
+    src: `/wp-content/uploads/2014/02/${image}`,
+    alt: `Capitol Hill Kitchen - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "zen-house": {
+  slug: "zen-house",
+  title: "Zen House",
+  category: "Remodels & Renovations",
+  location: "Wallingford, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/zen1.jpg",
+  previousHref: "/portfolio/laurelhurst-kitchen/",
+  nextHref: "/portfolio/capitol-hill-kitchen/",
+  description: [
+  "The owner wanted to blend the quiet, harmony and hand-crafted detail of the traditional Japanese style with contemporary minimalism and modern construction techniques. The size of the home was doubled, without changing the height or impacting the surrounding neighborhood views. The house is small and the construction budget was tight, so the details and budgets were closely monitored. Not an inch was wasted; all available space was converted to storage or expanded into essential living space. Custom metal fabrication, exposed concrete, and wood details are artfully balanced inside and out. Lockhart|Suver has continued working closely with the homeowner over the years on smaller projects, recently building a deck and an Iron Wood (Ipe) fence, to complete the spirit and quality of the home."
+],
+  details: [
+  {
+    "label": "Designer:",
+    "lines": [
+      "Koyo LLC"
+    ],
+    "links": [
+      {
+        "label": "www.koyo.us",
+        "href": "https://www.koyo.us"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Koyo LLC"
+    ],
+    "links": [
+      {
+        "label": "www.koyo.us",
+        "href": "https://www.koyo.us"
+      }
+    ]
+  },
+  {
+    "label": "Landscape:",
+    "lines": [
+      "D.M. Ohashi Landscape Services"
+    ],
+    "links": [
+      {
+        "label": "www.ohashilandscape.com",
+        "href": "https://www.ohashilandscape.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Koyo LLC"
+    ],
+    "links": [
+      {
+        "label": "www.koyo.us",
+        "href": "https://www.koyo.us"
+      }
+    ]
+  }
+],
+  galleryImages: zenHouseImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Zen House - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "laurelhurst-kitchen": {
+  slug: "laurelhurst-kitchen",
+  title: "Laurelhurst Kitchen",
+  category: "Remodels & Renovations",
+  location: "Laurelhurst, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/laurelhurstKitchen31.jpg",
+  previousHref: "/portfolio/edmonds-waterfront-residence/",
+  nextHref: "/portfolio/zen-house/",
+  description: [
+  "A remodel “tailored” to fit the owners’ family. The owners loved the intimate and cozy scale of their home, but the family needed more space. Rex Hohlbein described the guiding principal of his design as: “how small can this room be yet still function well and not feel cramped?” This approach resulted in a very modest addition, and an efficient floor plan beautifully fit to the family."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Rex Hohlbein & Matthew Waddington, project architect",
+      "Rex Hohlbein Architects"
+    ],
+    "links": [
+      {
+        "label": "www.rexhohlbeinarchitects.com",
+        "href": "https://www.rexhohlbeinarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: laurelhurstKitchenImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Laurelhurst Kitchen - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "tumble-creek-residence": {
+  slug: "tumble-creek-residence",
+  title: "Tumble Creek Residence",
+  category: "Remodels & Renovations",
+  location: "Tumble Creek, Washington",
+  heroImage: "/wp-content/uploads/2017/07/tumbleCreek2.jpg",
+  previousHref: "/portfolio/queen-anne-kitchen/",
+  nextHref: "/portfolio/laurelhurst-kitchen/",
+  description: [
+  "Our client found a perfect mountain retreat located on the East side of the Cascades. The location was ideal but the existing residence seemed out of scale, with massive dark-stained timber columns and beams contrasting harshly against painted drywall and light stained wood. The client envisioned a serene space with a palette of natural materials to connect with the forest setting and subtle textures inviting to the eye and to the touch of one’s fingers.",
+  "The design team responded with a complete re-imagination of a mountain retreat. A steel mezzanine was added with a custom spiral staircase to create a sense of human scale at the once cavernous entry and great room. Ceilings were lowered in the kitchen and hallway, wood floors replaced ceramic tile, tongue and groove wood ceilings covered drywall, and all of the near-black timbers received a soft hand-brushed lime-wash finish. RHO Architects carefully added windows to balance the sunlight at the entry and kitchen. The original over-sized fireplace was transformed into a balanced and reposed composition with a stone hearth extending to become a sitting ledge complemented by a custom plaster-finished fireplace surround. Painted steel and glass cabinets sit in front of white subway tile in the newly cheerful and bright kitchen. The kitchen island cabinets are clad with brass sheet with a rich patina.",
+  "The resulting space exudes a sense of relaxed elegance with touches of fun eclectic style. A perfect mountain retreat."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Replinger Hossner Osolin Architects"
+    ],
+    "links": [
+      {
+        "label": "www.rhoarchitects.com",
+        "href": "https://www.rhoarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Maryika Byskinewicz",
+      "Spaces"
+    ],
+    "links": [
+      {
+        "label": "www.maryika-spaces.com",
+        "href": "https://www.maryika-spaces.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: tumbleCreekResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2017/07/${image}`,
+    alt: `Tumble Creek Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "classic-seattle": {
+  slug: "classic-seattle",
+  title: "Classic Seattle",
+  category: "Remodels & Renovations",
+  location: "Queen Anne Hill, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/02/queenAnneKitchen6title.jpg",
+  previousHref: "/portfolio/edmonds-waterfront-residence/",
+  nextHref: "/portfolio/tumble-creek-residence/",
+  description: [
+  "This turn-of-the-century Queen Anne Hill home remodel began with a kitchen update, and in the process revitalized the floor plan for modern living. Opening the kitchen to the formal dining room and aligning views to the entry and living room beyond took this once tucked-away kitchen and gave it center stage in a now very functional and flowing floor plan. The new design stayed true to period, matching the original materials and detailing with particular attention given to the scale and proportion of openings and room size. Other than the added modern conveniences, you would never know there had been a remodel."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Rex Hohlbein & Matthew Waddington, project architect",
+      "Rex Hohlbein Architects"
+    ],
+    "links": [
+      {
+        "label": "www.rexhohlbeinarchitects.com",
+        "href": "https://www.rexhohlbeinarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: classicSeattleImages.map((image) => ({
+    src: `/wp-content/uploads/2014/02/${image}`,
+    alt: `Classic Seattle - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "edmonds-waterfront-residence": {
+  slug: "edmonds-waterfront-residence",
+  title: "Edmonds Waterfront Residence",
+  category: "Remodel / Renovation",
+  location: "Edmonds, Washington",
+  heroImage: "/wp-content/uploads/2019/01/EdmondsWaterRes015_2kfixed.jpg",
+  previousHref: "/portfolio/capitol-hill-arts-and-crafts-home/",
+  nextHref: "/portfolio/queen-anne-kitchen/",
+  description: [
+  "After more than thirty years raising a family in their waterfront home the owners decided it was time to transform their “empty nest”. The existing home was built in 1975 and an 80’s era remodel looked tired and dated. Ferguson Architects rose to the challenge, proposing a dramatic remodel with crisp contemporary sensibilities. The interior spaces of the home now flow together in a sequence of interlocking well-lit volumes facing a panoramic view West over the Puget Sound. The Great Room features a sliding glass wall that can be opened to the existing pool and terrace. The architect composed the interiors with finely-crafted focal points such as the steel-clad fireplace wall, a custom fabricated pivoting steel and alaskan yellow cedar entry door, and paths of bright white large-format porcelain tile floors that bridge the transitions from inside to outside. The exterior of the home was re-clad with precisely aligned horizontal cedar rain-screen siding, board-formed concrete panels and painted steel trim. Phase Two will entail creating an architectural courtyard space alongside the entry walkway."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Ben Ferguson, principal",
+      "Caela McKeever and Christian Truscinski, project architects",
+      "Ferguson Architecture"
+    ],
+    "links": [
+      {
+        "label": "www.fergusonarch.com",
+        "href": "https://www.fergusonarch.com"
+      }
+    ]
+  },
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Ferguson Architecture"
+    ],
+    "links": [
+      {
+        "label": "www.fergusonarch.com",
+        "href": "https://www.fergusonarch.com"
+      }
+    ]
+  },
+  {
+    "label": "Structural Engineer:",
+    "lines": [
+      "Ryan Reichman",
+      "Swenson Say Faget"
+    ],
+    "links": [
+      {
+        "label": "www.ssfengineers.com",
+        "href": "https://www.ssfengineers.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Heywood Chan",
+      "Ye-h Architectural Photography"
+    ],
+    "links": [
+      {
+        "label": "www.ye-h.com",
+        "href": "https://www.ye-h.com"
+      }
+    ]
+  }
+],
+  galleryImages: edmondsWaterfrontResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2019/01/${image}`,
+    alt: `Edmonds Waterfront Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "capitol-hill-arts-and-crafts-home": {
+  slug: "capitol-hill-arts-and-crafts-home",
+  title: "Capitol Hill Arts and Crafts Home",
+  category: "Remodels & Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2019/01/CapitolHillArtsCrafts_3608_2k.jpg",
+  previousHref: "/portfolio/601-residence/",
+  nextHref: "/portfolio/edmonds-waterfront-residence/",
+  description: [
+  "A classic Arts and Crafts home restored to its original grandeur with a subtle second floor expansion that nearly doubled its living space. The design team was guided by the client’s desire to preserve the integrity of the architecture while updating finishes and creating more room for frequent visits from family and friends. A carpenter’s dream, custom millwork was seamlessly blended between existing and renovated spaces in this whole house remodel and renovation. New master and guest suites, kitchen, media room and main floor bath were all part of the transformation."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Marilyn Deering, IIDA, Principal Designer",
+      "Deering Design Studio, Inc."
+    ],
+    "links": [
+      {
+        "label": "www.mdeeringdesign.com",
+        "href": "https://www.mdeeringdesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Architect:",
+    "lines": [
+      "Bruce Stock, principal",
+      "Stock & Associates"
+    ],
+    "links": [
+      {
+        "label": "www.stockandassociates.com",
+        "href": "https://www.stockandassociates.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Laurie Black",
+      "Laurie Black Photography"
+    ],
+    "links": [
+      {
+        "label": "www.laurieblack.com",
+        "href": "https://www.laurieblack.com"
+      }
+    ]
+  }
+],
+  galleryImages: capitolHillArtsAndCraftsHomeImages.map((image) => ({
+    src: `/wp-content/uploads/2019/01/${image}`,
+    alt: `Capitol Hill Arts and Crafts Home - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "601-residence": {
+  slug: "601-residence",
+  title: "601 Residence",
+  category: "Remodels & Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/601Res01.jpg",
+  previousHref: "/portfolio/waverly-residence/",
+  nextHref: "/portfolio/capitol-hill-arts-and-crafts-home/",
+  description: [
+  "A substantial renovation of an art collector’s home in Washington Park. Preserving existing tall ceilings and expansive walls of glass, the architect and designer updated this contemporary home with features like “floating” wood ceilings, a new kitchen organized around an over-sized island, and an integrated art lighting scheme."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Tom Kundig",
+      "Olson Kundig Architects"
+    ],
+    "links": [
+      {
+        "label": "www.olsonkundigarchitects.com",
+        "href": "https://www.olsonkundigarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Terry Hunziker"
+    ],
+    "links": [
+      {
+        "label": "www.terryhunziker.com",
+        "href": "https://www.terryhunziker.com"
+      }
+    ]
+  },
+  {
+    "label": "Lighting Designer:",
+    "lines": [
+      "Brian Hood"
+    ],
+    "links": [
+      {
+        "label": "www.brianhoodlighting.com",
+        "href": "https://www.brianhoodlighting.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: ResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `601 Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "waverly-residence": {
+  slug: "waverly-residence",
+  title: "Waverly Residence",
+  category: "Remodels and Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2022/05/1-HoedemakerPffeifer_Rudolph-13.jpg",
+  previousHref: "/portfolio/queen-anne-residence-2/",
+  nextHref: "/portfolio/601-residence/",
+  description: [
+  "A substantial renovation and addition to a Spanish Colonial style home in the Washington Park neighborhood. The design team seamlessly integrated new with old, referencing the original building materials including brick, steel windows, and clay tile roof. The interior of the home was reimagined with a new open concept kitchen and family room while updating and modernizing the formal living room, dining room and sun room. A Guest House with Garage was added in a second phase of construction."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Steve Hoedemaker and Kelly Jimenez",
+      "Hoedemaker Pfeiffer"
+    ],
+    "links": [
+      {
+        "label": "www.hoedemakerpfeiffer.com",
+        "href": "https://www.hoedemakerpfeiffer.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Tim Pfeiffer and Peak Petersen",
+      "Hoedemaker Pfeiffer",
+      "hoedemakerpfeiffer.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Tim Moshier",
+      "Cambium Landscape",
+      "cambiumlandscape.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Haris Kenjar"
+    ],
+    "links": [
+      {
+        "label": "www.hariskenjar.com",
+        "href": "https://www.hariskenjar.com"
+      }
+    ]
+  }
+],
+  galleryImages: waverlyResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2022/05/${image}`,
+    alt: `Waverly Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "queen-anne-residence-2": {
+  slug: "queen-anne-residence-2",
+  title: "Queen Anne Residence",
+  category: "Remodels & Renovations",
+  location: "Queen Ann Hill, Seattle Washington",
+  heroImage: "/wp-content/uploads/2018/07/1NB-Design-Group-_-Lee-Street-2.jpg",
+  previousHref: "/portfolio/light-house-residence/",
+  nextHref: "/portfolio/waverly-residence/",
+  description: [
+  "A top to bottom renovation of a long neglected Queen Anne classic. The homeowner guided the team toward a light and bright transformation of the interiors and playful contemporary additions through-out, including a glass and steel cube “mudroom” and a Donald Judd-esque transformation of the one time attic ballroom."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "John Deforest, Melissa Nordquist and Geoff Briggs",
+      "Deforest Architects"
+    ],
+    "links": [
+      {
+        "label": "www.deforestarchitects.com",
+        "href": "https://www.deforestarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Nancy Burfiend and James Fong",
+      "NB Design Group"
+    ],
+    "links": [
+      {
+        "label": "www.nbdesigngroup.net",
+        "href": "https://www.nbdesigngroup.net"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Haris Kenjar Photography & Design"
+    ],
+    "links": [
+      {
+        "label": "www.hariskenjar.com",
+        "href": "https://www.hariskenjar.com"
+      }
+    ]
+  }
+],
+  galleryImages: queenAnneResidence2Images.map((image) => ({
+    src: `/wp-content/uploads/2018/07/${image}`,
+    alt: `Queen Anne Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "light-house-residence": {
+  slug: "light-house-residence",
+  title: "Light House Residence",
+  category: "Remodels and Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2020/01/ok-39th-279x.jpg",
+  previousHref: "/portfolio/restoration-point-residence/",
+  nextHref: "/portfolio/queen-anne-residence-2/",
+  description: [
+  "A complete re-imagining of an early Jim Olson home, this project was a substantial renovation with little of the original structure left intact. One of the client’s main goals was to maximize light. By creating new walls of glass at the east and west elevations of this lakefront residence, Jim and his team transformed what was a darker and more inward-looking floor plan to an open and airy residence that fully embraces its Lake Washington location. The home is organized around a two-story east-west axis that allows views from the entry through to the lake. A Spencer Finch art light sculpture is the centerpiece of the home and offers a beacon to passing boaters. A north-south oriented bridge of glass and steel crosses over this two-story volume to connect the upper-floor living spaces. Numerous details elevate the finishes throughout, including a steel-clad fireplace wall, wire-brushed wood ceilings and high-gloss painted casework. The interiors were designed by Terry Hunziker who has collaborated with the client on a number of projects over the years."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Jim Olson, principal architect",
+      "William Franklin, project architect",
+      "Olson Kundig Architects",
+      "olsonkundig.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Terry Hunziker",
+      "Terry Hunziker Inc",
+      "terryhunziker.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Anne James",
+      "Anne James Landscape Architecture LLC",
+      "annejamesla.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Lighting Design:",
+    "lines": [
+      "Lisa Kramer",
+      "niteo",
+      "niteolighting.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: lightHouseResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2020/01/${image}`,
+    alt: `Light House Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "restoration-point-residence": {
+  slug: "restoration-point-residence",
+  title: "Restoration Point Residence",
+  category: "Remodels & Renovations",
+  location: "Bainbridge Island, Washington",
+  heroImage: "/wp-content/uploads/2017/09/newer_housefront.jpg",
+  previousHref: "/portfolio/remodels-and-renovations/",
+  nextHref: "/portfolio/light-house-residence/",
+  description: [
+  "Originally designed by noted architect Carl Gould, this waterfront home on Bainbridge Island was showing its age. The new owners, who envisaged a family retreat for generations to come, hired architect Jim Cutler to make it a home for the 21st century while preserving its original character. Cutler said his design was influenced by the guiding question, “What would Gould do?”. A complete renovation of the home followed including a re-imagined window and door fenestration, new central stair and extensive wall paneling to match existing cerused woodwork. The clients were keenly interested in making the home as energy efficient as possible, installing a ground source thermal heat system and a photo-voltaic array for electrical."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Jim Cutler and Bruce Anderson, principal architects",
+      "Jeff Almeter, project architect",
+      "Cutler Anderson Architects"
+    ],
+    "links": [
+      {
+        "label": "www.cutler-anderson.com",
+        "href": "https://www.cutler-anderson.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Philip Benjamin and Jesslyn Howard"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Lockhart|Suver",
+      "lsdev1.wpengine.com"
+    ],
+    "links": []
+  }
+],
+  galleryImages: restorationPointResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2017/09/${image}`,
+    alt: `Restoration Point Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+  "carillon-point-residence": {
+  slug: "carillon-point-residence",
+  title: "Carillon Point Residence",
+  category: "Remodels & Renovations",
+  location: "Carillon Point, Kirkland, Washington",
+  heroImage: "/wp-content/uploads/2014/05/carillonPoint2.jpg",
+  previousHref: "/portfolio/first-hill-penthouse/",
+  nextHref: "/portfolio/remodels-and-renovations/",
+  description: [
+  "This Carillon Point penthouse underwent a complete renovation, opening up the floor plan to take full advantage of the views. The contemporary design reflected the clients desire for clean lines and a subtle color palette. High gloss paint finish on portions of the kitchen casework was contrasted with stained sycamore to lend a furniture quality to the space. A sophisticated low voltage lighting control system lends flexibility to the clients changing art collection."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Stillwell Hansen Architects"
+    ],
+    "links": [
+      {
+        "label": "www.stillwellhansenarchitects.com",
+        "href": "https://www.stillwellhansenarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Hillary Young",
+      "Hillary Young Design Associates"
+    ],
+    "links": [
+      {
+        "label": "www.hillaryyoung.com",
+        "href": "https://www.hillaryyoung.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Craig Gibson Photography"
+    ],
+    "links": [
+      {
+        "label": "www.photobycraig.com",
+        "href": "https://www.photobycraig.com"
+      }
+    ]
+  }
+],
+  galleryImages: carillonPointResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Carillon Point Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "first-hill-penthouse": {
+  slug: "first-hill-penthouse",
+  title: "First Hill Penthouse",
+  category: "Remodels & Renovations",
+  location: "First Hill, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/firsthillPenthouse01.jpg",
+  previousHref: "/portfolio/big-star-belltown/",
+  nextHref: "/portfolio/carillon-point-residence/",
+  description: [
+  "Remodel and renovation of a circa 1928 penthouse."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Hughes Studio Architects"
+    ],
+    "links": [
+      {
+        "label": "www.hughes-studio.com",
+        "href": "https://www.hughes-studio.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Boyka Thayer"
+    ],
+    "links": [
+      {
+        "label": "www.tattersall-design.com",
+        "href": "https://www.tattersall-design.com"
+      }
+    ]
+  },
+  {
+    "label": "Roof Terrace Garden:",
+    "lines": [
+      "Ragen & Associates"
+    ],
+    "links": [
+      {
+        "label": "www.ragenassociates.com",
+        "href": "https://www.ragenassociates.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Steve Keating Photography"
+    ],
+    "links": [
+      {
+        "label": "www.steve-keating.com",
+        "href": "https://www.steve-keating.com"
+      }
+    ]
+  }
+],
+  galleryImages: firstHillPenthouseImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `First Hill Penthouse - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "big-star-belltown": {
+  slug: "big-star-belltown",
+  title: "Big Star Belltown",
+  category: "Downtown Condos",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2022/05/20210316_deforest_034.jpg",
+  previousHref: "/portfolio/1521-condo/",
+  nextHref: "/portfolio/first-hill-penthouse/",
+  description: [
+  "A complete re-build of a downtown Seattle condo — we couldn’t pass up the clients narrative regarding influences and inspiration for the project…",
+  "“Influence: The condo embraces the lysergically drenched ethos of late ‘60s San Francisco, both sonically and visually, in a thoroughly contemporary way.",
+  "Further explanation: Given our mutual love for the pop culture of our past the condo was always going to be grounded in rock & roll and its derivatives. Of course we will always enjoy our favorite musical histories, but we have no interest in viewing life through the rear view mirror, so it’s all through a contemporary lens. Accordingly, the vibe is more Four Tet’s Squidsoup than Warhol’s Factory. Think James Murphy’s Despacio rather than Bear Stanley’s Wall of Sound. Avalanches sampledelia over Airplane psychedelia.",
+  "A good turntable and B&O’s finest largely deliver the analog texture of music we could literally feel when music was analogue and our hearing enjoyed the benefits of youth. The Missoni fabrics, Pollock inspired art, great use of reflective surfaces and innovatively fun lighting combine to deliver the result we’ve been seeking but could never define.”"
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "John DeForest and Mark Slivka, project architects",
+      "DeForest Architects"
+    ],
+    "links": [
+      {
+        "label": "www.deforestarchitects.com",
+        "href": "https://www.deforestarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Jennifer Thuma, Principal/Design Lead",
+      "Grayscale Design Studio"
+    ],
+    "links": [
+      {
+        "label": "www.grayscaledesignstudio.com",
+        "href": "https://www.grayscaledesignstudio.com"
+      }
+    ]
+  },
+  {
+    "label": "Lighting Design:",
+    "lines": [
+      "Brian Hood",
+      "Brian Hood Lighting Design, Inc"
+    ],
+    "links": [
+      {
+        "label": "www.brianhoodlightingdesign.com",
+        "href": "https://www.brianhoodlightingdesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "John Granen",
+      "Granen Photography Inc"
+    ],
+    "links": [
+      {
+        "label": "www.johngranen.com",
+        "href": "https://www.johngranen.com"
+      }
+    ]
+  }
+],
+  galleryImages: bigStarBelltownImages.map((image) => ({
+    src: `/wp-content/uploads/2022/05/${image}`,
+    alt: `Big Star Belltown - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "1521-condo": {
+  slug: "1521-condo",
+  title: "1521 Residence",
+  category: "Downtown Condos",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2018/12/1521_Condo-329_2k.jpg",
+  previousHref: "/portfolio/pioneer-square-residence/",
+  nextHref: "/portfolio/big-star-belltown/",
+  description: [
+  "A City escape for San Juan residents, this Holly McKinley designed condominium was a complete renovation. The floor plan was opened up to take greater advantage of City and Sound views. The existing building structure posed a number of site line restrictions that Holly, in collaboration with the Lockhart|Suver team, deftly handled with clever ceiling and wall detailing. A more refined palette of finishes was incorporated into the design to create an elegant backdrop to custom furnishings."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Holly McKinley",
+      "Holly McKinley Interior Design, Inc"
+    ],
+    "links": [
+      {
+        "label": "www.hminteriors.com",
+        "href": "https://www.hminteriors.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Andrew Giammarco Photography"
+    ],
+    "links": [
+      {
+        "label": "www.andrewgiammarco.com",
+        "href": "https://www.andrewgiammarco.com"
+      }
+    ]
+  }
+],
+  galleryImages: CondoImages.map((image) => ({
+    src: `/wp-content/uploads/2018/12/${image}`,
+    alt: `1521 Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "pioneer-square-residence": {
+  slug: "pioneer-square-residence",
+  title: "Pioneer Square Residence",
+  category: "Remodels & Renovations",
+  location: "Pioneer Square, Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/pioneerSquare1.jpg",
+  previousHref: "/portfolio/bruno-residence/",
+  nextHref: "/portfolio/1521-condo/",
+  description: [
+  "A remodel and addition to a Pioneer Square condominium. Terry described his design approach to his personal residence as “evolutionary”. A deft structural reconfiguration gained a master bath and a sitting room on the upper level with a library and a bath added at the main level. The kitchen was altered into a smaller, more efficient space with steel-and-glass pocket doors. Recessed reveals “float” the walls over the floors. Wood, steel, concrete and plaster show the marks of hand-applied finishes in subtle tones. The roof deck was transformed into a private oasis just above the lively urban street below."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Terry Hunziker"
+    ],
+    "links": [
+      {
+        "label": "www.terryhunziker.com",
+        "href": "https://www.terryhunziker.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: pioneerSquareResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Pioneer Square Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
   "bruno-residence": {
   slug: "bruno-residence",
   title: "Bruno Residence",
