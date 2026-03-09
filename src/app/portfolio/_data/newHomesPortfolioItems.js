@@ -24,7 +24,7 @@ const newHomesPortfolioItems = [
   { name: "Arrow Bay", href: "/portfolio/arrow-bay/", image: "/wp-content/uploads/2024/10/Arrow-Bay_5692.jpg" },
   { name: "Beans-Bight Residence", href: "/portfolio/beans-bight-residence/", image: "/wp-content/uploads/2016/09/koyoDSC03424revB.jpg", position: "bottom center" },
   { name: "Union Bay Residence", href: "/portfolio/union-bay-residence/", image: "/wp-content/uploads/2017/06/Talbot_3.jpg" },
-  { name: "The Perch", href: "/portfolio/the-perch/", image: "/wp-content/uploads/2025/11/1_x_515_Comstock_24.jpg" },
+  { name: "The Perch", href: "/portfolio/comstock/", image: "/wp-content/uploads/2025/11/1_x_515_Comstock_24.jpg" },
   { name: "Madison Park", href: "/portfolio/madison-park/", image: "/wp-content/uploads/2014/01/madisonFrontPiece-390xHR2000.jpg" },
   { name: "The Cottage", href: "/portfolio/the-cottage/", image: "/wp-content/uploads/2017/09/403_Galer-304_2K.jpg", darkText: true },
   { name: "Longhouse Residence", href: "/portfolio/longhouse-residence/", image: "/wp-content/uploads/2014/02/longhouseTitleHRes.jpg" },
