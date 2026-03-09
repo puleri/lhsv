@@ -276,7 +276,381 @@ const longhouseResidenceImages = [
   "longhouse_3.jpg",
 ];
 
+const laingResidenceImages = [
+  "laing17.jpg",
+  "laing16.jpg",
+  "laing15.jpg",
+  "laing14.jpg",
+  "laing13.jpg",
+  "laing12.jpg",
+  "laing10.jpg",
+  "laing8.jpg",
+  "laing7.jpg",
+  "laing5.jpg",
+  "laing4.jpg"
+];
+
+const stoneHouseImages = [
+  "stonehouse2.jpg",
+  "stonehouse10.jpg",
+  "stonehouse4.jpg",
+  "stonehouse5.jpg",
+  "stonehouse3.jpg",
+  "stonehouse6.jpg",
+  "stonehouse8.jpg",
+  "stonehouse9.jpg",
+  "stonehouse7.jpg"
+];
+const beansViewImages = [
+  "2_CR_VS_Beansview-011.jpg",
+  "3_CR_VS_Beansview-006.jpg",
+  "4_CR_VS_Beansview-015.jpg",
+  "5_CR_VS_Beansview-020.jpg",
+  "6_CR_VS_Beansview-023.jpg",
+  "7_CR_VS_Beansview-049.jpg",
+  "8_CR_VS_Beansview-013.jpg"
+];
+
+const yarrowPointResidenceImages = [
+  "yarrowPoint02.jpg",
+  "yarrowPoint04.jpg",
+  "yarrowPoint03.jpg",
+  "yarrowPoint06.jpg",
+  "yarrowPoint05.jpg"
+];
+
+
+const phantomLakeResidenceImages = [
+  "phantomlakeRes_6.jpg",
+  "phantomlakeRes_5.jpg",
+  "phantomlakeRes_2.jpg",
+  "phantomlakeRes_4.jpg"
+];
+
+const phantomLakeStudioImages = [
+  "phantomlakeStudio2.jpg",
+  "phantomlakeStudio4.jpg",
+  "phantomlakeStudio3.jpg"
+];
+const obotResidenceImages = [
+  "obot1.jpg",
+  "obot12.jpg",
+  "obot10.jpg",
+  "obot5.jpg",
+  "obot7.jpg",
+  "obot6.jpg",
+  "obot8.jpg",
+  "obot11.jpg",
+  "obot4.jpg",
+  "obot13.jpg",
+  "obot3.jpg",
+  "obot2.jpg"
+];
+
+
 const portfolioProjectPages = {
+  "phantom-lake-studio": {
+  slug: "phantom-lake-studio",
+  title: "Phantom Lake Studio",
+  category: "New Homes",
+  location: "Bellevue, Washington",
+  heroImage: "/wp-content/uploads/2014/05/phantomlakeStudio1.jpg",
+  previousHref: "/portfolio/phantom-lake-residence/",
+  nextHref: "/portfolio/obot-residence/",
+  description: [
+  "A multi-purpose outbuilding with a garage, dance studio, potting shed and office. The project features a green roof, polycarbonate walls, standing seam metal siding, exposed framing and galvanized steel."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Bob Hull & Jed Edeler, project architect",
+      "The Miller Hull Partnership"
+    ],
+    "links": [
+      {
+        "label": "www.millerhull.com",
+        "href": "https://www.millerhull.com"
+      }
+    ]
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Margaret Johnson"
+    ],
+    "links": [
+      {
+        "label": "www.johnsonsoutherland.com",
+        "href": "https://www.johnsonsoutherland.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Photography Craig Gibson"
+    ],
+    "links": [
+      {
+        "label": "www.photobycraig.com",
+        "href": "https://www.photobycraig.com"
+      }
+    ]
+  }
+],
+  galleryImages: phantomLakeStudioImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Phantom Lake Studio - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+"obot-residence": {
+  slug: "obot-residence",
+  title: "Medina Residence",
+  category: "New Homes",
+  location: "Medina, Washington",
+  heroImage: "/wp-content/uploads/2014/05/obot9.jpg",
+  previousHref: "/portfolio/phantom-lake-studio/",
+  nextHref: "/portfolio/downtown-condos/",
+  description: [
+  "A romantic take on the French country house inspired this home. The centrally placed entry is distinguished by a round tower with a conical roof; extensive interior woodwork and half-timbering in the Norman style used reclaimed chestnut and teak from the East Coast. Stone terracing and pathways link a series of outdoor garden rooms. The challenging site and soil conditions of this waterfront home required an auger-cast piling system, timber-lagged shoring, a shotcrete foundation, and elaborate waterproofing."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Craig Stillwell",
+      "Stillwell Hanson Architects",
+      "craig@stillwellhansonarchitects.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Bradley Huson",
+      "dwww.bradleyhuson.com"
+    ],
+    "links": []
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Bradley Huson"
+    ],
+    "links": [
+      {
+        "label": "www.bradleyhuson.com",
+        "href": "https://www.bradleyhuson.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Lockhart|Suver",
+      "Stillwell Hanson Architects"
+    ],
+    "links": []
+  }
+],
+  galleryImages: obotResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Medina Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "phantom-lake-residence": {
+  slug: "phantom-lake-residence",
+  title: "Phantom Lake Residence",
+  category: "New Homes",
+  location: "Bellevue, Washington",
+  heroImage: "/wp-content/uploads/2014/05/phantomlakeRes_1.jpg",
+  previousHref: "/portfolio/yarrow-point-residence/",
+  nextHref: "/portfolio/phantom-lake-studio/",
+  description: [
+  "More with less – a new modern home feels expansive in a small footprint. A two-story glass curtain wall dissolves the barrier between the interior and the trees and lake. Metal standing seam roofing panels were chosen to clad the exterior walls – which shimmer as one walks past due to an opalescent copper “pearl” finish over a green base coating."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Bob Hull",
+      "The Miller Hull Partnership, LLC"
+    ],
+    "links": [
+      {
+        "label": "www.millerhull.com",
+        "href": "https://www.millerhull.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Fred Housel"
+    ],
+    "links": [
+      {
+        "label": "www.houselphoto.com",
+        "href": "https://www.houselphoto.com"
+      }
+    ]
+  },
+  {
+    "label": "Robin Stein:",
+    "lines": [],
+    "links": [
+      {
+        "label": "www.originaldocuments.net",
+        "href": "https://www.originaldocuments.net"
+      }
+    ]
+  }
+],
+  galleryImages: phantomLakeResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Phantom Lake Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "yarrow-point-residence": {
+  slug: "yarrow-point-residence",
+  title: "Yarrow Point Residence",
+  category: "New Homes",
+  location: "Yarrow Point, Washington",
+  heroImage: "/wp-content/uploads/2014/05/yarrowPoint1.jpg",
+  previousHref: "/portfolio/beans-view/",
+  nextHref: "/portfolio/phantom-lake-residence/",
+  description: [
+  "A “modern farm house” was how the architect described the vision for this new home. The texture of board formed concrete walls complements smooth troweled concrete floors; fir ceilings and cabinetry provide the warmth of fine woodwork, exposed steel structural beams express strength and define the interior spaces. Generous windows and glass doors bring sunlight deep into the house and provide views out to the courtyards, pool and outdoor fireplace."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Rex Hohlbein & Matthew Waddington, project architect",
+      "Rex Hohlbein Architects"
+    ],
+    "links": [
+      {
+        "label": "www.rexhohlbeinarchitects.com",
+        "href": "https://www.rexhohlbeinarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Garret Cord Werner"
+    ],
+    "links": [
+      {
+        "label": "www.garretcordwerner.com",
+        "href": "https://www.garretcordwerner.com"
+      }
+    ]
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Kenneth Philp Landscape Architects"
+    ],
+    "links": [
+      {
+        "label": "www.kennethphilp.com",
+        "href": "https://www.kennethphilp.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Steven Keating Photography"
+    ],
+    "links": [
+      {
+        "label": "www.steve-keating.com",
+        "href": "https://www.steve-keating.com"
+      }
+    ]
+  }
+],
+  galleryImages: yarrowPointResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Yarrow Point Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
+  "beans-view": {
+  slug: "beans-view",
+  title: "Beans View",
+  category: "New Homes",
+  location: "Bainbridge Island, Washington",
+  heroImage: "/wp-content/uploads/2025/12/1_CR_VS_Beansview-009.jpg",
+  previousHref: "/portfolio/stone-house/",
+  nextHref: "/portfolio/yarrow-point-residence/",
+  description: [
+  "With roof lines that reach for expansive southerly views, this waterfront retreat on Bainbridge Island, was designed with family in mind. A central living space with bedroom suites flanking east and west, it welcomes kids of all ages. A reflection of Northwest Regional design, the building’s liberal use of wood both interior and exterior, open floor plan, extensive use of glass and low pitched roofs reinforce the vernacular.",
+  "The buildings asymmetrical layout responds to the sloping terrain, with planted roofs both enhancing its low profile and providing a natural cooling effect in the warm summer months. Stone cladding, sourced regionally, helps anchor the building to the site and reduces maintenance. The home is situated at the base of a large hill with a foundation literally carved out of bedrock. The design integrated a substantial sub-grade drainage system to manage the underground river of water that flows through the site year round."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Conard Romano Architects: Jim Romano, Suzanne Findlay, and Maria Simon"
+    ],
+    "links": [
+      {
+        "label": "www.conardromano.com",
+        "href": "https://www.conardromano.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Virginia Stamey"
+    ],
+    "links": [
+      {
+        "label": "www.virginiastameyinteriordesign.com",
+        "href": "https://www.virginiastameyinteriordesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Kenneth Philp Landscape Architects: Kenneth Philp and Kwatee Stamm"
+    ],
+    "links": [
+      {
+        "label": "www.kennethphilp.com",
+        "href": "https://www.kennethphilp.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Andrew Giammarco"
+    ],
+    "links": [
+      {
+        "label": "www.andrewgiammarco.com",
+        "href": "https://www.andrewgiammarco.com"
+      }
+    ]
+  }
+],
+  galleryImages: beansViewImages.map((image) => ({
+    src: `/wp-content/uploads/2025/12/${image}`,
+    alt: `Beans View - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
   "the-bluff": {
     slug: "the-bluff",
     title: "The Bluff",
@@ -912,6 +1286,124 @@ const portfolioProjectPages = {
       alt: `Longhouse Residence - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
+
+  "laing-residence": {
+  slug: "laing-residence",
+  title: "Bellevue Residence",
+  category: "New Homes",
+  location: "Bellevue, Washington",
+  heroImage: "/wp-content/uploads/2014/05/laing3.jpg",
+  previousHref: "/portfolio/longhouse-residence/",
+  nextHref: "/portfolio/stone-house/",
+  description: [
+  "The owners wanted a modern home with timeless materials and expansive light-filled spaces. DeForest Architects designed a solution that required a ground-up remodel of their old home to transform a conventional suburban house into a stunning concrete, steel and glass modern dwelling. A soaring glass window wall with large sliding doors opening out to the elevated deck opens the home to an eagle’s nest view West to the Olympic mountains and Seattle skyline. Despite the floor to ceiling glass the design preserves privacy from neighbors. The home features “switchable” glass at the entry to provide instant privacy or a dramatic view through the house at the touch of a switch. The owners desired reduce the environmental impact of replacing a house so the existing structure was de-constructed to minimize the volume of materials sent to the waste stream, the new home was designed with less space to heat, energy efficient heating and a planted roof."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "DeForest Architects"
+    ],
+    "links": [
+      {
+        "label": "www.deforestarchitects.com",
+        "href": "https://www.deforestarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "Robin Chell Design"
+    ],
+    "links": [
+      {
+        "label": "www.robinchelldesign.com",
+        "href": "https://www.robinchelldesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Landscape Architect:",
+    "lines": [
+      "Randy Allworth"
+    ],
+    "links": [
+      {
+        "label": "www.allworthdesign.com",
+        "href": "https://www.allworthdesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Benjamin Benschneider Photography"
+    ],
+    "links": [
+      {
+        "label": "www.benschneiderphoto.com",
+        "href": "https://www.benschneiderphoto.com"
+      }
+    ]
+  }
+],
+  galleryImages: laingResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Bellevue Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+"stone-house": {
+  slug: "stone-house",
+  title: "Stone House",
+  category: "New Homes",
+  location: "Washington Park, Seattle",
+  heroImage: "/wp-content/uploads/2014/05/stonehouse1.jpg",
+  previousHref: "/portfolio/laing-residence/",
+  nextHref: "/portfolio/beans-view/",
+  description: [
+  "Strikingly simple: two stone-clad, pristine gables linked together by a continuous skylight. Expansive glazing washes the interior spaces with natural light, accentuating the warmth and texture of the palette of natural materials. Contemporary, yet timeless and enduring  the architects distilled their design to its essence, eliminating unnecessary or extraneous elements. Lockhart|Suver built this home to last. It features a rigid steel, concrete and masonry structure, a water-tight foundation, meticulously detailed stone cladding, and metal roofing."
+],
+  details: [
+  {
+    "label": "Architect:",
+    "lines": [
+      "Stuart Silk & Aaron Mollick, project architect",
+      "Stuart Silk Architects"
+    ],
+    "links": [
+      {
+        "label": "www.stuartsilk.com",
+        "href": "https://www.stuartsilk.com"
+      }
+    ]
+  },
+  {
+    "label": "Interiors:",
+    "lines": [
+      "NK Interiors",
+      "nelleen@comcast.net"
+    ],
+    "links": []
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: stoneHouseImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Stone House - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
 
 };
 
