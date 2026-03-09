@@ -1,5 +1,6 @@
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import "./globals.css";
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <ScrollToTopButton />
       </body>
     </html>
   );
