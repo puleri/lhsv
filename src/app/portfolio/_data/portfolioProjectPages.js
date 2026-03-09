@@ -225,6 +225,30 @@ const comstockImages = [
   "11_d_515_Comstock_4.jpg",
 ];
 
+const madisonParkImages = [
+  "lda-madison-245xHR.jpg",
+  "lda-madison-333xHR.jpg",
+  "lda-madison-225xHR.jpg",
+  "lda-madison-291xHR.jpg",
+  "lda-madison-274xHR.jpg",
+  "lda-madison-372xHR.jpg",
+  "lda-madison-349xHR.jpg",
+  "lda-madison-323xHR.jpg",
+  "lda-madison-252xHR.jpg",
+  "lda-madison-376xHR.jpg",
+  "lda-madison-374xHR.jpg",
+  "lda-madison-303xHR.jpg",
+  "lda-madison-178xHR.jpg",
+  "lda-madison-167xHR.jpg",
+  "lda-madison-147xHR.jpg",
+  "lda-madison-127xHR2560.jpg",
+  "lda-madison-113xHR.jpg",
+  "lda-madison-385xHR.jpg",
+  "lda-madison-265xHR.jpg",
+  "lda-madison-404xHR.jpg",
+  "lda-madison-270xHR.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -724,6 +748,45 @@ const portfolioProjectPages = {
     galleryImages: comstockImages.map((image) => ({
       src: `/wp-content/uploads/2025/11/${image}`,
       alt: `The Perch - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
+  "madison-park": {
+    slug: "madison-park",
+    title: "Madison Park",
+    category: "New Homes",
+    location: "Seattle, Washington",
+    heroImage: "/wp-content/uploads/2024/09/lda-madison-390xHR.jpg",
+    previousHref: "/portfolio/the-perch/",
+    nextHref: "/portfolio/the-cottage/",
+    description: [
+      "California dreamin’. The clients love of modern design and the surf house vernacular that populates the Strand in LA resulted in clean lines, an open floor plan, playful tile and stone finishes and a driftwood colored palette. Sliding glass walls bring the outside in, maximizing daylight at our north latitude.",
+      "Complicated site hydrology required installation of a whole house ground water pump system while under construction. Site de-watering for the full depth lower floor managed roughly 28,000 gallons every 24 hours. An elaborate waterproofing system created a bathtub effect to manage the underground river. The lower floor allowed the design team to pack a lot of house into this urban lot.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Brandon Architects: Chris Brandon, Tyler Wilson"],
+        links: [{ label: "www.brandonarchitects.com", href: "https://www.brandonarchitects.com" }],
+      },
+      {
+        label: "Interiors:",
+        lines: ["Lucas Design: David and Suzie Lucas"],
+        links: [{ label: "www.lucasinterior.com", href: "https://www.lucasinterior.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Ironwood Tree Design: David Berleth"],
+        links: [{ label: "www.ironwoodtree.com", href: "https://www.ironwoodtree.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Aaron Leitz"],
+        links: [{ label: "www.aaronleitz.com", href: "https://www.aaronleitz.com" }],
+      },
+    ],
+    galleryImages: madisonParkImages.map((image) => ({
+      src: `/wp-content/uploads/2024/09/${image}`,
+      alt: `Madison Park - ${image.replace(/\.jpg$/i, "")}`,
     })),
   },
 };
