@@ -347,8 +347,151 @@ const obotResidenceImages = [
   "obot2.jpg"
 ];
 
+const fourSeasonsPenthouseImages = [
+  "FSK2_1.jpg",
+  "FSK2_25.jpg",
+  "FSK2_24.jpg",
+  "FSK2_22.jpg",
+  "FSK2_20.jpg",
+  "FSK2_17.jpg",
+  "FSK2_16.jpg",
+  "FSK2_13.jpg",
+  "FSK2_12.jpg",
+  "FSK2_11.jpg",
+  "FSK2_5.jpg",
+  "FSK2_4.jpg",
+  "FSK2_2.jpg"
+];
+
+const brunoResidenceImages = [
+  "bruno09.jpg",
+  "bruno01.jpg",
+  "bruno17.jpg",
+  "bruno16.jpg",
+  "bruno14.jpg",
+  "bruno12.jpg",
+  "bruno10.jpg",
+  "bruno08.jpg",
+  "bruno07.jpg",
+  "bruno05.jpg",
+  "bruno03.jpg",
+  "bruno02.jpg"
+];
 
 const portfolioProjectPages = {
+  "bruno-residence": {
+  slug: "bruno-residence",
+  title: "Bruno Residence",
+  category: "Remodels & Renovations",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/bruno11.jpg",
+  previousHref: "/portfolio/four-seasons-penthouse/",
+  nextHref: "/portfolio/pioneer-square-residence/",
+  description: [
+  "A transformative update for this Seattle condominium. The owners wanted a simplified floor plan that allowed for an easy separation of public and private spaces. Like all of Terry’s homes there is a refined sense of detail throughout, seamlessly melding steel, wood, and stone to create a complementary backdrop for his custom-designed furnishings."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Terry Hunziker and David Lucas",
+      "Terry Hunziker Design"
+    ],
+    "links": [
+      {
+        "label": "www.terryhunziker.com",
+        "href": "https://www.terryhunziker.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Aaron Leitz Photography"
+    ],
+    "links": [
+      {
+        "label": "www.aaronleitz.com",
+        "href": "https://www.aaronleitz.com"
+      }
+    ]
+  }
+],
+  galleryImages: brunoResidenceImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Bruno Residence - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+  "four-seasons-penthouse": {
+  slug: "four-seasons-penthouse",
+  title: "Four Seasons Penthouse",
+  category: "New Homes",
+  location: "Seattle, Washington",
+  heroImage: "/wp-content/uploads/2014/05/FSK2_23.jpg",
+  previousHref: "/portfolio/downtown-condos/",
+  nextHref: "/portfolio/bruno-residence/",
+  description: [
+  "Complete build-out of the penthouse condominium in the Four Seasons Hotel and Private Residences."
+],
+  details: [
+  {
+    "label": "Interior Design:",
+    "lines": [
+      "Nancy Burfiend",
+      "NB Design Group"
+    ],
+    "links": [
+      {
+        "label": "www.nbdesigngroup.com",
+        "href": "https://www.nbdesigngroup.com"
+      }
+    ]
+  },
+  {
+    "label": "Architect:",
+    "lines": [
+      "Stillwell Hansen Architects"
+    ],
+    "links": [
+      {
+        "label": "www.stillwellhansenarchitects.com",
+        "href": "https://www.stillwellhansenarchitects.com"
+      }
+    ]
+  },
+  {
+    "label": "Lighting Design:",
+    "lines": [
+      "Brian Hood Lighting Design"
+    ],
+    "links": [
+      {
+        "label": "www.brianhoodlightingdesign.com",
+        "href": "https://www.brianhoodlightingdesign.com"
+      }
+    ]
+  },
+  {
+    "label": "Photography:",
+    "lines": [
+      "Benjamin Benschneider Photography"
+    ],
+    "links": [
+      {
+        "label": "www.benschneiderphoto.com",
+        "href": "https://www.benschneiderphoto.com"
+      }
+    ]
+  }
+],
+  galleryImages: fourSeasonsPenthouseImages.map((image) => ({
+    src: `/wp-content/uploads/2014/05/${image}`,
+    alt: `Four Seasons Penthouse - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
+  })),
+},
+
+
   "phantom-lake-studio": {
   slug: "phantom-lake-studio",
   title: "Phantom Lake Studio",
