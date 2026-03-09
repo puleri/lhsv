@@ -262,6 +262,20 @@ const theCottageImages = [
   "403_Galer-114_REV2_2K.jpg"
 ];
 
+const longhouseResidenceImages = [
+  "longhouse_2.jpg",
+  "longhouse_11.jpg",
+  "longhouse_9.jpg",
+  "longhouse_4.jpg",
+  "longhouse_8.jpg",
+  "longhouse_7.jpg",
+  "longhouse_12.jpg",
+  "longhouse_6.jpg",
+  "longhouse_5.jpg",
+  "longhouse_10.jpg",
+  "longhouse_3.jpg",
+];
+
 const portfolioProjectPages = {
   "the-bluff": {
     slug: "the-bluff",
@@ -858,7 +872,46 @@ const portfolioProjectPages = {
     src: `/wp-content/uploads/2017/09/${image}`,
     alt: `The Cottage - ${image.replace(/\.(jpg|jpeg|png|webp|gif|avif)$/i, "")}`,
   })),
-},
+  },
+  "longhouse-residence": {
+    slug: "longhouse-residence",
+    title: "Longhouse Residence",
+    category: "New Homes",
+    location: "Bridle Trails, Bellevue, Washington",
+    heroImage: "/wp-content/uploads/2014/05/longhouse_1.jpg",
+    previousHref: "/portfolio/the-cottage/",
+    nextHref: "/portfolio/laing-residence/",
+    description: [
+      "A subtle and complex geometry underlies the design for this new home. The client, a mathematician, enjoys a vaulted skylight generated from a cycloid curve, and another with origami-like intersecting planes.",
+      "Stone terraces step off the kitchen in four directions, embracing the landscape. The home features vegetated green roofs, geothermal heating and cooling, and bamboo and polished concrete floors.",
+    ],
+    details: [
+      {
+        label: "Architect:",
+        lines: ["Richard Garfield", "rhiza A + D"],
+        links: [{ label: "www.rhizaplusd.com", href: "https://www.rhizaplusd.com" }],
+      },
+      {
+        label: "Landscape Architect:",
+        lines: ["Murase Associates"],
+        links: [{ label: "www.murase.com", href: "https://www.murase.com" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["Robin Stein"],
+        links: [{ label: "www.originaldocuments.net", href: "https://www.originaldocuments.net" }],
+      },
+      {
+        label: "Photography:",
+        lines: ["rhiza A + D"],
+        links: [{ label: "www.rhizaaplusd.com", href: "https://www.rhizaaplusd.com" }],
+      },
+    ],
+    galleryImages: longhouseResidenceImages.map((image) => ({
+      src: `/wp-content/uploads/2014/05/${image}`,
+      alt: `Longhouse Residence - ${image.replace(/\.jpg$/i, "")}`,
+    })),
+  },
 
 };
 
