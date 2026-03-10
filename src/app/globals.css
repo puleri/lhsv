@@ -406,7 +406,7 @@ main {
 
 footer {
   background: linear-gradient(rgba(37, 29, 27, 0.7), rgba(37, 29, 27, 0.7)),
-    url("/wp-content/uploads/2014/02/footer-bg.jpg");
+    url("/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg");
   background-size: cover;
   background-position: center center;
   color: #d6d0c8;
@@ -996,7 +996,7 @@ footer {
   margin-top: 3px;
 }
 
-.about-main {
+ .about-main {
   background: #372e2c;
   color: #dadbd4;
 }
@@ -1006,111 +1006,171 @@ footer {
   margin: 0 auto;
 }
 
-.about-hero {
-  min-height: 320px;
-  background-position: center;
-  background-size: cover;
+.about-page-title {
+  position: relative;
+  min-height: 245px;
+  overflow: hidden;
   display: grid;
   align-items: end;
 }
 
-.about-hero-content {
-  padding: 36px 0;
+.about-pagetitle-background {
+  position: absolute;
+  inset: 0;
+  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
 }
 
-.about-hero h1 {
+.about-title-name {
+  position: relative;
+  z-index: 1;
+  padding: 34px 0 26px;
+}
+
+.about-title-name h1 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
-  color: #fff;
+  color: #ec4d21;
 }
 
-.about-hero h2 {
-  margin: 0.25rem 0 0;
-  font-size: 1.35rem;
-  font-weight: 400;
-  color: #e9e3dc;
+.about-title-name h2 {
+  margin: 0;
+  color: #c4c4c4;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .about-section {
-  padding: 36px 0 10px;
+  padding: 48px 0;
 }
 
-.about-section-title {
-  margin: 0 0 18px;
+.about-section-dark {
+  background: #372e2c;
+}
+
+.about-section-red {
+  background: url('/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg') center / cover no-repeat, #8c2d1e;
+}
+
+.about-section-ogham {
+  min-height: 620px;
+  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-heading {
+  margin: 0 0 24px;
   color: #fff;
-  font-size: clamp(1.8rem, 3vw, 2.45rem);
-  font-weight: 400;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 300;
 }
 
-.about-grid {
+.about-heading-spaced {
+  margin-top: 52px;
+}
+
+.about-heading-accent {
+  color: #e3a029;
+}
+
+.about-grid-two,
+.about-grid-four {
   display: grid;
-  gap: 1.2rem;
+  gap: 22px;
 }
 
-.about-grid-4 {
+.about-grid-two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-grid-four {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.about-grid-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.about-grid p {
+.about-grid-two p,
+.about-grid-four p {
   margin: 0;
-  line-height: 1.6;
-}
-
-.about-grid a {
-  color: #e3a029;
-}
-
-.accent {
-  color: #e3a029;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .about-person {
-  margin: 0 0 0.6rem;
-  font-size: 1.15rem;
+  margin: 0 0 10px;
+  color: #e3a029;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
-.about-ogham {
-  margin-top: 24px;
-  padding: 90px 0 120px;
-  background-position: center;
-  background-size: cover;
+.about-home-service-link-wrap {
+  margin-top: 24px !important;
+}
+
+.about-home-service-link {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+.about-home-service-link:hover {
+  border-color: #fff;
+}
+
+.about-ogham-indent {
+  text-indent: 23px;
 }
 
 .about-bottom-row {
+  background: #372e2c;
+  padding: 22px 0;
+}
+
+.about-bottom-row-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1rem;
   align-items: center;
-  padding: 28px 0 36px;
 }
 
 .about-bottom-row h3,
-.about-bottom-row p {
+.about-bottom-row h6 {
   margin: 0;
+  font-weight: 400;
 }
 
-.about-bottom-row p {
-  color: #c6c6bc;
+.about-bottom-row h3 {
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+}
+
+.about-bottom-row h6 {
+  font-size: 0.95rem;
   text-align: right;
+  color: #c6c6bc;
 }
 
 .about-bottom-row a {
-  color: inherit;
+  color: #e3a029;
 }
 
 @media (max-width: 1000px) {
-  .about-grid-4,
-  .about-grid-2,
-  .about-bottom-row {
+  .about-grid-four,
+  .about-grid-two,
+  .about-bottom-row-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-bottom-row p {
+  .about-bottom-row h6 {
     text-align: left;
+  }
+
+  .about-section-ogham {
+    min-height: 0;
+    padding-top: 72px;
+    padding-bottom: 72px;
   }
 }
