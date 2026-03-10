@@ -95,7 +95,7 @@ export default function AboutUsPage() {
                 completion but throughout the life of their home, building, or built environment.
               </p>
               <p className="about-home-service-link-wrap">
-                <a href="/home-service-2/" className="about-home-service-link">
+                <a href="/home-services-2/" className="about-home-service-link">
                   More about Lockhart|Suver Home Service
                 </a>
               </p>
@@ -200,7 +200,7 @@ export default function AboutUsPage() {
           </h3>
           <h6>
             <span>
-              <a href="/portfolio/projects-2/">Previous</a> | <a href="/home-service-2/">Next</a>
+              <a href="/portfolio/projects-2/">Previous</a> | <a href="/home-services-2/">Next</a>
             </span>
           </h6>
         </div>

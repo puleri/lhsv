@@ -88,7 +88,7 @@ const navItems = [
   { label: "Firm Profile", href: "/about-us/" },
   {
     label: "Home Service",
-    href: "/home-service-2/",
+    href: "/home-services-2/",
     children: [
       { label: "Home Service", href: "/home-service/" },
       { label: "About Home Service", href: "/about-home-service/" },
