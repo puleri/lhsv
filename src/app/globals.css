@@ -406,7 +406,7 @@ main {
 
 footer {
   background: linear-gradient(rgba(37, 29, 27, 0.7), rgba(37, 29, 27, 0.7)),
-    url("/wp-content/uploads/2014/02/footer-bg.jpg");
+    url("/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg");
   background-size: cover;
   background-position: center center;
   color: #d6d0c8;
@@ -994,4 +994,183 @@ footer {
   border-right: 1px solid currentColor;
   transform: rotate(-45deg);
   margin-top: 3px;
+}
+
+ .about-main {
+  background: #372e2c;
+  color: #dadbd4;
+}
+
+.about-wrapper {
+  width: min(1260px, 94vw);
+  margin: 0 auto;
+}
+
+.about-page-title {
+  position: relative;
+  min-height: 245px;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+}
+
+.about-pagetitle-background {
+  position: absolute;
+  inset: 0;
+  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
+}
+
+.about-title-name {
+  position: relative;
+  z-index: 1;
+  padding: 34px 0 26px;
+}
+
+.about-title-name h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: #ec4d21;
+}
+
+.about-title-name h2 {
+  margin: 0;
+  color: #c4c4c4;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.about-section {
+  padding: 48px 0;
+}
+
+.about-section-dark {
+  background: #372e2c;
+}
+
+.about-section-red {
+  background: url('/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg') center / cover no-repeat, #8c2d1e;
+}
+
+.about-section-ogham {
+  min-height: 620px;
+  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-heading {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 300;
+}
+
+.about-heading-spaced {
+  margin-top: 52px;
+}
+
+.about-heading-accent {
+  color: #e3a029;
+}
+
+.about-grid-two,
+.about-grid-four {
+  display: grid;
+  gap: 22px;
+}
+
+.about-grid-two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-grid-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-grid-two p,
+.about-grid-four p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.about-person {
+  margin: 0 0 10px;
+  color: #e3a029;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.about-home-service-link-wrap {
+  margin-top: 24px !important;
+}
+
+.about-home-service-link {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+.about-home-service-link:hover {
+  border-color: #fff;
+}
+
+.about-ogham-indent {
+  text-indent: 23px;
+}
+
+.about-bottom-row {
+  background: #372e2c;
+  padding: 22px 0;
+}
+
+.about-bottom-row-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.about-bottom-row h3,
+.about-bottom-row h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.about-bottom-row h3 {
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+}
+
+.about-bottom-row h6 {
+  font-size: 0.95rem;
+  text-align: right;
+  color: #c6c6bc;
+}
+
+.about-bottom-row a {
+  color: #e3a029;
+}
+
+@media (max-width: 1000px) {
+  .about-grid-four,
+  .about-grid-two,
+  .about-bottom-row-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-bottom-row h6 {
+    text-align: left;
+  }
+
+  .about-section-ogham {
+    min-height: 0;
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 }
