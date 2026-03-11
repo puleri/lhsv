@@ -1548,3 +1548,81 @@ footer {
     min-height: 320px;
   }
 }
+
+.our-commitment-main {
+  background: #fff;
+  color: #575850;
+}
+
+.our-commitment-intro {
+  padding: 40px 0 60px;
+}
+
+.our-commitment-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.our-commitment-intro h1 {
+  margin: 0 0 1rem;
+}
+
+.our-commitment-intro h1 span {
+  color: #e34a21;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+}
+
+.our-commitment-intro ol {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.our-commitment-intro li {
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.our-commitment-grid h3 {
+  margin: 6.5rem 0 1rem;
+  color: #e3a029;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.our-commitment-grid em {
+  color: #e3a029;
+}
+
+.our-commitment-hero {
+  min-height: 500px;
+  background-image: url('/wp-content/uploads/2014/05/Jack_Potter08.jpg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-commitment-cta {
+  padding: 25px 0 18px;
+}
+
+.our-commitment-cta h3 {
+  margin: 0;
+  color: #e3a029;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .our-commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .our-commitment-grid h3 {
+    margin-top: 0;
+  }
+
+  .our-commitment-hero {
+    min-height: 320px;
+  }
+}
