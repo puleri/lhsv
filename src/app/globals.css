@@ -5,6 +5,8 @@
   --foreground: #3f3a38;
   --panel: #352d2b;
   --accent: #d28f1d;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
 }
 
 * {
@@ -406,7 +408,7 @@ main {
 
 footer {
   background: linear-gradient(rgba(37, 29, 27, 0.7), rgba(37, 29, 27, 0.7)),
-    url("/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg");
+    url("/wp-content/uploads/2017/09/darkWood2.png");
   background-size: cover;
   background-position: center center;
   color: #d6d0c8;
@@ -1017,7 +1019,7 @@ footer {
 .about-pagetitle-background {
   position: absolute;
   inset: 0;
-  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
+  background: url('/wp-content/uploads/2014/05/ogham1.jpg') center center / cover no-repeat;
 }
 
 .about-title-name {
@@ -1049,12 +1051,12 @@ footer {
 }
 
 .about-section-red {
-  background: url('/wp-content/uploads/2024/04/Lawtonwood_13_B.jpg') center / cover no-repeat, #8c2d1e;
+  background: url('/wp-content/uploads/2013/05/red.png');
 }
 
 .about-section-ogham {
   min-height: 620px;
-  background: url('/wp-content/uploads/2014/05/stonehouse1.jpg') center center / cover no-repeat;
+  background: url('/wp-content/uploads/2014/05/ogham1.jpg') center center / cover no-repeat;
   padding-top: 130px;
   padding-bottom: 130px;
 }
