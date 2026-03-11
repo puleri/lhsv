@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Ongoing Maintenance | Lockhart Suver",
-  description: "Lockhart|Suver Home Service ongoing maintenance.",
+  title: "Small Projects and Repairs | Lockhart Suver",
+  description: "Lockhart|Suver Home Service small projects and repairs.",
 };
 
 export default function SmallProjectsAndRepairsPage() {
@@ -10,44 +10,44 @@ export default function SmallProjectsAndRepairsPage() {
         <div className="container small-projects-repairs-grid">
           <div>
             <h1>
-              <span>Ongoing Maintenance</span>
+              <span>Small Projects &amp; Repairs</span>
             </h1>
             <p>
-              One of the biggest challenges of owning a home is keeping up with all the maintenance work required to
-              preserve its value and keep it running efficiently. And it&apos;s almost always more costly to fix — or
-              replace — something after it breaks than it is to properly maintain it along the way. We provide free
-              in-home assessments to identify ongoing maintenance issues and small repairs before they become expensive
-              problems.
+              Whether you are looking to install a new deck or convert an office into a nursery, our craftsmen can
+              build virtually anything. Every project, regardless of size, is professionally managed from start to
+              finish with the same exacting attention to quality, materials and design on which we have built our
+              reputation. And since no one likes surprises, we&apos;re happy to provide you a detailed estimate for your
+              project and make sure the only thing we exceed is your expectations.
             </p>
             <p>
-              We&apos;ll work with you to design a customized plan for regular maintenance that fits with both your needs
-              and your budget. And there&apos;s no need to try and keep track of it all — we&apos;ll remind you when service is
-              due and schedule it for a time that is convenient for you.
+              And when something breaks, there often isn&apos;t time to research a qualified professional to fix it. In the
+              end, you can end up paying more for sub-par work and no follow-up. We&apos;re known and trusted in the
+              community for our quality workmanship as well as our ability to solve almost any problem.
             </p>
           </div>
 
           <div>
             <h3>
-              “They built our house years ago, but to this day I can call with any maintenance issue, and someone will
-              be here in short order, or they&apos;ll tell me who to call.”
+              “I always feel they have the client&apos;s best interests at heart. They raise the bar on quality, but they
+              keep the budget under control.”
             </h3>
             <p>
-              <em>Jan Roddy, Bellevue</em>
+              <em>Chris Spivey, Wallingford</em>
               <br />
-              <em>New Construction</em>
+              <em>Remodel</em>
             </p>
           </div>
         </div>
       </section>
 
-      <section className="small-projects-repairs-hero" aria-label="Ongoing maintenance service" />
+      <section className="small-projects-repairs-hero" aria-label="Small projects and repairs craftsmanship" />
 
       <section className="small-projects-repairs-cta">
         <div className="container">
           <h3>
-            <span>Lockhart|Suver Home Service Remodels</span>{" "}
-            <a href="/remodels/" className="home-service-button">
-              Remodels
+            <span>More about Lockhart|Suver Home Service&apos;s Ongoing Maintenance service</span>{" "}
+            <a href="/ongoing-maintenance/" className="home-service-button">
+              Ongoing Maintenance
             </a>
           </h3>
         </div>

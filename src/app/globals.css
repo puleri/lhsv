@@ -1679,8 +1679,8 @@ footer {
 
 .small-projects-repairs-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/05/LSbuilders5.jpg');
-  background-position: center left;
+  background-image: url('/wp-content/uploads/2016/06/Brad_Sparks_clean.jpg');
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1707,4 +1707,13 @@ footer {
   .small-projects-repairs-hero {
     min-height: 320px;
   }
+}
+
+
+.ongoing-hero {
+    min-height: 500px;
+  background-image: url('/wp-content/uploads/2014/05/LSbuilders5.jpg');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
