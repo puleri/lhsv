@@ -267,6 +267,8 @@ main {
 .sub-menu .nav-item > a {
   color: #fff;
   padding: 0.55rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 300;
   border-bottom: 1px solid #3a3a3a;
 }
 
