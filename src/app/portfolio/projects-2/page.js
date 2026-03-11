@@ -92,7 +92,7 @@ export default function ProjectsTwoPage() {
   return (
     <main className="projects2-main">
       <section className="projects2-title-row">
-        <div className="projects2-wrapper">
+        <div className="projects2-wrapper text-orange">
           <h1>Projects</h1>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function ProjectsTwoPage() {
         {projectGroups.map((group) => (
           <article
             key={group.heading}
-            className={`projects2-group ${group.textLight ? "text-light" : "text-normal"}`}
+            className={`projects2-group ${group.textLight ? "" : "text-normal"}`}
             style={{ backgroundImage: `url(${group.backgroundImage})` }}
           >
             <div className="projects2-overlay" />
@@ -109,9 +109,9 @@ export default function ProjectsTwoPage() {
               <div className="projects2-empty-col" />
               <div className="projects2-list-col">
                 <h2>{group.heading}</h2>
-                <ul>
+                <ul className="text-yellow">
                   {group.links.map(([label, href]) => (
-                    <li key={href}>
+                    <li key={href} className="hover-orange">
                       <Link href={href}>{label}</Link>
                     </li>
                   ))}

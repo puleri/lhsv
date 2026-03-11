@@ -5,7 +5,7 @@ export default function PortfolioCategoryTemplate({ title, items, previousHref, 
     <main className="portfolio-category-main">
       <section className="portfolio-category-title-row">
         <div className="projects2-wrapper">
-          <h1>{title}</h1>
+          <h1 className="font-light text-orange">{title}</h1>
         </div>
       </section>
 
@@ -18,11 +18,11 @@ export default function PortfolioCategoryTemplate({ title, items, previousHref, 
             />
             <div className="portfolio-category-item-content projects2-wrapper">
               <div />
-              <div className="portfolio-category-copy">
+              <div className="portfolio-category-copy font-semilight">
                 <h2 className={item.darkText ? "dark-text" : ""}>{item.name}</h2>
                 <h4>
                   <strong>
-                    <Link href={item.href}>view portfolio</Link>
+                    <Link className="font-semilight hover-orange text-yellow" href={item.href}>view portfolio</Link>
                   </strong>
                 </h4>
               </div>

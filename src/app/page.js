@@ -163,12 +163,12 @@ export default function Home() {
 
       <section className="intro-band" id="firm-profile">
         <div className="container intro-content">
-          <h1 className="">Craftsmanship in every detail.</h1>
-          <p>
+          <h1 className="text-orange">Craftsmanship in every detail.</h1>
+          <p className="font-semilight">
             We specialize in turning challenging architecture and one-of-a-kind designs into
             well-crafted homes, interiors and built environments.
           </p>
-          <a href="/about-us/">view the firm profile</a>
+          <a className="font-medium" href="/about-us/">view the firm profile</a>
         </div>
       </section>
 
@@ -176,8 +176,8 @@ export default function Home() {
         {projectSections.map((section) => (
           <article key={section.title} className="project-strip h-100" style={{ backgroundImage: `url(${section.image})` }}>
             <div className="strip-overlay" />
-            <div className={`container strip-content ${section.light ? "text-light" : "text-normal"}`}>
-              <h2>{section.title}</h2>
+            <div className={`container strip-content text-yellow  ${section.light ? "" : "text-normal"}`}>
+              <h2 className="text-white">{section.title}</h2>
               <a href={section.href}>{section.cta}</a>
             </div>
           </article>

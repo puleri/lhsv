@@ -5,7 +5,7 @@ function DetailGroup({ label, lines, links }) {
     <div className="project-detail-group">
       <p className="project-detail-label">{label}</p>
       {lines?.map((line) => (
-        <p key={line} className="project-detail-text">
+        <p key={line} className="project-detail-text text-white">
           {line}
         </p>
       ))}
@@ -25,9 +25,9 @@ export default function PortfolioProjectTemplate({ project }) {
     <main className="portfolio-project-main">
       <section className="portfolio-project-title-row projects2-wrapper">
         <div>
-          <h4>{project.category}</h4>
-          <h1>{project.title}</h1>
-          <h2>{project.location}</h2>
+          <h4 className="text-white">{project.category}</h4>
+          <h1 className="text-orange font-light">{project.title}</h1>
+          <h2 className="text-lightgrey">{project.location}</h2>
         </div>
       </section>
 
@@ -37,14 +37,14 @@ export default function PortfolioProjectTemplate({ project }) {
         <div className="portfolio-project-two-col">
           <div>
             <h3>{project.title}</h3>
-            <p className="project-detail-label">Description:</p>
+            <p className="project-detail-label text-lightgrey">Description:</p>
             {project.description.map((paragraph) => (
-              <p key={paragraph} className="project-detail-text">
+              <p key={paragraph} className="text-white project-detail-text">
                 {paragraph}
               </p>
             ))}
-            <p className="project-detail-label">Location:</p>
-            <p className="project-detail-text">{project.location}</p>
+            <p className="project-detail-label text-lightgrey">Location:</p>
+            <p className="project-detail-text text-white">{project.location}</p>
           </div>
 
           <div>

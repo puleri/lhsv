@@ -150,7 +150,7 @@ a {
   left: 0;
   right: 0;
   z-index: 1000;
-  font-weight: 900;
+  font-weight: 600;
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
@@ -438,7 +438,6 @@ main {
 
 .intro-content h1 {
   margin: 0 0 0.9rem;
-  color: #d46834;
   font-size: clamp(1.8rem, 3vw, 2.45rem);
   font-weight: 400;
 }
@@ -494,13 +493,6 @@ main {
   font-size: 0.95rem;
 }
 
-.text-light {
-  color: #f8f7f5;
-}
-
-.text-normal {
-  color: #eee9e3;
-}
 
 .contact-band {
   min-height: 92px;
@@ -723,7 +715,7 @@ footer {
 
 .projects2-wrapper {
   width: min(1260px, 94vw);
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .projects2-title-row {
@@ -733,7 +725,7 @@ footer {
 .projects2-title-row h1 {
   margin: 0;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .projects2-groups {
@@ -776,7 +768,6 @@ footer {
 .projects2-list-col h2 {
   margin: 0 0 0.75rem;
   font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
 }
 
 .projects2-list-col ul {
@@ -790,11 +781,10 @@ footer {
 }
 
 .projects2-list-col a {
-  color: #fff;
 }
 
 .projects2-list-col a:hover {
-  color: #e3a029;
+  color: #e34a21
 }
 
 .projects2-bottom-row {
@@ -812,7 +802,6 @@ footer {
 
 .projects2-bottom-row h3 {
   font-size: 1.35rem;
-  font-weight: 400;
 }
 
 .projects2-bottom-row p {
@@ -860,7 +849,6 @@ footer {
 .portfolio-category-title-row h1 {
   margin: 0;
   font-size: 40px;
-  font-weight: 400;
 }
 
 .portfolio-category-list {
@@ -899,7 +887,6 @@ footer {
 .portfolio-category-copy h2 {
   margin: 0;
   font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 300;
 }
 
 .portfolio-category-copy h2.dark-text {
@@ -909,16 +896,12 @@ footer {
 .portfolio-category-copy h4 {
   margin: 0.25rem 0 0;
   font-size: 1rem;
-  font-weight: 700;
 }
 
 .portfolio-category-copy a {
-  color: #fff;
 }
 
-.portfolio-category-copy a:hover {
-  color: #e3a029;
-}
+
 
 @media (max-width: 900px) {
   .portfolio-category-item-content {
@@ -1034,7 +1017,6 @@ footer {
 
 .portfolio-project-main {
   background: #372e2c;
-  color: #c0c0c0;
   padding-bottom: 44px;
 }
 
@@ -1044,23 +1026,17 @@ footer {
 
 .portfolio-project-title-row h4 {
   margin: 0;
-  color: #c6c6bc;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 .portfolio-project-title-row h1 {
   margin: 0;
-  color: #f5f5f3;
   font-size: clamp(2rem, 3.8vw, 3rem);
-  font-weight: 400;
 }
 
 .portfolio-project-title-row h2 {
   margin: 0.25rem 0 0;
-  color: #e5e0dc;
   font-size: 1.2rem;
-  font-weight: 400;
 }
 
 .portfolio-project-image {
@@ -1081,7 +1057,6 @@ footer {
   margin: 0 0 0.8rem;
   color: #e34a21;
   font-size: 2rem;
-  font-weight: 400;
 }
 
 .portfolio-project-nav-top {
@@ -1102,7 +1077,6 @@ footer {
 .project-detail-label {
   margin: 0.8rem 0 0.15rem;
   color: #c0c0c0;
-  font-weight: 700;
 }
 
 .project-detail-text {
@@ -1387,3 +1361,45 @@ footer {
   height: 80px;
   background: #fff;
 }
+
+/* utility classes */
+.text-light {
+  color: #f8f7f5;
+}
+
+.text-normal {
+  color: #eee9e3;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-semilight {
+  font-weight: 500;
+}
+
+.font-medium {
+  font-weight: 600;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-orange {
+  color: #e34a21;
+}
+
+.text-yellow {
+  color: #e3a029;
+}
+
+.text-lightgrey {
+  color: #7b7b7b;
+}
+
+.hover-orange:hover {
+    color: #e34a21;
+}
+
