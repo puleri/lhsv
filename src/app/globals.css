@@ -1400,3 +1400,78 @@ footer {
     color: #e34a21;
 }
 
+
+.home-service-main {
+  background: #fff;
+  color: #575850;
+}
+
+.home-service-intro {
+  padding: 70px 0 40px;
+}
+
+.home-service-intro-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.home-service-intro h1 {
+  margin: 0 0 0.8rem;
+}
+
+.home-service-intro h1 span {
+  color: #e34a21;
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 300;
+}
+
+.home-service-intro h5,
+.home-service-intro h3 {
+  margin: 0 0 1rem;
+  color: #575850;
+  font-weight: 400;
+}
+
+.home-service-text-orange {
+  color: #e34a21;
+}
+
+.home-service-hero {
+  min-height: 400px;
+  background-image: url('/wp-content/uploads/2014/02/serviceDeptTruck_long.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-service-cta {
+  padding: 25px 0 18px;
+}
+
+.home-service-cta h3 {
+  margin: 0;
+  font-weight: 400;
+  color: #e3a029;
+}
+
+.home-service-button {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  background: #f7f7f7;
+  color: #4d4d4d;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .home-service-intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-service-hero {
+    min-height: 320px;
+  }
+}
