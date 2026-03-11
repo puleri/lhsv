@@ -1717,3 +1717,75 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.remodels-main {
+  background: #fff;
+  color: #575850;
+}
+
+.remodels-intro {
+  padding: 40px 0 60px;
+}
+
+.remodels-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.remodels-intro h1 {
+  margin: 0 0 1rem;
+}
+
+.remodels-intro h1 span {
+  color: #e34a21;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+}
+
+.remodels-intro p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+
+.remodels-grid h3 {
+  margin: 5.5rem 0 1rem;
+  color: #e3a029;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.remodels-grid em {
+  color: #e3a029;
+}
+
+.remodels-hero {
+  min-height: 500px;
+  background-image: url('/wp-content/uploads/2013/11/remodel_title2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.remodels-cta {
+  padding: 25px 0 18px;
+}
+
+.remodels-cta h3 {
+  margin: 0;
+  color: #e3a029;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .remodels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .remodels-grid h3 {
+    margin-top: 0;
+  }
+
+  .remodels-hero {
+    min-height: 320px;
+  }
+}
