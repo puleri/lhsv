@@ -1446,24 +1446,31 @@ footer {
 }
 
 .home-service-cta {
-  padding: 25px 0 18px;
+  padding: 35px 0;
 }
 
 .home-service-cta h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.1rem;
   color: #e3a029;
 }
 
 .home-service-button {
   display: inline-block;
-  margin-left: 0.5rem;
-  padding: 0.3rem 0.65rem;
-  border: 1px solid #d0d0d0;
+  margin-left: 0.8rem;
+  color: #e3a029;
+  padding: 0.6rem 0.95rem;
+  border: 2px solid #e3a029;
   border-radius: 3px;
-  background: #f7f7f7;
-  color: #4d4d4d;
+  text-transform: uppercase;
   font-size: 0.9rem;
+  transition: all .2s ease-in-out;
+}
+
+.home-service-button:hover {
+  background-color: #e3a029 ;
+  color: white;
 }
 
 @media (max-width: 900px) {
