@@ -121,7 +121,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
+    <main className="home-grid-layout">
       <section className="hero" aria-label="Featured homes">
         {heroSlides.map((slide, i) => {
           const isCurrent = i === currentSlide;
@@ -185,7 +185,9 @@ export default function Home() {
       </section>
 
       <section className="contact-band" id="contact">
-        <a href="/remodels/contact-2">Please contact us for more information about building your next project.</a>
+        <div className="container contact-content">
+          <a href="/remodels/contact-2">Please contact us for more information about building your next project.</a>
+        </div>
       </section>
     </main>
   );
