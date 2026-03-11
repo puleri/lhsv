@@ -1583,12 +1583,14 @@ footer {
 
 .our-commitment-intro ol {
   margin: 0;
+  list-style:decimal;
   padding-left: 1.4rem;
 }
 
 .our-commitment-intro li {
   margin-bottom: 1rem;
   line-height: 1.65;
+  margin-left: 15px;
 }
 
 .our-commitment-grid h3 {
@@ -1611,7 +1613,7 @@ footer {
 }
 
 .our-commitment-cta {
-  padding: 25px 0 18px;
+  padding: 30px 0;
 }
 
 .our-commitment-cta h3 {
@@ -1630,6 +1632,79 @@ footer {
   }
 
   .our-commitment-hero {
+    min-height: 320px;
+  }
+}
+
+.small-projects-repairs-main {
+  background: #fff;
+  color: #575850;
+}
+
+.small-projects-repairs-intro {
+  padding: 40px 0 60px;
+}
+
+.small-projects-repairs-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.small-projects-repairs-intro h1 {
+  margin: 0 0 1rem;
+}
+
+.small-projects-repairs-intro h1 span {
+  color: #e34a21;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 300;
+}
+
+.small-projects-repairs-intro p {
+  margin: 0 0 1rem;
+  line-height: 1.65;
+}
+
+.small-projects-repairs-grid h3 {
+  margin: 5.5rem 0 1rem;
+  color: #e3a029;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.small-projects-repairs-grid em {
+  color: #e3a029;
+}
+
+.small-projects-repairs-hero {
+  min-height: 500px;
+  background-image: url('/wp-content/uploads/2016/06/Brad_Sparks_clean.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.small-projects-repairs-cta {
+  padding: 30px 0;
+}
+
+.small-projects-repairs-cta h3 {
+  margin: 0;
+  color: #e3a029;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .small-projects-repairs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-projects-repairs-grid h3 {
+    margin-top: 0;
+  }
+
+  .small-projects-repairs-hero {
     min-height: 320px;
   }
 }

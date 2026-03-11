@@ -30,7 +30,7 @@ export default function OurCommitmentPage() {
 
           <div>
             <h3>
-              “They don&apos;t over-promise – [they] never make promises they can&apos;t keep.”
+              “They don&apos;t over-promise - [they] never make promises they can&apos;t keep.”
             </h3>
             <p>
               <em>Margi Allison, Interior Designer</em>
