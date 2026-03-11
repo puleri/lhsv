@@ -1526,14 +1526,14 @@ footer {
 
 .about-home-service-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/02/serviceDeptTruck_long.jpg');
+  background-image: url('/wp-content/uploads/2014/02/Rex_Hake_04.jpg');
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-home-service-cta {
-  padding: 25px 0 18px;
+  padding: 30px 0;
 }
 
 .about-home-service-cta h3 {
