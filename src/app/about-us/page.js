@@ -10,8 +10,8 @@ export default function AboutUsPage() {
         <div className="about-pagetitle-background" />
         <div className="about-wrapper">
           <div className="about-title-name">
-            <h1>Firm Profile</h1>
-            <h2>Learn more about us</h2>
+            <h1 className="font-light">Firm Profile</h1>
+            <h2 className="font-medium text-lightgrey">Learn more about us</h2>
           </div>
         </div>
       </section>

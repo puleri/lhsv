@@ -1162,21 +1162,18 @@ footer {
 .about-title-name {
   position: relative;
   z-index: 1;
-  padding: 34px 0 26px;
+  padding: 15px 0 100px;
 }
 
 .about-title-name h1 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
   color: #ec4d21;
 }
 
 .about-title-name h2 {
   margin: 0;
-  color: #c4c4c4;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 .about-section {

@@ -14,7 +14,6 @@ export default function HomeServicesPage() {
           </a>
         </div>
       </section>
-      <section className="home-services-spacer" aria-hidden="true" />
     </main>
   );
 }
