@@ -415,12 +415,17 @@ main {
 .contact-band a {
   font-size: 1.15rem;
 }
-
+.home-grid-layout {
+  
+  font-weight: 900;
+}
 .home-grid-layout .intro-content {
   width: min(1280px, 92vw);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: center;
+    grid-column: 2;
+
 }
 
 .home-grid-layout .intro-content > * {
