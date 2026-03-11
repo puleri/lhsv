@@ -1174,3 +1174,48 @@ footer {
     padding-bottom: 72px;
   }
 }
+
+.home-services-main {
+  background-color: #fff;
+}
+
+.home-services-hero {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url('/wp-content/uploads/2014/02/home2.jpg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-services-hero-content {
+  width: 100%;
+}
+
+.home-services-hero h1 {
+  margin: 0 0 26px;
+  color: #e34a21;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 300;
+}
+
+.home-services-enter-button {
+  display: inline-block;
+  border: 1px solid #e3a029;
+  color: #e3a029;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 11px 28px;
+  font-size: 0.74rem;
+}
+
+.home-services-enter-button:hover {
+  background: rgba(227, 160, 41, 0.12);
+}
+
+.home-services-spacer {
+  height: 80px;
+  background: #fff;
+}
