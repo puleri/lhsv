@@ -1,3 +1,5 @@
+import "./about-us.module.css";
+
 export const metadata = {
   title: "Firm Profile | Lockhart Suver",
   description: "Learn more about Lockhart Suver.",

@@ -1064,7 +1064,6 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/wp-content/uploads/2015/12/home5_reduced.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1290,7 +1289,6 @@ footer {
 .about-pagetitle-background {
   position: absolute;
   inset: 0;
-  background: url('/wp-content/uploads/2014/05/ogham1.jpg') center center / cover no-repeat;
 }
 
 .about-title-name {
@@ -1318,13 +1316,8 @@ footer {
   background: #372e2c;
 }
 
-.about-section-red {
-  background: url('/wp-content/uploads/2013/05/red.png');
-}
-
 .about-section-ogham {
   min-height: 620px;
-  background: url('/wp-content/uploads/2014/05/ogham1.jpg') center center / cover no-repeat;
   padding-top: 130px;
   padding-bottom: 130px;
 }
@@ -1453,7 +1446,6 @@ footer {
   min-height: 700px;
   display: flex;
   align-items: center;
-  background-image: url('/wp-content/uploads/2014/02/serviceDeptTruck_long.jpg');
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1573,7 +1565,6 @@ footer {
 
 .home-service-hero {
   min-height: 400px;
-  background-image: url('/wp-content/uploads/2014/02/serviceDeptTruck_long.jpg');
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1660,7 +1651,6 @@ footer {
 
 .about-home-service-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/02/Rex_Hake_04.jpg');
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1740,7 +1730,6 @@ footer {
 
 .our-commitment-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/05/Jack_Potter08.jpg');
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1813,7 +1802,6 @@ footer {
 
 .small-projects-repairs-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2016/06/Brad_Sparks_clean.jpg');
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1846,7 +1834,6 @@ footer {
 
 .ongoing-hero {
     min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/05/LSbuilders5.jpg');
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1894,7 +1881,6 @@ footer {
 
 .remodels-hero {
   min-height: 500px;
-  background-image: url('/wp-content/uploads/2014/05/hollomon-19424x.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

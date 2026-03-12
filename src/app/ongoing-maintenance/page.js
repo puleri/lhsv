@@ -1,3 +1,5 @@
+import "./ongoing-maintenance.module.css";
+
 export const metadata = {
   title: "Ongoing Maintenance | Lockhart Suver",
   description: "Lockhart|Suver Home Service ongoing maintenance.",

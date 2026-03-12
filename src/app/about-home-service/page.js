@@ -1,3 +1,5 @@
+import "./about-home-service.module.css";
+
 export const metadata = {
   title: "About Home Service | Lockhart Suver",
   description: "Learn more about Lockhart|Suver Home Service.",

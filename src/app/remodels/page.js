@@ -1,3 +1,5 @@
+import "./remodels.module.css";
+
 export const metadata = {
   title: "Remodels | Lockhart Suver",
   description: "Lockhart|Suver Home Service remodeling services.",

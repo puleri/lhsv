@@ -1,3 +1,5 @@
+import "./commercial.module.css";
+
 export const metadata = {
   title: "Commercial | Lockhart Suver",
   description: "Commercial page for Lockhart Suver.",

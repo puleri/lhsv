@@ -1,3 +1,5 @@
+import "./small-projects-and-repairs.module.css";
+
 export const metadata = {
   title: "Small Projects and Repairs | Lockhart Suver",
   description: "Lockhart|Suver Home Service small projects and repairs.",
