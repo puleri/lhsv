@@ -198,6 +198,10 @@ main {
   display: block;
 }
 
+.mobile-nav-close {
+  display: none;
+}
+
 @media (min-width: 901px) {
   .main-nav .dropdown-toggle {
     display: none;
@@ -663,6 +667,11 @@ footer {
     z-index: 1301;
   }
 
+  .nav-toggle.is-open {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
   .primary-nav {
     display: block;
     position: fixed;
@@ -681,6 +690,20 @@ footer {
     pointer-events: none;
     transition: transform 250ms ease, visibility 0ms linear 250ms;
     z-index: 1300;
+  }
+
+  .mobile-nav-close {
+    display: inline-flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.25rem;
+    cursor: pointer;
   }
 
   .primary-nav.is-open {

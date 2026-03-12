@@ -230,6 +230,14 @@ export default function SiteHeader() {
         </button>
 
         <nav id="primary-nav" className={`primary-nav${isMobileMenuOpen ? " is-open" : ""}`} aria-label="Primary">
+          <button
+            type="button"
+            className="mobile-nav-close"
+            aria-label="Close navigation"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            ×
+          </button>
           <ul className="main-nav">
             {links.map((item, index) => (
               <NavItem
