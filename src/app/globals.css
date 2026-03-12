@@ -296,15 +296,15 @@ main {
 }
 
 .sub-menu-scrollable {
-  max-height: calc(6 * 2.2rem);
+  max-height: calc(10 * 2.2rem);
   overflow-y: auto;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.5rem ;
 }
 
 .sub-menu-scrollable::after {
   content: "↓";
   position: sticky;
-  bottom: 0.3rem;
+  bottom: 0px;
   display: block;
   text-align: center;
   font-size: 0.75rem;
