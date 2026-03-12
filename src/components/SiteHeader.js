@@ -181,6 +181,19 @@ export default function SiteHeader() {
     };
   }, []);
 
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = "";
+      return;
+    }
+
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
 
   const links = useMemo(() => navItems, []);
 
