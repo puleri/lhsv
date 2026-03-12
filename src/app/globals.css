@@ -273,7 +273,7 @@ main {
   left: 0;
   top: 100%;
   min-width: 121px;
-  font-size: .3rem;
+  font-size: 0.82rem;
   background: #262626;
   border: 1px solid #3a3a3a;
   box-shadow: 0 8px 16px rgb(0 0 0 / 12%);
@@ -312,7 +312,7 @@ main {
 .sub-menu .nav-item > .nav-link-row > a {
   color: #fff;
   padding: 0.55rem 0.8rem;
-  font-size: 0.75rem;
+  font-size: 0.82rem;
   font-weight: 500;
   border-bottom: 1px solid #3a3a3a;
 }
