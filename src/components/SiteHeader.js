@@ -108,19 +108,41 @@ function isActivePath(pathname, href) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href);
 }
 
-function NavItem({ item, pathname }) {
+function NavItem({ item, pathname, menuPath, openDropdowns, onToggleDropdown, onNavigate }) {
   const hasChildren = Boolean(item.children?.length);
   const isActive = isActivePath(pathname, item.href);
+  const isDropdownOpen = Boolean(openDropdowns[menuPath]);
 
   return (
     <li className={`nav-item${hasChildren ? " has-children" : ""}`}>
-      <Link className={isActive ? "active" : ""} href={item.href}>
-        {item.label}
-      </Link>
+      <div className="nav-link-row">
+        <Link className={isActive ? "active" : ""} href={item.href} onClick={onNavigate}>
+          {item.label}
+        </Link>
+        {hasChildren ? (
+          <button
+            type="button"
+            className={`dropdown-toggle${isDropdownOpen ? " is-open" : ""}`}
+            aria-expanded={isDropdownOpen}
+            aria-label={`Toggle ${item.label} submenu`}
+            onClick={() => onToggleDropdown(menuPath)}
+          >
+            ▾
+          </button>
+        ) : null}
+      </div>
       {hasChildren ? (
-        <ul className={`sub-menu${item.scrollableSubmenu ? " sub-menu-scrollable" : ""}`}>
-          {item.children.map((child) => (
-            <NavItem key={`${item.label}-${child.label}`} item={child} pathname={pathname} />
+        <ul className={`sub-menu${item.scrollableSubmenu ? " sub-menu-scrollable" : ""}${isDropdownOpen ? " is-open" : ""}`}>
+          {item.children.map((child, index) => (
+            <NavItem
+              key={`${item.label}-${child.label}`}
+              item={child}
+              pathname={pathname}
+              menuPath={`${menuPath}-${index}`}
+              openDropdowns={openDropdowns}
+              onToggleDropdown={onToggleDropdown}
+              onNavigate={onNavigate}
+            />
           ))}
         </ul>
       ) : null}
@@ -131,6 +153,8 @@ function NavItem({ item, pathname }) {
 export default function SiteHeader() {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openDropdowns, setOpenDropdowns] = useState({});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -157,7 +181,20 @@ export default function SiteHeader() {
     };
   }, []);
 
+
   const links = useMemo(() => navItems, []);
+
+  const handleDropdownToggle = (path) => {
+    setOpenDropdowns((currentState) => ({
+      ...currentState,
+      [path]: !currentState[path],
+    }));
+  };
+
+  const handleNavigate = () => {
+    setIsMobileMenuOpen(false);
+    setOpenDropdowns({});
+  };
 
   return (
     <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>
@@ -166,10 +203,31 @@ export default function SiteHeader() {
           <img src="/wp-content/uploads/2014/02/LSlogo2.png" alt="Lockhart Suver" />
         </Link>
 
-        <nav aria-label="Primary">
+        <button
+          type="button"
+          className={`nav-toggle${isMobileMenuOpen ? " is-open" : ""}`}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation"
+          onClick={() => setIsMobileMenuOpen((state) => !state)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <nav id="primary-nav" className={`primary-nav${isMobileMenuOpen ? " is-open" : ""}`} aria-label="Primary">
           <ul className="main-nav">
-            {links.map((item) => (
-              <NavItem key={item.label} item={item} pathname={pathname} />
+            {links.map((item, index) => (
+              <NavItem
+                key={item.label}
+                item={item}
+                pathname={pathname}
+                menuPath={`${index}`}
+                openDropdowns={openDropdowns}
+                onToggleDropdown={handleDropdownToggle}
+                onNavigate={handleNavigate}
+              />
             ))}
           </ul>
         </nav>
