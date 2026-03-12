@@ -399,22 +399,42 @@ main {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 0.35rem;
+  gap: 0.5rem;
   z-index: 4;
 }
 
 .dot {
-  width: 11px;
-  height: 11px;
+  position: relative;
+  width: 16px;
+  height: 16px;
   border-radius: 999px;
   border: 1px solid #fff;
-  background: rgb(0 0 0 / 35%);
+  background: rgb(0 0 0 / 45%);
+  overflow: hidden;
   padding: 0;
   cursor: pointer;
+  isolation: isolate;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: #fff;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 420ms ease;
+  z-index: -1;
 }
 
 .dot.active {
-  background: #fff;
+  border-color: #fff;
+}
+
+.dot.active::before {
+  transform: scaleX(1);
+  transform-origin: left center;
 }
 
 .intro-band,
