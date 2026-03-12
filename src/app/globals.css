@@ -442,8 +442,8 @@ main {
 .hero-watermark {
   position: absolute;
   width: min(46vw, 660px);
-  left: 50%;
-  bottom: 56px;
+  left: 60%;
+  bottom: 0;
   transform: translateX(-50%);
   opacity: 0.9;
   z-index: 3;
@@ -453,7 +453,7 @@ main {
 .hero-dots {
   position: absolute;
   bottom: 16px;
-  left: 50%;
+  left: 44%;
   transform: translatey(-50%);
   display: flex;
   gap: 0.5rem;
