@@ -397,7 +397,7 @@ main {
   position: absolute;
   bottom: 16px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translatey(-50%);
   display: flex;
   gap: 0.5rem;
   z-index: 4;
@@ -422,8 +422,8 @@ main {
   inset: 0;
   border-radius: inherit;
   background: #fff;
-  transform: scaleX(0);
-  transform-origin: right center;
+  transform: scaleY(0);
+  transform-origin: top center;
   transition: transform 420ms ease;
   z-index: -1;
 }
@@ -434,7 +434,7 @@ main {
 
 .dot.active::before {
   transform: scaleX(1);
-  transform-origin: left center;
+  transform-origin: bottom center;
 }
 
 .intro-band,
