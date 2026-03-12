@@ -1,0 +1,11 @@
+:global(.about-pagetitle-background) {
+  background: url("/wp-content/uploads/2014/05/ogham1.jpg") center center / cover no-repeat;
+}
+
+:global(.about-section-red) {
+  background: url("/wp-content/uploads/2013/05/red.png");
+}
+
+:global(.about-section-ogham) {
+  background: url("/wp-content/uploads/2014/05/ogham1.jpg") center center / cover no-repeat;
+}

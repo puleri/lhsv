@@ -1,3 +1,5 @@
+import "./our-commitment.module.css";
+
 export const metadata = {
   title: "Our Commitment | Lockhart Suver",
   description: "Learn about the Lockhart|Suver Home Service commitment.",
