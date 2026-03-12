@@ -200,6 +200,7 @@ main {
 }
 
 .nav-item {
+  margin: 0 12px;
   position: relative;
 }
 
@@ -212,7 +213,6 @@ main {
 }
 
 .nav-item.has-children > a {
-  padding-right: 0.9rem;
 }
 
 
@@ -492,7 +492,7 @@ main {
   min-height: 92px;
   display: grid;
   place-items: center;
-  text-align: center;
+  text-align: left;
   padding: 0.8rem 1rem;
 }
 
