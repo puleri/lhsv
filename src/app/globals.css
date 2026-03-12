@@ -384,10 +384,10 @@ main {
 
 .hero-watermark {
   position: absolute;
-  width: min(40vw, 580px);
+  width: min(46vw, 660px);
   left: 50%;
-  top: 28%;
-  transform: translateX(-30%);
+  bottom: 56px;
+  transform: translateX(-50%);
   opacity: 0.9;
   z-index: 3;
   pointer-events: none;
@@ -632,8 +632,8 @@ footer {
   }
 
   .hero-watermark {
-    width: 62vw;
-    top: 34%;
+    width: 72vw;
+    bottom: 52px;
     transform: translateX(-50%);
   }
 
