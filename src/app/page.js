@@ -141,7 +141,18 @@ export default function Home() {
             imageClasses.push(transitionDirection === 1 ? "exit-to-left" : "exit-to-right");
           }
 
-          return <img key={slide.image} className={imageClasses.join(" ")} src={slide.image} alt={slide.alt} />;
+          const isInitialLcpImage = i === 0;
+
+          return (
+            <img
+              key={slide.image}
+              className={imageClasses.join(" ")}
+              src={slide.image}
+              alt={slide.alt}
+              loading={isInitialLcpImage ? "eager" : "lazy"}
+              fetchPriority={isInitialLcpImage ? "high" : "auto"}
+            />
+          );
         })}
         <img
           className="hero-watermark"
