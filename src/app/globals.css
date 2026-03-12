@@ -198,6 +198,12 @@ main {
   display: block;
 }
 
+@media (min-width: 901px) {
+  .main-nav .dropdown-toggle {
+    display: none;
+  }
+}
+
 .nav-toggle {
   display: none;
   border: 0;
@@ -661,6 +667,10 @@ footer {
     background: #666;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
+    max-height: min(75vh, calc(100vh - 110px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .primary-nav.is-open {
