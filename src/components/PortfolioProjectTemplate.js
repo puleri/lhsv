@@ -1,4 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
+
+const FALLBACK_IMAGE_WIDTH = 1600;
+const FALLBACK_IMAGE_HEIGHT = 1067;
+
+function getImageDimensions(image) {
+  return {
+    width: image?.width ?? FALLBACK_IMAGE_WIDTH,
+    height: image?.height ?? FALLBACK_IMAGE_HEIGHT,
+  };
+}
 
 function DetailGroup({ label, lines, links }) {
   return (
@@ -21,6 +32,8 @@ function DetailGroup({ label, lines, links }) {
 }
 
 export default function PortfolioProjectTemplate({ project }) {
+  const heroDimensions = getImageDimensions(project);
+
   return (
     <main className="portfolio-project-main">
       <section className="portfolio-project-title-row projects2-wrapper">
@@ -32,7 +45,15 @@ export default function PortfolioProjectTemplate({ project }) {
       </section>
 
       <section className="portfolio-project-content projects2-wrapper">
-        <img src={project.heroImage} alt={project.heroAlt ?? project.title} className="portfolio-project-image" />
+        <Image
+          src={project.heroImage}
+          alt={project.heroAlt ?? project.title}
+          className="portfolio-project-image"
+          width={heroDimensions.width}
+          height={heroDimensions.height}
+          sizes="(max-width: 900px) 100vw, 1200px"
+          priority
+        />
 
         <div className="portfolio-project-two-col">
           <div>
@@ -58,9 +79,21 @@ export default function PortfolioProjectTemplate({ project }) {
         </div>
 
         <div className="portfolio-project-gallery">
-          {project.galleryImages.map((image) => (
-            <img key={image.src} src={image.src} alt={image.alt ?? project.title} className="portfolio-project-image" />
-          ))}
+          {project.galleryImages.map((image) => {
+            const dimensions = getImageDimensions(image);
+
+            return (
+              <Image
+                key={image.src}
+                src={image.src}
+                alt={image.alt ?? project.title}
+                className="portfolio-project-image"
+                width={dimensions.width}
+                height={dimensions.height}
+                sizes="(max-width: 900px) 100vw, 1200px"
+              />
+            );
+          })}
         </div>
 
         <section className="projects2-bottom-row">
