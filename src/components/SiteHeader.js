@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -108,15 +108,29 @@ function isActivePath(pathname, href) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href);
 }
 
-function NavItem({ item, pathname, menuPath, openDropdowns, onToggleDropdown, onNavigate }) {
+function NavItem({ item, pathname, menuPath, depth, openDropdowns, onToggleDropdown, onNavigate, onLinkHoverPrefetch }) {
   const hasChildren = Boolean(item.children?.length);
   const isActive = isActivePath(pathname, item.href);
   const isDropdownOpen = Boolean(openDropdowns[menuPath]);
+  const shouldPrefetch = depth === 0;
+
+  const handleLinkHover = () => {
+    if (depth > 0) {
+      onLinkHoverPrefetch(item.href);
+    }
+  };
 
   return (
     <li className={`nav-item${hasChildren ? " has-children" : ""}`}>
       <div className="nav-link-row">
-        <Link className={isActive ? "active" : ""} href={item.href} onClick={onNavigate}>
+        <Link
+          className={isActive ? "active" : ""}
+          href={item.href}
+          prefetch={shouldPrefetch}
+          onClick={onNavigate}
+          onMouseEnter={handleLinkHover}
+          onFocus={handleLinkHover}
+        >
           {item.label}
         </Link>
         {hasChildren ? (
@@ -139,9 +153,11 @@ function NavItem({ item, pathname, menuPath, openDropdowns, onToggleDropdown, on
               item={child}
               pathname={pathname}
               menuPath={`${menuPath}-${index}`}
+              depth={depth + 1}
               openDropdowns={openDropdowns}
               onToggleDropdown={onToggleDropdown}
               onNavigate={onNavigate}
+              onLinkHoverPrefetch={onLinkHoverPrefetch}
             />
           ))}
         </ul>
@@ -152,9 +168,11 @@ function NavItem({ item, pathname, menuPath, openDropdowns, onToggleDropdown, on
 
 export default function SiteHeader() {
   const pathname = usePathname();
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdowns, setOpenDropdowns] = useState({});
+  const prefetchedHrefsRef = useRef(new Set());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -209,6 +227,15 @@ export default function SiteHeader() {
     setOpenDropdowns({});
   };
 
+  const handleLinkHoverPrefetch = (href) => {
+    if (prefetchedHrefsRef.current.has(href)) {
+      return;
+    }
+
+    router.prefetch(href);
+    prefetchedHrefsRef.current.add(href);
+  };
+
   return (
     <header className={`site-header${isScrolled ? " is-scrolled" : ""}`}>
       <div className="container header-inner">
@@ -245,9 +272,11 @@ export default function SiteHeader() {
                 item={item}
                 pathname={pathname}
                 menuPath={`${index}`}
+                depth={0}
                 openDropdowns={openDropdowns}
                 onToggleDropdown={handleDropdownToggle}
                 onNavigate={handleNavigate}
+                onLinkHoverPrefetch={handleLinkHoverPrefetch}
               />
             ))}
           </ul>
